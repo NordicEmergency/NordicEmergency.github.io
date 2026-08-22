@@ -3,18 +3,21 @@
         "id": "dapuc",
         "name": "DAPUC – Dansk Præhospital Uddannelsescenter",
         "logo": null,
-        "url": "https://www.dapuc.dk"
+        "url": "https://www.dapuc.dk",
+        "visibility": "public"
     },
     {
         "id": "sosu-ostjylland",
         "name": "SOSU Østjylland",
         "logo": null,
-        "url": "https://www.sosu-ostjylland.dk"
+        "url": "https://www.sosu-ostjylland.dk",
+        "visibility": "hidden"
     },
     {
         "id": "cph",
         "name": "Københavns Lufthavne",
         "logo": null,
-        "url": "https://www.cph.dk"
+        "url": "https://www.cph.dk",
+        "visibility": "hidden"
     }
 ]

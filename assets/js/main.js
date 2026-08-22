@@ -152,12 +152,13 @@
     var section = document.getElementById("customers");
     var list = document.getElementById("customer-list");
     if (!section || !list) return;
-    if (!customers || !customers.length) {
+    var visible = (customers || []).filter(function (c) { return c.visibility !== "hidden"; });
+    if (!visible.length) {
       section.hidden = true;
       return;
     }
     section.hidden = false;
-    list.innerHTML = customers
+    list.innerHTML = visible
       .map(function (c) {
         var inner = c.logo
           ? '<img src="' + c.logo + '" alt="' + c.name + '">'
