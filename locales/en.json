@@ -7,5 +7,46 @@
     "labs": "Labs",
     "team": "Team",
     "contact": "Contact"
+  },
+  "hero": {
+    "title": "NordicEmergency",
+    "tagline": "VR-based emergency response and CPR training — clinical precision when it matters."
+  },
+  "solutions": {
+    "intro": "Two VR platforms built to train decision-making, coordination and action when it counts.",
+    "items": [
+      {
+        "title": "Disaster & Emergency Response Training",
+        "description": "Multi-user simulation across fire, police, authorities and rescue services — controlled by a gamemaster who adapts the scenario in real time."
+      },
+      {
+        "title": "First Aid & CPR Training",
+        "description": "Realistic VR training in first aid and CPR, built on recognised clinical guidelines."
+      }
+    ]
+  },
+  "academy": {
+    "description": "Train as a gamemaster and/or CPR instructor. Academy gives you the skills to facilitate realistic VR training yourself."
+  },
+  "labs": {
+    "description": "Our internal R&D environment, where we test new VR technology and explore how didactic learning principles best translate into everyday practice."
+  },
+  "team": {
+    "tabs": {
+      "core": "Core Team",
+      "board": "Board"
+    },
+    "core": {
+      "thomas": { "title": "CEO, BSc.MBA" },
+      "ricki": { "title": "Senior Medical Trainer, Paramedic" },
+      "mads": { "title": "Doctor (MD)" }
+    },
+    "board": {
+      "placeholder_title": "Board Member"
+    }
+  },
+  "contact": {
+    "description": "Want to know more about our VR platforms or Academy? Get in touch.",
+    "email_label": "Email"
   }
 }

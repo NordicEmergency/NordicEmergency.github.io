@@ -7,5 +7,46 @@
     "labs": "Labs",
     "team": "Team",
     "contact": "Kontakt"
+  },
+  "hero": {
+    "title": "NordicEmergency",
+    "tagline": "VR-baseret beredskabstræning og hjerte-lungeredning – klinisk præcision, når det gælder."
+  },
+  "solutions": {
+    "intro": "To VR-platforme udviklet til at træne beslutninger, samarbejde og handling, når det tæller.",
+    "items": [
+      {
+        "title": "Katastrofe- og beredskabstræning",
+        "description": "Multiuser-simulation på tværs af brand, politi, myndigheder og redningstjenester – styret af en gamemaster, der tilpasser scenariet i realtid."
+      },
+      {
+        "title": "Førstehjælp & hjertelungeredning",
+        "description": "Realistisk VR-træning i førstehjælp og HLR, bygget på anerkendte kliniske retningslinjer."
+      }
+    ]
+  },
+  "academy": {
+    "description": "Bliv uddannet gamemaster og/eller HLR-instruktør. Academy giver dig de kompetencer, der skal til for selv at facilitere realistisk VR-træning."
+  },
+  "labs": {
+    "description": "Vores interne udviklingsmiljø, hvor vi tester ny VR-teknologi og undersøger, hvordan didaktiske læringsprincipper bedst overføres til hverdagen."
+  },
+  "team": {
+    "tabs": {
+      "core": "Kerneteam",
+      "board": "Bestyrelse"
+    },
+    "core": {
+      "thomas": { "title": "CEO, BSc.MBA" },
+      "ricki": { "title": "Senior Medical Trainer, uddannet paramedicin" },
+      "mads": { "title": "Læge" }
+    },
+    "board": {
+      "placeholder_title": "Bestyrelsesmedlem"
+    }
+  },
+  "contact": {
+    "description": "Vil du vide mere om vores VR-platforme eller Academy? Skriv til os.",
+    "email_label": "Email"
   }
 }

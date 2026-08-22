@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NordicEmergency</title>
+<meta name="description" content="NordicEmergency — VR-based emergency response and CPR training.">
+<link rel="icon" type="image/svg+xml" href="assets/icons/star-of-life.svg">
+<link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="#top">
+      <img class="brand-mark" src="assets/icons/star-of-life.svg" alt="">
+      <span class="brand-name" data-i18n="hero.title">NordicEmergency</span>
+    </a>
+
+    <nav class="site-nav" aria-label="Main">
+      <ul>
+        <li><a href="#solutions" data-i18n="nav.solutions">Solutions</a></li>
+        <li><a href="#academy" data-i18n="nav.academy">Academy</a></li>
+        <li><a href="#labs" data-i18n="nav.labs">Labs</a></li>
+        <li><a href="#team" data-i18n="nav.team">Team</a></li>
+        <li><a href="#contact" data-i18n="nav.contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <div class="lang-switcher" id="lang-switcher" aria-label="Language"></div>
+  </div>
+</header>
+
+<main id="top">
+
+  <section class="hero">
+    <div class="container">
+      <h1 data-i18n="hero.title">NordicEmergency</h1>
+      <p class="tagline" data-i18n="hero.tagline">VR-based emergency response and CPR training.</p>
+    </div>
+  </section>
+
+  <section id="solutions" class="section">
+    <div class="container">
+      <h2 data-i18n="nav.solutions">Solutions</h2>
+      <p class="section-intro" data-i18n="solutions.intro"></p>
+      <div class="cards" id="solutions-list"></div>
+    </div>
+  </section>
+
+  <section id="academy" class="section section-alt">
+    <div class="container">
+      <h2 data-i18n="nav.academy">Academy</h2>
+      <p data-i18n="academy.description"></p>
+    </div>
+  </section>
+
+  <section id="labs" class="section">
+    <div class="container">
+      <h2 data-i18n="nav.labs">Labs</h2>
+      <p data-i18n="labs.description"></p>
+    </div>
+  </section>
+
+  <section id="team" class="section section-alt">
+    <div class="container">
+      <h2 data-i18n="nav.team">Team</h2>
+      <div class="tabs" role="tablist">
+        <button class="tab-btn active" role="tab" aria-selected="true" data-tab="core" data-i18n="team.tabs.core">Core Team</button>
+        <button class="tab-btn" role="tab" aria-selected="false" data-tab="board" data-i18n="team.tabs.board">Board</button>
+      </div>
+      <div class="people" id="team-core" role="tabpanel"></div>
+      <div class="people" id="team-board" role="tabpanel" hidden></div>
+    </div>
+  </section>
+
+  <section id="contact" class="section">
+    <div class="container">
+      <h2 data-i18n="nav.contact">Contact</h2>
+      <p data-i18n="contact.description"></p>
+      <p class="contact-email">
+        <span data-i18n="contact.email_label">Email</span>:
+        <a href="mailto:info@nordicemergency.com">info@nordicemergency.com</a>
+      </p>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <p>&copy; <span id="year"></span> Nordic Emergency ApS</p>
+  </div>
+</footer>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>

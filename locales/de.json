@@ -7,5 +7,46 @@
     "labs": "Labs",
     "team": "Team",
     "contact": "Kontakt"
+  },
+  "hero": {
+    "title": "NordicEmergency",
+    "tagline": "VR-basiertes Einsatz- und Wiederbelebungstraining – klinische Präzision, wenn es darauf ankommt."
+  },
+  "solutions": {
+    "intro": "Zwei VR-Plattformen für Entscheidungsfindung, Koordination und Handeln, wenn es darauf ankommt.",
+    "items": [
+      {
+        "title": "Katastrophen- und Einsatztraining",
+        "description": "Multiuser-Simulation für Feuerwehr, Polizei, Behörden und Rettungsdienste – gesteuert von einem Gamemaster, der das Szenario in Echtzeit anpasst."
+      },
+      {
+        "title": "Erste Hilfe & Wiederbelebung",
+        "description": "Realistisches VR-Training in Erster Hilfe und HLR auf Basis anerkannter klinischer Leitlinien."
+      }
+    ]
+  },
+  "academy": {
+    "description": "Werden Sie Gamemaster und/oder HLR-Trainer. Die Academy vermittelt Ihnen die Fähigkeiten, realistisches VR-Training selbst zu leiten."
+  },
+  "labs": {
+    "description": "Unsere interne Entwicklungsumgebung, in der wir neue VR-Technologie testen und untersuchen, wie didaktische Lernprinzipien am besten in den Alltag übertragen werden."
+  },
+  "team": {
+    "tabs": {
+      "core": "Kernteam",
+      "board": "Vorstand"
+    },
+    "core": {
+      "thomas": { "title": "CEO, BSc.MBA" },
+      "ricki": { "title": "Senior Medical Trainer, Rettungssanitäter" },
+      "mads": { "title": "Arzt" }
+    },
+    "board": {
+      "placeholder_title": "Vorstandsmitglied"
+    }
+  },
+  "contact": {
+    "description": "Möchten Sie mehr über unsere VR-Plattformen oder die Academy erfahren? Kontaktieren Sie uns.",
+    "email_label": "E-Mail"
   }
 }

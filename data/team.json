@@ -1,0 +1,14 @@
+{
+  "core": [
+    { "id": "thomas", "name": "Thomas", "linkedin": null },
+    { "id": "ricki", "name": "Ricki", "linkedin": null },
+    { "id": "mads", "name": "Mads", "linkedin": "https://www.linkedin.com/in/mads-sommer-129a253b/" }
+  ],
+  "board": [
+    { "id": "board-1", "name": "TBA" },
+    { "id": "board-2", "name": "TBA" },
+    { "id": "board-3", "name": "TBA" },
+    { "id": "board-4", "name": "TBA" },
+    { "id": "board-5", "name": "TBA" }
+  ]
+}
