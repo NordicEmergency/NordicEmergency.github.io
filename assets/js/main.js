@@ -42,7 +42,18 @@
       .toUpperCase();
   }
 
-  function renderPerson(person, title) {
+  function renderAvatar(person, avatarClass) {
+    if (person.image) {
+      return (
+        '<div class="' + avatarClass + ' avatar-photo">' +
+        '<img src="' + person.image + '" alt="">' +
+        "</div>"
+      );
+    }
+    return '<div class="' + avatarClass + '">' + initials(person.name) + "</div>";
+  }
+
+  function renderPerson(person, title, bio) {
     var linkHtml = person.linkedin
       ? '<a href="' + person.linkedin + '" target="_blank" rel="noopener">LinkedIn</a>'
       : "";
@@ -50,9 +61,10 @@
     var avatarClass = person.placeholder ? "avatar avatar-placeholder" : "avatar";
     return (
       '<div class="' + personClass + '">' +
-      '<div class="' + avatarClass + '">' + initials(person.name) + "</div>" +
+      renderAvatar(person, avatarClass) +
       "<h3>" + person.name + "</h3>" +
       (title ? "<p>" + title + "</p>" : "") +
+      (bio ? '<p class="person-bio">' + bio + "</p>" : "") +
       linkHtml +
       "</div>"
     );
@@ -66,8 +78,8 @@
     var coreTitles = (dict.team && dict.team.core) || {};
     coreEl.innerHTML = teamData.core
       .map(function (person) {
-        var title = coreTitles[person.id] ? coreTitles[person.id].title : "";
-        return renderPerson(person, title);
+        var entry = coreTitles[person.id] || {};
+        return renderPerson(person, entry.title, entry.bio);
       })
       .join("");
 
@@ -140,6 +152,16 @@
       });
   }
 
+  function applySiteData(site) {
+    var emailEl = document.getElementById("contact-email");
+    if (emailEl && site.email) {
+      emailEl.textContent = site.email;
+      emailEl.href = "mailto:" + site.email;
+    }
+    var linkedinEl = document.getElementById("footer-linkedin");
+    if (linkedinEl && site.linkedin) linkedinEl.href = site.linkedin;
+  }
+
   document.addEventListener("DOMContentLoaded", function () {
     var yearEl = document.getElementById("year");
     if (yearEl) yearEl.textContent = new Date().getFullYear();
@@ -148,10 +170,13 @@
 
     Promise.all([
       fetch("locales/config.json").then(function (res) { return res.json(); }),
-      fetch("data/team.json").then(function (res) { return res.json(); })
+      fetch("data/team.json").then(function (res) { return res.json(); }),
+      fetch("data/site.json").then(function (res) { return res.json(); })
     ]).then(function (results) {
       var config = results[0];
       var teamData = results[1];
+      var siteData = results[2];
+      applySiteData(siteData);
       var lang = detectLang(config);
       loadLang(lang, config, teamData);
     });

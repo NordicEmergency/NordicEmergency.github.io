@@ -37,9 +37,16 @@
       "board": "Vorstand"
     },
     "core": {
-      "thomas": { "title": "CEO, BSc.MBA" },
-      "ricki": { "title": "Senior Medical Trainer, Rettungssanitäter" },
-      "mads": { "title": "Arzt" }
+      "thk": {
+        "title": "CEO, BSc., MBA"
+      },
+      "rtk": {
+        "title": "Senior Medical Trainer, Rettungssanitäter"
+      },
+      "mgs": {
+        "title": "Oberarzt",
+        "bio": "Mads Sommer ist Oberarzt am Sygehus Sønderjylland, Notarzt und Rettungshubschrauberarzt, der sich zudem mit Gesundheitsinnovation und virtueller Realität (VR) für die Ausbildung in lebensrettender Erster Hilfe beschäftigt."
+      }
     },
     "board": {
       "placeholder_title": "Vorstandsmitglied"

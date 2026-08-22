@@ -1,14 +1,38 @@
 {
   "core": [
-    { "id": "thomas", "name": "Thomas", "linkedin": null },
-    { "id": "ricki", "name": "Ricki", "linkedin": null },
-    { "id": "mads", "name": "Mads", "linkedin": "https://www.linkedin.com/in/mads-sommer-129a253b/" }
+    {
+      "id": "thk",
+      "name": "Thomas Herbert Kokholm",
+      "linkedin": "https://www.linkedin.com/in/kokholm/",
+      "image": "assets/images/thomas_portrait.jpg"
+    },
+    {
+      "id": "rtk",
+      "name": "Ricki Toft Kristiansen",
+      "linkedin": "https://www.linkedin.com/in/ricki-toft-kristiansen-97762070/",
+      "phone": ""
+    },
+    {
+      "id": "mgs",
+      "name": "Mads Gabelgaard Sommer",
+      "linkedin": "https://www.linkedin.com/in/mads-sommer-129a253b/"
+    }
   ],
   "board": [
-    { "id": "board-1", "name": "TBA 1", "placeholder": true },
-    { "id": "board-2", "name": "TBA 2", "placeholder": true },
-    { "id": "board-3", "name": "TBA 3", "placeholder": true },
-    { "id": "board-4", "name": "TBA 4", "placeholder": true },
-    { "id": "board-5", "name": "TBA 5", "placeholder": true }
+    {
+      "id": "bod_1",
+      "name": "Ricki Toft Kristiansen",
+      "placeholder": true
+    },
+    {
+      "id": "bod_2",
+      "name": "Kjeld Grostøl Nielsen",
+      "placeholder": true
+    },
+    {
+      "id": "bod_3",
+      "name": "Thomas Herbert Kokholm",
+      "placeholder": true
+    }
   ]
 }

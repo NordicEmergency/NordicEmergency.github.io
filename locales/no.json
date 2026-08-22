@@ -37,9 +37,16 @@
       "board": "Styre"
     },
     "core": {
-      "thomas": { "title": "CEO, BSc.MBA" },
-      "ricki": { "title": "Senior Medical Trainer, paramedisiner" },
-      "mads": { "title": "Lege" }
+      "thk": {
+        "title": "CEO, BSc., MBA"
+      },
+      "rtk": {
+        "title": "Senior Medical Trainer, paramedisiner"
+      },
+      "mgs": {
+        "title": "Overlege",
+        "bio": "Mads Sommer er overlege ved Sygehus Sønderjylland, akuttlege og helikopterlege, som også arbeider med helseinnovasjon og virtuell virkelighet (VR) for opplæring i livreddende førstehjelp."
+      }
     },
     "board": {
       "placeholder_title": "Styremedlem"

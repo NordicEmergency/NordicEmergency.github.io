@@ -37,9 +37,16 @@
       "board": "Board"
     },
     "core": {
-      "thomas": { "title": "CEO, BSc.MBA" },
-      "ricki": { "title": "Senior Medical Trainer, Paramedic" },
-      "mads": { "title": "Doctor (MD)" }
+      "thk": {
+        "title": "CEO, BSc., MBA"
+      },
+      "rtk": {
+        "title": "Senior Medical Trainer, Paramedic"
+      },
+      "mgs": {
+        "title": "Senior Consultant Physician",
+        "bio": "Mads Sommer is a senior consultant physician at Sygehus Sønderjylland, an emergency physician and helicopter doctor who also works on health innovation and virtual reality (VR) for life-saving first aid training."
+      }
     },
     "board": {
       "placeholder_title": "Board Member"

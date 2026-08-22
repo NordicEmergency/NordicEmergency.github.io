@@ -37,9 +37,16 @@
       "board": "Styrelse"
     },
     "core": {
-      "thomas": { "title": "CEO, BSc.MBA" },
-      "ricki": { "title": "Senior Medical Trainer, ambulanssjukvårdare" },
-      "mads": { "title": "Läkare" }
+      "thk": {
+        "title": "CEO, BSc, MBA"
+      },
+      "rtk": {
+        "title": "Senior Medical Trainer, ambulanssjukvårdare"
+      },
+      "mgs": {
+        "title": "Överläkare",
+        "bio": "Mads Sommer är överläkare vid Sygehus Sønderjylland, akutläkare och helikopterläkare, som även arbetar med hälsoinnovation och virtuell verklighet (VR) för utbildning i livräddande första hjälpen."
+      }
     },
     "board": {
       "placeholder_title": "Styrelsemedlem"
