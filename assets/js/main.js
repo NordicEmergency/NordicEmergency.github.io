@@ -46,17 +46,25 @@
     if (person.image) {
       return (
         '<div class="' + avatarClass + ' avatar-photo">' +
-        '<img src="' + person.image + '" alt="">' +
+        '<img src="' + person.image + '" alt="" data-fallback="' + initials(person.name) + '">' +
         "</div>"
       );
     }
     return '<div class="' + avatarClass + '">' + initials(person.name) + "</div>";
   }
 
+  function isValidPhone(value) {
+    return typeof value === "string" && /^\+?[0-9\s]{6,}$/.test(value.trim());
+  }
+
   function renderPerson(person, title, bio) {
-    var linkHtml = person.linkedin
-      ? '<a href="' + person.linkedin + '" target="_blank" rel="noopener">LinkedIn</a>'
-      : "";
+    var links = [];
+    if (isValidPhone(person.mobile)) {
+      links.push('<a href="tel:' + person.mobile.replace(/\s+/g, "") + '">' + person.mobile + "</a>");
+    }
+    if (person.linkedin) {
+      links.push('<a href="' + person.linkedin + '" target="_blank" rel="noopener">LinkedIn</a>');
+    }
     var personClass = person.placeholder ? "person person-placeholder" : "person";
     var avatarClass = person.placeholder ? "avatar avatar-placeholder" : "avatar";
     return (
@@ -65,9 +73,19 @@
       "<h3>" + person.name + "</h3>" +
       (title ? "<p>" + title + "</p>" : "") +
       (bio ? '<p class="person-bio">' + bio + "</p>" : "") +
-      linkHtml +
+      (links.length ? '<p class="person-links">' + links.join(" · ") + "</p>" : "") +
       "</div>"
     );
+  }
+
+  function attachAvatarFallbacks(container) {
+    container.querySelectorAll(".avatar-photo img").forEach(function (img) {
+      img.addEventListener("error", function () {
+        var wrap = img.parentElement;
+        wrap.classList.remove("avatar-photo");
+        wrap.textContent = img.getAttribute("data-fallback") || "";
+      });
+    });
   }
 
   function renderTeam(dict, teamData) {
@@ -87,6 +105,9 @@
     boardEl.innerHTML = teamData.board
       .map(function (person) { return renderPerson(person, boardTitle); })
       .join("");
+
+    attachAvatarFallbacks(coreEl);
+    attachAvatarFallbacks(boardEl);
   }
 
   function initTabs() {

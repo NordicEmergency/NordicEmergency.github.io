@@ -4,24 +4,29 @@
       "id": "thk",
       "name": "Thomas Herbert Kokholm",
       "linkedin": "https://www.linkedin.com/in/kokholm/",
-      "image": "assets/images/thomas_portrait.jpg"
+      "image": "assets/images/thomas_portrait.jpg",
+      "mobile": "+45 31 77 17 70"
     },
     {
       "id": "rtk",
       "name": "Ricki Toft Kristiansen",
       "linkedin": "https://www.linkedin.com/in/ricki-toft-kristiansen-97762070/",
-      "phone": ""
+      "image": "assets/images/ricki_portrait.jpg",
+      "mobile": "+45 31 34 77 95"
     },
     {
       "id": "mgs",
       "name": "Mads Gabelgaard Sommer",
-      "linkedin": "https://www.linkedin.com/in/mads-sommer-129a253b/"
+      "linkedin": "https://www.linkedin.com/in/mads-sommer-129a253b/",
+      "image": "assets/images/mads_portrait.jpg",
+      "mobile": "+45 xx xx xx xx"
     }
   ],
   "board": [
     {
       "id": "bod_1",
       "name": "Ricki Toft Kristiansen",
+      "image": "assets/images/ricki_portrait.jpg",
       "placeholder": true
     },
     {
@@ -32,6 +37,7 @@
     {
       "id": "bod_3",
       "name": "Thomas Herbert Kokholm",
+      "image": "assets/images/thomas_portrait.jpg",
       "placeholder": true
     }
   ]
