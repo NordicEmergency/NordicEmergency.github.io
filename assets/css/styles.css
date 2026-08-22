@@ -305,6 +305,13 @@ h1, h2, h3 { color: var(--color-primary-dark); line-height: 1.2; }
   font-size: 0.9rem;
 }
 
+.customer-logo-placeholder {
+  border-style: dashed;
+  background: var(--color-bg-alt);
+  font-weight: 500;
+  font-style: italic;
+}
+
 .customer-logo img {
   max-width: 100%;
   max-height: 40px;

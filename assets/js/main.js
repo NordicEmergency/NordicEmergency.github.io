@@ -3,6 +3,15 @@
 
   var LANG_STORAGE_KEY = "ne_lang";
 
+  function fetchJSON(url, fallback) {
+    return fetch(url)
+      .then(function (res) { return res.json(); })
+      .catch(function (err) {
+        console.warn("Failed to load " + url + ", using fallback.", err);
+        return fallback;
+      });
+  }
+
   function getByPath(obj, path) {
     return path.split(".").reduce(function (acc, key) {
       return acc && acc[key] !== undefined ? acc[key] : undefined;
@@ -153,9 +162,10 @@
         var inner = c.logo
           ? '<img src="' + c.logo + '" alt="' + c.name + '">'
           : "<span>" + c.name + "</span>";
+        var cls = c.placeholder ? "customer-logo customer-logo-placeholder" : "customer-logo";
         return c.url
-          ? '<a class="customer-logo" href="' + c.url + '" target="_blank" rel="noopener">' + inner + "</a>"
-          : '<div class="customer-logo">' + inner + "</div>";
+          ? '<a class="' + cls + '" href="' + c.url + '" target="_blank" rel="noopener">' + inner + "</a>"
+          : '<div class="' + cls + '">' + inner + "</div>";
       })
       .join("");
   }
@@ -209,8 +219,7 @@
   }
 
   function loadLang(lang, config, teamData, articleData) {
-    fetch("locales/" + lang + ".json")
-      .then(function (res) { return res.json(); })
+    fetchJSON("locales/" + lang + ".json", {})
       .then(function (dict) {
         document.documentElement.lang = lang;
         applyTranslations(dict);
@@ -252,11 +261,11 @@
     initTabs();
 
     Promise.all([
-      fetch("locales/config.json").then(function (res) { return res.json(); }),
-      fetch("data/team.json").then(function (res) { return res.json(); }),
-      fetch("data/site.json").then(function (res) { return res.json(); }),
-      fetch("data/article.json").then(function (res) { return res.json(); }),
-      fetch("data/customer.json").then(function (res) { return res.json(); })
+      fetchJSON("locales/config.json", { default: "en", languages: [{ code: "en", flag: "gb", label: "English" }] }),
+      fetchJSON("data/team.json", { core: [], board: [] }),
+      fetchJSON("data/site.json", {}),
+      fetchJSON("data/article.json", []),
+      fetchJSON("data/customer.json", [])
     ]).then(function (results) {
       var config = results[0];
       var teamData = results[1];
