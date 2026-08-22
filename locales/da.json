@@ -24,7 +24,8 @@
           "Gamemaster-styret: scenariet tilpasses i realtid",
           "Træner samarbejde på tværs af brand, politi, myndigheder og redning",
           "Gentagelig træning uden risiko eller logistik"
-        ]
+        ],
+        "icon": "speaking"
       },
       {
         "title": "Førstehjælp & hjertelungeredning",
@@ -34,7 +35,8 @@
           "Træn hjertemassage og AED-betjening",
           "Gentag scenariet, til reaktionen bliver automatisk",
           "Intet udstyr, ingen logistik – træn når det passer dig"
-        ]
+        ],
+        "icon": "heartbeat"
       }
     ]
   },

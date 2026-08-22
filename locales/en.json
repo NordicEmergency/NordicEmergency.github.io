@@ -24,7 +24,8 @@
           "Gamemaster-controlled: the scenario adapts in real time",
           "Trains coordination across fire, police, authorities and rescue",
           "Repeatable training without risk or logistics"
-        ]
+        ],
+        "icon": "speaking"
       },
       {
         "title": "First Aid & CPR Training",
@@ -34,7 +35,8 @@
           "Practise chest compressions and AED use",
           "Repeat the scenario until the response becomes automatic",
           "No equipment, no logistics — train whenever it suits you"
-        ]
+        ],
+        "icon": "heartbeat"
       }
     ]
   },

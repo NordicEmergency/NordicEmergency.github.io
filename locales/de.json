@@ -24,7 +24,8 @@
           "Gamemaster-gesteuert: Das Szenario passt sich in Echtzeit an",
           "Trainiert die Zusammenarbeit zwischen Feuerwehr, Polizei, Behörden und Rettungsdiensten",
           "Wiederholbares Training ohne Risiko oder Logistikaufwand"
-        ]
+        ],
+        "icon": "speaking"
       },
       {
         "title": "Erste Hilfe & Wiederbelebung",
@@ -34,7 +35,8 @@
           "Üben Sie Herzdruckmassage und AED-Bedienung",
           "Wiederholen Sie das Szenario, bis die Reaktion automatisch erfolgt",
           "Keine Ausrüstung, keine Logistik – trainieren Sie, wann es passt"
-        ]
+        ],
+        "icon": "heartbeat"
       }
     ]
   },

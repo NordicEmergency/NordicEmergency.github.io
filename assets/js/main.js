@@ -25,6 +25,13 @@
     });
   }
 
+  var SOLUTION_ICONS = {
+    speaking:
+      '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="8" cy="7" r="3"></circle><path d="M2 21v-2a6 6 0 0 1 6-6h0a6 6 0 0 1 4 1.5"></path><path d="M15.5 8.5a3 3 0 0 1 0 4"></path><path d="M18.5 6.5a6 6 0 0 1 0 8"></path></svg>',
+    heartbeat:
+      '<svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 21s-6.7-4.35-9.33-8.2C.87 10.1 1.4 6.6 4.2 5.1c2.3-1.24 5-.5 6.3 1.4l1.5 2.2 1.5-2.2c1.3-1.9 4-2.64 6.3-1.4 2.8 1.5 3.33 5 1.53 7.7C18.7 16.65 12 21 12 21z"></path></svg>'
+  };
+
   function renderSolutions(dict) {
     var list = document.getElementById("solutions-list");
     if (!list) return;
@@ -34,8 +41,12 @@
         var highlights = item.highlights && item.highlights.length
           ? "<ul>" + item.highlights.map(function (h) { return "<li>" + h + "</li>"; }).join("") + "</ul>"
           : "";
+        var iconSvg = SOLUTION_ICONS[item.icon];
+        var iconClass = "card-icon" + (item.icon === "heartbeat" ? " card-icon-heartbeat" : "");
+        var icon = iconSvg ? '<span class="' + iconClass + '">' + iconSvg + "</span>" : "";
         return (
           '<div class="card"><h3>' +
+          icon +
           item.title +
           "</h3><p>" +
           item.description +

@@ -24,7 +24,8 @@
           "Gamemaster-styrt: scenariet tilpasses i sanntid",
           "Trener samarbeid på tvers av brann, politi, myndigheter og redning",
           "Gjentakbar trening uten risiko eller logistikk"
-        ]
+        ],
+        "icon": "speaking"
       },
       {
         "title": "Førstehjelp og hjerte-lungeredning",
@@ -34,7 +35,8 @@
           "Øv på hjertekompresjoner og AED-bruk",
           "Gjenta scenariet til reaksjonen blir automatisk",
           "Ikke noe utstyr, ingen logistikk – tren når det passer deg"
-        ]
+        ],
+        "icon": "heartbeat"
       }
     ]
   },

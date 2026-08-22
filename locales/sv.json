@@ -24,7 +24,8 @@
           "Gamemaster-styrd: scenariot anpassas i realtid",
           "Tränar samarbete mellan brand, polis, myndigheter och räddningstjänst",
           "Upprepningsbar träning utan risk eller logistik"
-        ]
+        ],
+        "icon": "speaking"
       },
       {
         "title": "Första hjälpen & hjärt-lungräddning",
@@ -34,7 +35,8 @@
           "Öva hjärtkompressioner och AED-användning",
           "Upprepa scenariot tills reaktionen blir automatisk",
           "Ingen utrustning, ingen logistik – träna när det passar dig"
-        ]
+        ],
+        "icon": "heartbeat"
       }
     ]
   },
