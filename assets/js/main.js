@@ -126,13 +126,28 @@
       })
       .join("");
 
-    var boardTitle = dict.team && dict.team.board ? dict.team.board.placeholder_title : "";
+    var boardDict = (dict.team && dict.team.board) || {};
+    var boardFallbackTitle = boardDict.placeholder_title || "";
     boardEl.innerHTML = teamData.board
-      .map(function (person) { return renderPerson(person, boardTitle); })
+      .map(function (person) {
+        var entry = boardDict[person.id];
+        var title = entry && entry.title ? entry.title : boardFallbackTitle;
+        return renderPerson(person, title);
+      })
       .join("");
 
     attachAvatarFallbacks(coreEl);
     attachAvatarFallbacks(boardEl);
+
+    var boardTabBtn = document.querySelector('.tab-btn[data-tab="board"]');
+    var boardHidden = boardDict.visibility === "hidden";
+    if (boardTabBtn) boardTabBtn.hidden = boardHidden;
+    var tabsBar = document.querySelector(".tabs");
+    if (tabsBar) tabsBar.hidden = boardHidden;
+    if (boardHidden) {
+      boardEl.hidden = true;
+      coreEl.hidden = false;
+    }
   }
 
   function renderArticles(lang, articles) {
