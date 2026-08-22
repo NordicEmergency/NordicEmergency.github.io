@@ -1,32 +1,34 @@
 # NordicEmergency.com
 
-Hjemmeside for Nordic Emergency ApS — VR-platforme til katastrofe-/beredskabstræning og førstehjælp/HLR-simulation.
+Website for Nordic Emergency ApS — VR platforms for disaster/emergency response training and first aid/CPR simulation.
 
-Enkeltsides site, hostet på GitHub Pages, datastyret via JSON. Understøtter fem sprog (DA, EN, DE, NO, SV) via små flag i headeren.
+Single-page site, hosted on GitHub Pages, content-driven via JSON. Supports five languages (DA, EN, DE, NO, SV) via small flags in the header.
 
 **Live:** https://nordicemergency.github.io/
 
-## Sektioner
-- Solutions — de to VR-platforme
-- Academy — uddannelse til gamemaster/HLR-instruktør
-- Labs — internt udviklingsmiljø
-- Team — kerneteam og bestyrelse
-- I medierne / Kunder — vises kun når der er indhold
+## Sections
+- Solutions — the two VR platforms
+- Academy — training to become a gamemaster/CPR instructor
+- Labs — internal R&D environment
+- Team — core team and board
+- In the Media / Customers — shown only when there's content
 - Contact
 
-## Struktur
+## Structure
 ```
-index.html            Sideskelet
-assets/css/            Styling
-assets/js/main.js      i18n-loader, rendering af team/artikler/kunder, sprogvælger
-locales/*.json         Al tekst pr. sprog (da/en/de/no/sv) + config.json (sprogliste)
-data/team.json         Team- og bestyrelsesmedlemmer
-data/article.json      Presseomtale
-data/customer.json     Kundeliste
-data/site.json         Firmaoplysninger (email, LinkedIn, CVR, adresse)
-assets/images/         Portrætter mv.
-assets/flags/          SVG-flag til sprogvælger
+docs/index.html             Page shell
+docs/assets/css/             Styling
+docs/assets/js/main.js       i18n loader, rendering of team/articles/customers, language switcher
+docs/locales/*.json          All text per language (da/en/de/no/sv) + config.json (language list)
+docs/data/team.json          Team and board members
+docs/data/article.json       Press coverage
+docs/data/customer.json      Customer list
+docs/data/site.json          Company details (email, LinkedIn, CVR, address)
+docs/assets/images/          Portraits etc.
+docs/assets/flags/           SVG flags for the language switcher
 ```
 
-## Redigering af indhold
-Al tekst ligger i `locales/*.json` — ingen tekst er hardkodet i HTML'en. Team, artikler og kunder redigeres i de tilhørende JSON-filer i `data/`.
+GitHub Pages serves from the `docs/` folder on `main`.
+
+## Editing content
+All text lives in `docs/locales/*.json` — no text is hardcoded in the HTML. Team, articles and customers are edited in their respective JSON files under `docs/data/`.
