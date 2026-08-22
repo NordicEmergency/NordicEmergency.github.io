@@ -9,7 +9,7 @@
     "contact": "Kontakt"
   },
   "hero": {
-    "title": "NordicEmergency",
+    "title": "Nordic Emergency ApS",
     "tagline": "VR-baserad beredskapsträning och hjärt-lungräddning – klinisk precision när det gäller.",
     "lead": "Vi utvecklar VR-plattformar som gör det möjligt att träna beslutsfattande, samarbete och livräddande handlingar om och om igen – i realistiska scenarier, utan risk och utan att kompromissa med den kliniska verkligheten."
   },
@@ -66,6 +66,12 @@
     "board": {
       "placeholder_title": "Styrelsemedlem"
     }
+  },
+  "press": {
+    "heading": "I medierna"
+  },
+  "customers": {
+    "heading": "Kunder"
   },
   "contact": {
     "description": "Vill du veta mer om våra VR-plattformar, certifiera dig genom Academy, eller har du en idé som hör hemma i Labs? Hör av dig – vi svarar gärna på frågor om allt från teknik och pris till implementering hos er.",

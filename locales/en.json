@@ -9,7 +9,7 @@
     "contact": "Contact"
   },
   "hero": {
-    "title": "NordicEmergency",
+    "title": "Nordic Emergency ApS",
     "tagline": "VR-based emergency response and CPR training — clinical precision when it matters.",
     "lead": "We build VR platforms that let you train decisions, teamwork and life-saving action again and again — in realistic scenarios, without risk, and without compromising on clinical accuracy."
   },
@@ -66,6 +66,12 @@
     "board": {
       "placeholder_title": "Board Member"
     }
+  },
+  "press": {
+    "heading": "In the Media"
+  },
+  "customers": {
+    "heading": "Customers"
   },
   "contact": {
     "description": "Want to know more about our VR platforms, get certified through Academy, or have an idea that belongs in Labs? Get in touch — we're happy to answer questions about anything from technology and pricing to implementation at your organisation.",

@@ -9,7 +9,7 @@
     "contact": "Kontakt"
   },
   "hero": {
-    "title": "NordicEmergency",
+    "title": "Nordic Emergency ApS",
     "tagline": "VR-basiertes Einsatz- und Wiederbelebungstraining – klinische Präzision, wenn es darauf ankommt.",
     "lead": "Wir entwickeln VR-Plattformen, mit denen Sie Entscheidungen, Teamarbeit und lebensrettendes Handeln immer wieder trainieren können – in realistischen Szenarien, ohne Risiko und ohne Abstriche bei der klinischen Genauigkeit."
   },
@@ -66,6 +66,12 @@
     "board": {
       "placeholder_title": "Vorstandsmitglied"
     }
+  },
+  "press": {
+    "heading": "In den Medien"
+  },
+  "customers": {
+    "heading": "Kunden"
   },
   "contact": {
     "description": "Möchten Sie mehr über unsere VR-Plattformen erfahren, sich über die Academy zertifizieren lassen oder haben Sie eine Idee für Labs? Kontaktieren Sie uns – wir beantworten gerne Fragen zu Technik, Preisen und Implementierung bei Ihnen.",

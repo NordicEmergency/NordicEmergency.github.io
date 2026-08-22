@@ -44,6 +44,7 @@
   <section id="solutions" class="section">
     <div class="container">
       <h2 data-i18n="nav.solutions">Solutions</h2>
+      <div class="section-rule"></div>
       <p class="section-intro" data-i18n="solutions.intro"></p>
       <div class="cards" id="solutions-list"></div>
     </div>
@@ -52,6 +53,7 @@
   <section id="academy" class="section section-alt">
     <div class="container">
       <h2 data-i18n="nav.academy">Academy</h2>
+      <div class="section-rule"></div>
       <p data-i18n="academy.description"></p>
     </div>
   </section>
@@ -59,6 +61,7 @@
   <section id="labs" class="section">
     <div class="container">
       <h2 data-i18n="nav.labs">Labs</h2>
+      <div class="section-rule"></div>
       <p data-i18n="labs.description"></p>
     </div>
   </section>
@@ -66,6 +69,7 @@
   <section id="team" class="section section-alt">
     <div class="container">
       <h2 data-i18n="nav.team">Team</h2>
+      <div class="section-rule"></div>
       <div class="tabs" role="tablist">
         <button class="tab-btn active" role="tab" aria-selected="true" data-tab="core" data-i18n="team.tabs.core">Core Team</button>
         <button class="tab-btn" role="tab" aria-selected="false" data-tab="board" data-i18n="team.tabs.board">Board</button>
@@ -75,9 +79,26 @@
     </div>
   </section>
 
+  <section id="press" class="section" hidden>
+    <div class="container">
+      <h2 data-i18n="press.heading">In the Media</h2>
+      <div class="section-rule"></div>
+      <div class="article-list" id="article-list"></div>
+    </div>
+  </section>
+
+  <section id="customers" class="section section-alt" hidden>
+    <div class="container">
+      <h2 data-i18n="customers.heading">Customers</h2>
+      <div class="section-rule"></div>
+      <div class="customer-list" id="customer-list"></div>
+    </div>
+  </section>
+
   <section id="contact" class="section">
     <div class="container">
       <h2 data-i18n="nav.contact">Contact</h2>
+      <div class="section-rule"></div>
       <p data-i18n="contact.description"></p>
       <p class="contact-email">
         <span data-i18n="contact.email_label">Email</span>:
@@ -90,7 +111,10 @@
 
 <footer class="site-footer">
   <div class="container footer-inner">
-    <p>&copy; <span id="year"></span> Nordic Emergency ApS</p>
+    <div>
+      <p>&copy; <span id="year"></span> <span id="footer-company">Nordic Emergency ApS</span></p>
+      <p class="footer-meta" id="footer-meta"></p>
+    </div>
     <a id="footer-linkedin" href="#" target="_blank" rel="noopener">LinkedIn</a>
   </div>
 </footer>
