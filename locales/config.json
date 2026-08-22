@@ -1,0 +1,10 @@
+{
+  "default": "da",
+  "languages": [
+    { "code": "da", "flag": "dk", "label": "Dansk" },
+    { "code": "en", "flag": "gb", "label": "English" },
+    { "code": "de", "flag": "de", "label": "Deutsch" },
+    { "code": "no", "flag": "no", "label": "Norsk" },
+    { "code": "sv", "flag": "se", "label": "Svenska" }
+  ]
+}
