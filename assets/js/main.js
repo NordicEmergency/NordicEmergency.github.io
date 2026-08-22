@@ -22,12 +22,17 @@
     var items = (dict.solutions && dict.solutions.items) || [];
     list.innerHTML = items
       .map(function (item) {
+        var highlights = item.highlights && item.highlights.length
+          ? "<ul>" + item.highlights.map(function (h) { return "<li>" + h + "</li>"; }).join("") + "</ul>"
+          : "";
         return (
           '<div class="card"><h3>' +
           item.title +
           "</h3><p>" +
           item.description +
-          "</p></div>"
+          "</p>" +
+          highlights +
+          "</div>"
         );
       })
       .join("");

@@ -10,26 +10,39 @@
   },
   "hero": {
     "title": "NordicEmergency",
-    "tagline": "VR-baseret beredskabstræning og hjerte-lungeredning – klinisk præcision, når det gælder."
+    "tagline": "VR-baseret beredskabstræning og hjerte-lungeredning – klinisk præcision, når det gælder.",
+    "lead": "Vi udvikler VR-platforme, der gør det muligt at træne beslutninger, samarbejde og livreddende handlinger igen og igen – i realistiske scenarier, uden risiko og uden at gå på kompromis med den kliniske virkelighed."
   },
   "solutions": {
-    "intro": "To VR-platforme udviklet til at træne beslutninger, samarbejde og handling, når det tæller.",
+    "intro": "NordicEmergency står bag to VR-platforme, der begge er bygget på den samme grundtanke: de bedste beslutninger i en krisesituation er dem, du allerede har trænet. Uanset om det er en fuldskala beredskabsøvelse med flere myndigheder eller genoplivning af en bevidstløs patient, giver vores platforme et sikkert rum til at øve, fejle og blive bedre – igen og igen.",
     "items": [
       {
         "title": "Katastrofe- og beredskabstræning",
-        "description": "Multiuser-simulation på tværs af brand, politi, myndigheder og redningstjenester – styret af en gamemaster, der tilpasser scenariet i realtid."
+        "description": "En multiuser VR-simulation, hvor brand, politi, myndigheder og redningstjenester træner sammen i det samme scenarie – hver fra deres eget perspektiv. En gamemaster styrer forløbet og kan i realtid ændre på hændelsen, tilføje komplikationer eller eskalere presset, præcis som i en virkelig krise. Målet er ikke kun individuel færdighed, men den koordination og kommunikation på tværs af enheder, der afgør, om en indsats lykkes.",
+        "highlights": [
+          "Multiuser – flere deltagere i samme scenarie, samtidig",
+          "Gamemaster-styret: scenariet tilpasses i realtid",
+          "Træner samarbejde på tværs af brand, politi, myndigheder og redning",
+          "Gentagelig træning uden risiko eller logistik"
+        ]
       },
       {
         "title": "Førstehjælp & hjertelungeredning",
-        "description": "Realistisk VR-træning i førstehjælp og HLR, bygget på anerkendte kliniske retningslinjer."
+        "description": "VR-træning i førstehjælp og hjerte-lungeredning, bygget på anerkendte kliniske retningslinjer. Du øver hjertemassage, brug af hjertestarter (AED) og de kritiske første minutter, hvor beslutsomhed og korrekt teknik gør forskellen mellem liv og død – i et trygt miljø, hvor du kan gentage scenariet, til det sidder på rygraden.",
+        "highlights": [
+          "Baseret på anerkendte kliniske retningslinjer",
+          "Træn hjertemassage og AED-betjening",
+          "Gentag scenariet, til reaktionen bliver automatisk",
+          "Intet udstyr, ingen logistik – træn når det passer dig"
+        ]
       }
     ]
   },
   "academy": {
-    "description": "Bliv uddannet gamemaster og/eller HLR-instruktør. Academy giver dig de kompetencer, der skal til for selv at facilitere realistisk VR-træning."
+    "description": "Academy er vejen ind, hvis du selv vil stå i spidsen for træningen. Her uddanner vi gamemastere, der kan lede og tilpasse de multiuser-scenarier, som beredskabsplatformen bygger på, og HLR-instruktører, der kan facilitere realistisk førstehjælpstræning for andre. Du får både den kliniske og den didaktiske ballast til at gøre træningen troværdig – uanset om den foregår på en brandstation, et sygehus eller i en virksomhed."
   },
   "labs": {
-    "description": "Vores interne udviklingsmiljø, hvor vi tester ny VR-teknologi og undersøger, hvordan didaktiske læringsprincipper bedst overføres til hverdagen."
+    "description": "Labs er vores interne udviklingsmiljø – stedet hvor nye VR-koncepter, scenarier og teknologier bliver født, testet og forkastet, længe før de når en bruger. Her arbejder vi tæt sammen med klinikere, undervisere og gamemastere for at forstå, hvordan didaktiske læringsprincipper bedst overføres fra en virtuel oplevelse til en handling, du kan stole på i virkeligheden."
   },
   "team": {
     "tabs": {
@@ -38,10 +51,12 @@
     },
     "core": {
       "thk": {
-        "title": "CEO, BSc., MBA"
+        "title": "CEO, BSc., MBA",
+        "bio": "Thomas er elektroingeniør og direktør med 25 års erfaring fra ledende stillinger i tech- og industrivirksomheder. Han leder i dag produktstrategi og teknisk arkitektur for VR- og AI-baserede træningsplatforme til sundheds- og velfærdsuddannelse, i tæt samarbejde med universiteter og hospitaler."
       },
       "rtk": {
-        "title": "Senior Medical Trainer, uddannet paramedicin"
+        "title": "Senior Medical Trainer, uddannet paramedicin",
+        "bio": "Ricki er udviklingskonsulent hos DAPUC – Dansk Præhospital Uddannelses Center – og uddannet paramediciner med solid erfaring i præhospital undervisning og kompetenceudvikling."
       },
       "mgs": {
         "title": "Overlæge",
@@ -53,7 +68,7 @@
     }
   },
   "contact": {
-    "description": "Vil du vide mere om vores VR-platforme eller Academy? Skriv til os.",
+    "description": "Vil du vide mere om vores VR-platforme, blive certificeret gennem Academy, eller har du en idé, der hører hjemme i Labs? Skriv til os – vi svarer gerne på spørgsmål om alt fra teknik og pris til implementering hos jer.",
     "email_label": "Email"
   }
 }

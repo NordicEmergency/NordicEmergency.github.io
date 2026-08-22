@@ -10,26 +10,39 @@
   },
   "hero": {
     "title": "NordicEmergency",
-    "tagline": "VR-based emergency response and CPR training — clinical precision when it matters."
+    "tagline": "VR-based emergency response and CPR training — clinical precision when it matters.",
+    "lead": "We build VR platforms that let you train decisions, teamwork and life-saving action again and again — in realistic scenarios, without risk, and without compromising on clinical accuracy."
   },
   "solutions": {
-    "intro": "Two VR platforms built to train decision-making, coordination and action when it counts.",
+    "intro": "NordicEmergency is behind two VR platforms built on the same core idea: the best decisions in a crisis are the ones you've already trained. Whether it's a full-scale multi-agency emergency exercise or resuscitating an unconscious patient, our platforms give you a safe space to practise, fail and improve — again and again.",
     "items": [
       {
         "title": "Disaster & Emergency Response Training",
-        "description": "Multi-user simulation across fire, police, authorities and rescue services — controlled by a gamemaster who adapts the scenario in real time."
+        "description": "A multi-user VR simulation where fire, police, authorities and rescue services train together in the same scenario — each from their own perspective. A gamemaster controls the scenario and can change the incident in real time, add complications or escalate the pressure, just like in a real crisis. The goal isn't just individual skill, but the cross-agency coordination and communication that determines whether a response succeeds.",
+        "highlights": [
+          "Multi-user — several participants in the same scenario, at the same time",
+          "Gamemaster-controlled: the scenario adapts in real time",
+          "Trains coordination across fire, police, authorities and rescue",
+          "Repeatable training without risk or logistics"
+        ]
       },
       {
         "title": "First Aid & CPR Training",
-        "description": "Realistic VR training in first aid and CPR, built on recognised clinical guidelines."
+        "description": "VR training in first aid and CPR, built on recognised clinical guidelines. You practise chest compressions, AED use, and the critical first minutes where composure and correct technique make the difference between life and death — in a safe environment where you can repeat the scenario until it becomes second nature.",
+        "highlights": [
+          "Built on recognised clinical guidelines",
+          "Practise chest compressions and AED use",
+          "Repeat the scenario until the response becomes automatic",
+          "No equipment, no logistics — train whenever it suits you"
+        ]
       }
     ]
   },
   "academy": {
-    "description": "Train as a gamemaster and/or CPR instructor. Academy gives you the skills to facilitate realistic VR training yourself."
+    "description": "Academy is the path in if you want to lead the training yourself. We train gamemasters who can run and adapt the multi-user scenarios behind our emergency response platform, and CPR instructors who can facilitate realistic first-aid training for others. You get both the clinical grounding and the didactic skills to make the training credible — whether it takes place at a fire station, a hospital, or a workplace."
   },
   "labs": {
-    "description": "Our internal R&D environment, where we test new VR technology and explore how didactic learning principles best translate into everyday practice."
+    "description": "Labs is our internal R&D environment — where new VR concepts, scenarios and technologies are born, tested and discarded long before they reach a user. We work closely with clinicians, educators and gamemasters to understand how didactic learning principles best translate from a virtual experience into an action you can rely on in reality."
   },
   "team": {
     "tabs": {
@@ -38,10 +51,12 @@
     },
     "core": {
       "thk": {
-        "title": "CEO, BSc., MBA"
+        "title": "CEO, BSc., MBA",
+        "bio": "Thomas is an electrical engineer and executive with 25 years' experience in leadership roles across tech and industrial companies. He now leads product strategy and technical architecture for VR- and AI-based training platforms for healthcare and welfare education, working closely with universities and hospitals."
       },
       "rtk": {
-        "title": "Senior Medical Trainer, Paramedic"
+        "title": "Senior Medical Trainer, Paramedic",
+        "bio": "Ricki is a development consultant at DAPUC — the Danish Prehospital Education Centre — and a trained paramedic with extensive experience in prehospital education and competence development."
       },
       "mgs": {
         "title": "Senior Consultant Physician",
@@ -53,7 +68,7 @@
     }
   },
   "contact": {
-    "description": "Want to know more about our VR platforms or Academy? Get in touch.",
+    "description": "Want to know more about our VR platforms, get certified through Academy, or have an idea that belongs in Labs? Get in touch — we're happy to answer questions about anything from technology and pricing to implementation at your organisation.",
     "email_label": "Email"
   }
 }

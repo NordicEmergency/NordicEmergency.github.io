@@ -10,26 +10,39 @@
   },
   "hero": {
     "title": "NordicEmergency",
-    "tagline": "VR-basiertes Einsatz- und Wiederbelebungstraining – klinische Präzision, wenn es darauf ankommt."
+    "tagline": "VR-basiertes Einsatz- und Wiederbelebungstraining – klinische Präzision, wenn es darauf ankommt.",
+    "lead": "Wir entwickeln VR-Plattformen, mit denen Sie Entscheidungen, Teamarbeit und lebensrettendes Handeln immer wieder trainieren können – in realistischen Szenarien, ohne Risiko und ohne Abstriche bei der klinischen Genauigkeit."
   },
   "solutions": {
-    "intro": "Zwei VR-Plattformen für Entscheidungsfindung, Koordination und Handeln, wenn es darauf ankommt.",
+    "intro": "Hinter NordicEmergency stehen zwei VR-Plattformen, die auf derselben Grundidee beruhen: Die besten Entscheidungen in einer Krise sind die, die man bereits trainiert hat. Ob groß angelegte Einsatzübung mit mehreren Behörden oder Wiederbelebung eines bewusstlosen Patienten – unsere Plattformen bieten einen sicheren Raum zum Üben, Scheitern und Besserwerden, immer wieder.",
     "items": [
       {
         "title": "Katastrophen- und Einsatztraining",
-        "description": "Multiuser-Simulation für Feuerwehr, Polizei, Behörden und Rettungsdienste – gesteuert von einem Gamemaster, der das Szenario in Echtzeit anpasst."
+        "description": "Eine Multiuser-VR-Simulation, in der Feuerwehr, Polizei, Behörden und Rettungsdienste gemeinsam im selben Szenario trainieren – jeder aus seiner eigenen Perspektive. Ein Gamemaster steuert den Ablauf und kann das Ereignis in Echtzeit verändern, Komplikationen hinzufügen oder den Druck erhöhen, genau wie in einer echten Krise. Es geht nicht nur um individuelles Können, sondern um die Koordination und Kommunikation zwischen den Einsatzkräften, die über Erfolg oder Misserfolg entscheidet.",
+        "highlights": [
+          "Multiuser – mehrere Teilnehmer gleichzeitig im selben Szenario",
+          "Gamemaster-gesteuert: Das Szenario passt sich in Echtzeit an",
+          "Trainiert die Zusammenarbeit zwischen Feuerwehr, Polizei, Behörden und Rettungsdiensten",
+          "Wiederholbares Training ohne Risiko oder Logistikaufwand"
+        ]
       },
       {
         "title": "Erste Hilfe & Wiederbelebung",
-        "description": "Realistisches VR-Training in Erster Hilfe und HLR auf Basis anerkannter klinischer Leitlinien."
+        "description": "VR-Training in Erster Hilfe und Wiederbelebung auf Basis anerkannter klinischer Leitlinien. Sie üben Herzdruckmassage, den Einsatz eines Defibrillators (AED) und die entscheidenden ersten Minuten, in denen Ruhe und die richtige Technik über Leben und Tod entscheiden – in einer sicheren Umgebung, in der Sie das Szenario so oft wiederholen können, bis es zur zweiten Natur wird.",
+        "highlights": [
+          "Basiert auf anerkannten klinischen Leitlinien",
+          "Üben Sie Herzdruckmassage und AED-Bedienung",
+          "Wiederholen Sie das Szenario, bis die Reaktion automatisch erfolgt",
+          "Keine Ausrüstung, keine Logistik – trainieren Sie, wann es passt"
+        ]
       }
     ]
   },
   "academy": {
-    "description": "Werden Sie Gamemaster und/oder HLR-Trainer. Die Academy vermittelt Ihnen die Fähigkeiten, realistisches VR-Training selbst zu leiten."
+    "description": "Die Academy ist der Weg für alle, die das Training selbst leiten möchten. Wir bilden Gamemaster aus, die die Multiuser-Szenarien unserer Einsatztraining-Plattform leiten und anpassen können, sowie HLR-Trainer, die realistisches Erste-Hilfe-Training für andere durchführen können. Sie erhalten sowohl das klinische als auch das didaktische Rüstzeug, um das Training glaubwürdig zu machen – ob in einer Feuerwache, einem Krankenhaus oder einem Unternehmen."
   },
   "labs": {
-    "description": "Unsere interne Entwicklungsumgebung, in der wir neue VR-Technologie testen und untersuchen, wie didaktische Lernprinzipien am besten in den Alltag übertragen werden."
+    "description": "Labs ist unsere interne Entwicklungsumgebung – der Ort, an dem neue VR-Konzepte, Szenarien und Technologien entstehen, getestet und verworfen werden, lange bevor sie einen Nutzer erreichen. Wir arbeiten eng mit Klinikern, Ausbildern und Gamemastern zusammen, um zu verstehen, wie sich didaktische Lernprinzipien am besten von einer virtuellen Erfahrung in eine Handlung übertragen lassen, auf die man sich in der Realität verlassen kann."
   },
   "team": {
     "tabs": {
@@ -38,10 +51,12 @@
     },
     "core": {
       "thk": {
-        "title": "CEO, BSc., MBA"
+        "title": "CEO, BSc., MBA",
+        "bio": "Thomas ist Elektroingenieur und Führungskraft mit 25 Jahren Erfahrung in leitenden Positionen in Technologie- und Industrieunternehmen. Heute verantwortet er Produktstrategie und technische Architektur für VR- und KI-basierte Trainingsplattformen für die Gesundheits- und Sozialausbildung, in enger Zusammenarbeit mit Universitäten und Krankenhäusern."
       },
       "rtk": {
-        "title": "Senior Medical Trainer, Rettungssanitäter"
+        "title": "Senior Medical Trainer, Rettungssanitäter",
+        "bio": "Ricki ist Entwicklungsberater bei DAPUC – dem dänischen Zentrum für präklinische Ausbildung – und ausgebildeter Rettungssanitäter mit umfangreicher Erfahrung in der präklinischen Ausbildung und Kompetenzentwicklung."
       },
       "mgs": {
         "title": "Oberarzt",
@@ -53,7 +68,7 @@
     }
   },
   "contact": {
-    "description": "Möchten Sie mehr über unsere VR-Plattformen oder die Academy erfahren? Kontaktieren Sie uns.",
+    "description": "Möchten Sie mehr über unsere VR-Plattformen erfahren, sich über die Academy zertifizieren lassen oder haben Sie eine Idee für Labs? Kontaktieren Sie uns – wir beantworten gerne Fragen zu Technik, Preisen und Implementierung bei Ihnen.",
     "email_label": "E-Mail"
   }
 }
