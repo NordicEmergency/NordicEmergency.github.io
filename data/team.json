@@ -5,10 +5,10 @@
     { "id": "mads", "name": "Mads", "linkedin": "https://www.linkedin.com/in/mads-sommer-129a253b/" }
   ],
   "board": [
-    { "id": "board-1", "name": "TBA" },
-    { "id": "board-2", "name": "TBA" },
-    { "id": "board-3", "name": "TBA" },
-    { "id": "board-4", "name": "TBA" },
-    { "id": "board-5", "name": "TBA" }
+    { "id": "board-1", "name": "TBA 1", "placeholder": true },
+    { "id": "board-2", "name": "TBA 2", "placeholder": true },
+    { "id": "board-3", "name": "TBA 3", "placeholder": true },
+    { "id": "board-4", "name": "TBA 4", "placeholder": true },
+    { "id": "board-5", "name": "TBA 5", "placeholder": true }
   ]
 }

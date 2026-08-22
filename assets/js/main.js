@@ -46,9 +46,11 @@
     var linkHtml = person.linkedin
       ? '<a href="' + person.linkedin + '" target="_blank" rel="noopener">LinkedIn</a>'
       : "";
+    var personClass = person.placeholder ? "person person-placeholder" : "person";
+    var avatarClass = person.placeholder ? "avatar avatar-placeholder" : "avatar";
     return (
-      '<div class="person">' +
-      '<div class="avatar">' + initials(person.name) + "</div>" +
+      '<div class="' + personClass + '">' +
+      '<div class="' + avatarClass + '">' + initials(person.name) + "</div>" +
       "<h3>" + person.name + "</h3>" +
       (title ? "<p>" + title + "</p>" : "") +
       linkHtml +

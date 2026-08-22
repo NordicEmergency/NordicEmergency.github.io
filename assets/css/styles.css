@@ -177,6 +177,10 @@ h1, h2, h3 { color: var(--color-primary-dark); line-height: 1.2; }
   gap: 24px;
 }
 
+.people[hidden] {
+  display: none;
+}
+
 .person {
   text-align: center;
   background: var(--color-bg);
@@ -197,6 +201,17 @@ h1, h2, h3 { color: var(--color-primary-dark); line-height: 1.2; }
   font-weight: 700;
   font-size: 1.3rem;
   margin: 0 auto 14px;
+}
+
+.person-placeholder {
+  border-style: dashed;
+  background: var(--color-bg-alt);
+}
+
+.avatar-placeholder {
+  background: transparent;
+  border: 2px dashed var(--color-border);
+  color: var(--color-text-muted);
 }
 
 .person h3 { font-size: 1rem; margin: 0 0 4px; }
