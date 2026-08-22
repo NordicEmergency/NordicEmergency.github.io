@@ -251,6 +251,23 @@
     return config.default;
   }
 
+  function renderContactForm(dict) {
+    var form = dict.contact && dict.contact.form;
+    if (!form) return;
+    var nameInput = document.getElementById("cf-name");
+    var emailInput = document.getElementById("cf-email");
+    var messageInput = document.getElementById("cf-message");
+    var subjectSelect = document.getElementById("cf-subject");
+    if (nameInput) nameInput.placeholder = form.name_placeholder || "";
+    if (emailInput) emailInput.placeholder = form.email_placeholder || "";
+    if (messageInput) messageInput.placeholder = form.message_placeholder || "";
+    if (subjectSelect && form.subject_options) {
+      subjectSelect.innerHTML = form.subject_options
+        .map(function (opt) { return "<option>" + opt + "</option>"; })
+        .join("");
+    }
+  }
+
   function loadLang(lang, config, teamData, articleData) {
     fetchJSON("locales/" + lang + ".json", {})
       .then(function (dict) {
@@ -259,11 +276,31 @@
         renderSolutions(dict);
         renderTeam(dict, teamData);
         renderArticles(lang, articleData);
+        renderContactForm(dict);
         renderLangSwitcher(config, lang, function (newLang) {
           localStorage.setItem(LANG_STORAGE_KEY, newLang);
           loadLang(newLang, config, teamData, articleData);
         });
       });
+  }
+
+  function initContactForm(site) {
+    var form = document.getElementById("contact-form");
+    if (!form) return;
+    form.addEventListener("submit", function (e) {
+      e.preventDefault();
+      var name = document.getElementById("cf-name").value.trim();
+      var email = document.getElementById("cf-email").value.trim();
+      var subject = document.getElementById("cf-subject").value;
+      var message = document.getElementById("cf-message").value.trim();
+      var target = site.email || "info@nordicemergency.dk";
+      var mailSubject = subject + (name ? " – " + name : "");
+      var mailBody = message + "\n\n---\n" + name + (email ? " (" + email + ")" : "");
+      window.location.href =
+        "mailto:" + target +
+        "?subject=" + encodeURIComponent(mailSubject) +
+        "&body=" + encodeURIComponent(mailBody);
+    });
   }
 
   function applySiteData(site) {
@@ -307,6 +344,7 @@
       var customerData = results[4];
       applySiteData(siteData);
       renderCustomers(customerData);
+      initContactForm(siteData);
       var lang = detectLang(config);
       loadLang(lang, config, teamData, articleData);
     });

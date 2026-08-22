@@ -81,6 +81,17 @@
   },
   "contact": {
     "description": "Möchten Sie mehr über unsere VR-Plattformen erfahren, sich über die Academy zertifizieren lassen oder haben Sie eine Idee für Labs? Kontaktieren Sie uns – wir beantworten gerne Fragen zu Technik, Preisen und Implementierung bei Ihnen.",
-    "email_label": "E-Mail"
+    "email_label": "E-Mail",
+    "form": {
+      "name_label": "Name",
+      "name_placeholder": "Ihr Name",
+      "email_label": "E-Mail",
+      "email_placeholder": "sie@email.de",
+      "subject_label": "Betreff",
+      "subject_options": ["Allgemeine Anfrage", "Solutions & Demo", "Academy", "Presse", "Sonstiges"],
+      "message_label": "Nachricht",
+      "message_placeholder": "Schreiben Sie hier Ihre Nachricht...",
+      "submit": "Nachricht senden"
+    }
   }
 }

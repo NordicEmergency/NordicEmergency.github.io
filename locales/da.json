@@ -81,6 +81,17 @@
   },
   "contact": {
     "description": "Vil du vide mere om vores VR-platforme, blive certificeret gennem Academy, eller har du en idé, der hører hjemme i Labs? Skriv til os – vi svarer gerne på spørgsmål om alt fra teknik og pris til implementering hos jer.",
-    "email_label": "Email"
+    "email_label": "Email",
+    "form": {
+      "name_label": "Navn",
+      "name_placeholder": "Dit navn",
+      "email_label": "Email",
+      "email_placeholder": "din@email.dk",
+      "subject_label": "Emne",
+      "subject_options": ["Generel henvendelse", "Solutions & demo", "Academy", "Presse", "Andet"],
+      "message_label": "Besked",
+      "message_placeholder": "Skriv din besked her...",
+      "submit": "Send besked"
+    }
   }
 }

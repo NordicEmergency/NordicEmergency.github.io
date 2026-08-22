@@ -81,6 +81,17 @@
   },
   "contact": {
     "description": "Vill du veta mer om våra VR-plattformar, certifiera dig genom Academy, eller har du en idé som hör hemma i Labs? Hör av dig – vi svarar gärna på frågor om allt från teknik och pris till implementering hos er.",
-    "email_label": "E-post"
+    "email_label": "E-post",
+    "form": {
+      "name_label": "Namn",
+      "name_placeholder": "Ditt namn",
+      "email_label": "E-post",
+      "email_placeholder": "din@epost.se",
+      "subject_label": "Ämne",
+      "subject_options": ["Allmän förfrågan", "Solutions och demo", "Academy", "Press", "Övrigt"],
+      "message_label": "Meddelande",
+      "message_placeholder": "Skriv ditt meddelande här...",
+      "submit": "Skicka meddelande"
+    }
   }
 }

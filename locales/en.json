@@ -81,6 +81,17 @@
   },
   "contact": {
     "description": "Want to know more about our VR platforms, get certified through Academy, or have an idea that belongs in Labs? Get in touch — we're happy to answer questions about anything from technology and pricing to implementation at your organisation.",
-    "email_label": "Email"
+    "email_label": "Email",
+    "form": {
+      "name_label": "Name",
+      "name_placeholder": "Your name",
+      "email_label": "Email",
+      "email_placeholder": "you@email.com",
+      "subject_label": "Subject",
+      "subject_options": ["General inquiry", "Solutions & demo", "Academy", "Press", "Other"],
+      "message_label": "Message",
+      "message_placeholder": "Write your message here...",
+      "submit": "Send message"
+    }
   }
 }
