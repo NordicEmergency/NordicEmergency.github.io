@@ -7,6 +7,16 @@
 <meta name="description" content="NordicEmergency — VR-based emergency response and CPR training.">
 <link rel="icon" type="image/png" href="assets/icons/badge.png">
 <link rel="stylesheet" href="assets/css/styles.css">
+<script>
+(function () {
+  try {
+    var stored = localStorage.getItem("ne_theme");
+    if (stored === "light" || stored === "dark") {
+      document.documentElement.setAttribute("data-theme", stored);
+    }
+  } catch (e) {}
+})();
+</script>
 </head>
 <body>
 
@@ -28,6 +38,11 @@
     </nav>
 
     <div class="lang-switcher" id="lang-switcher" aria-label="Language"></div>
+
+    <button id="theme-toggle" class="theme-toggle" type="button" aria-pressed="false" aria-label="Toggle dark mode">
+      <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"></path></svg>
+      <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+    </button>
   </div>
 </header>
 

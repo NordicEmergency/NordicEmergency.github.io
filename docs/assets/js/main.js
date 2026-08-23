@@ -2,6 +2,7 @@
   "use strict";
 
   var LANG_STORAGE_KEY = "ne_lang";
+  var THEME_STORAGE_KEY = "ne_theme";
 
   function fetchJSON(url, fallback) {
     return fetch(url)
@@ -203,6 +204,49 @@
       .join("");
   }
 
+  function getStoredTheme() {
+    try {
+      return localStorage.getItem(THEME_STORAGE_KEY);
+    } catch (e) {
+      return null;
+    }
+  }
+
+  function systemPrefersDark() {
+    return window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+  }
+
+  function currentEffectiveTheme() {
+    var stored = getStoredTheme();
+    if (stored === "light" || stored === "dark") return stored;
+    return systemPrefersDark() ? "dark" : "light";
+  }
+
+  function initThemeToggle() {
+    var btn = document.getElementById("theme-toggle");
+    if (!btn) return;
+
+    function updatePressed() {
+      btn.setAttribute("aria-pressed", currentEffectiveTheme() === "dark" ? "true" : "false");
+    }
+    updatePressed();
+
+    btn.addEventListener("click", function () {
+      var next = currentEffectiveTheme() === "dark" ? "light" : "dark";
+      try {
+        localStorage.setItem(THEME_STORAGE_KEY, next);
+      } catch (e) {}
+      document.documentElement.setAttribute("data-theme", next);
+      updatePressed();
+    });
+
+    if (window.matchMedia) {
+      window.matchMedia("(prefers-color-scheme: dark)").addEventListener("change", function () {
+        if (!getStoredTheme()) updatePressed();
+      });
+    }
+  }
+
   function initTabs() {
     var buttons = document.querySelectorAll(".tab-btn");
     buttons.forEach(function (btn) {
@@ -329,6 +373,7 @@
     if (yearEl) yearEl.textContent = new Date().getFullYear();
 
     initTabs();
+    initThemeToggle();
 
     Promise.all([
       fetchJSON("locales/config.json", { default: "en", languages: [{ code: "en", flag: "gb", label: "English" }] }),
