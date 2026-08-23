@@ -11,25 +11,25 @@
   "hero": {
     "title": "Nordic Emergency ApS",
     "tagline": "VR-baserad beredskapsträning och hjärt-lungräddning – klinisk precision när det gäller.",
-    "lead": "Vi utvecklar VR-plattformar som gör det möjligt att träna beslutsfattande, samarbete och livräddande handlingar om och om igen – i realistiska scenarier, utan risk och utan att kompromissa med den kliniska verkligheten."
+    "lead": "Vi utvecklar VR-plattformar som gör det möjligt att träna beslutsfattande, samarbete och livräddande handlingar om och om igen – i realistiska scenarier, utan risk och utan att kompromissa med den kliniska kvaliteten."
   },
   "solutions": {
-    "intro": "Bakom NordicEmergency står två VR-plattformar byggda på samma grundtanke: de bästa besluten i en kris är de du redan har tränat på. Oavsett om det handlar om en fullskalig beredskapsövning med flera myndigheter eller att återuppliva en medvetslös patient ger våra plattformar ett tryggt utrymme att öva, misslyckas och bli bättre – om och om igen.",
+    "intro": "Bakom NordicEmergency står två VR-plattformar byggda på samma grundtanke: de bästa besluten i en kris är de du redan har tränat på. Oavsett om det handlar om en fullskalig beredskapsövning med flera myndigheter eller att genomföra återupplivning av en medvetslös patient ger våra plattformar ett tryggt utrymme att öva, misslyckas och bli bättre – om och om igen.",
     "items": [
       {
         "title": "Katastrof- och beredskapsträning",
-        "description": "En VR-simulering för flera användare, där brand, polis, myndigheter och räddningstjänst tränar tillsammans i samma scenario – var och en utifrån sitt eget perspektiv. En gamemaster styr förloppet och kan ändra händelsen i realtid, lägga till komplikationer eller eskalera pressen, precis som i en verklig kris. Målet är inte bara individuell skicklighet, utan den samordning och kommunikation mellan enheter som avgör om en insats lyckas.",
+        "description": "En VR-simulering för flera användare, där räddningstjänst, polis, myndigheter och andra aktörer tränar tillsammans i samma scenario – var och en utifrån sitt eget perspektiv. En gamemaster styr förloppet och kan ändra händelsen i realtid, lägga till komplikationer eller eskalera pressen, precis som i en verklig kris. Målet är inte bara individuell skicklighet, utan den samordning och kommunikation mellan enheter som avgör om en insats lyckas.",
         "highlights": [
           "Flera användare – flera deltagare i samma scenario, samtidigt",
           "Gamemaster-styrd: scenariot anpassas i realtid",
-          "Tränar samarbete mellan brand, polis, myndigheter och räddningstjänst",
+          "Tränar samarbete mellan räddningstjänst, polis, myndigheter och andra aktörer",
           "Upprepningsbar träning utan risk eller logistik"
         ],
         "icon": "speaking"
       },
       {
         "title": "Första hjälpen & hjärt-lungräddning",
-        "description": "VR-träning i första hjälpen och hjärt-lungräddning, baserad på erkända kliniska riktlinjer. Du övar hjärtkompressioner, användning av hjärtstartare (AED) och de kritiska första minuterna, där lugn och rätt teknik avgör skillnaden mellan liv och död – i en trygg miljö där du kan upprepa scenariot tills det sitter i ryggmärgen.",
+        "description": "VR-träning i första hjälpen och hjärt-lungräddning, baserad på erkända kliniska riktlinjer. Du övar hjärtkompressioner, användning av hjärtstartare (AED) och de kritiska första minuterna, där lugn, beslutsamhet och rätt teknik kan vara avgörande – i en trygg miljö där du kan upprepa scenariot tills det sitter i ryggmärgen.",
         "highlights": [
           "Baserad på erkända kliniska riktlinjer",
           "Öva hjärtkompressioner och AED-användning",
@@ -41,10 +41,10 @@
     ]
   },
   "academy": {
-    "description": "Academy är vägen in om du själv vill leda träningen. Vi utbildar gamemasters som kan leda och anpassa de scenarier för flera användare som beredskapsplattformen bygger på, och HLR-instruktörer som kan leda realistisk första hjälpen-träning för andra. Du får både den kliniska och den didaktiska grunden som krävs för att göra träningen trovärdig – oavsett om den sker på en brandstation, ett sjukhus eller en arbetsplats."
+    "description": "Academy är för dig som vill leda träningen själv. Vi utbildar gamemasters som kan leda och anpassa de scenarier för flera användare som beredskapsplattformen bygger på, och HLR-instruktörer som kan leda realistisk första hjälpen-träning för andra. Du får både den kliniska och den didaktiska grunden som krävs för att göra träningen trovärdig – oavsett om den sker på en brandstation, ett sjukhus eller en arbetsplats."
   },
   "labs": {
-    "description": "Labs är vår interna utvecklingsmiljö – platsen där nya VR-koncept, scenarier och tekniker föds, testas och förkastas långt innan de når en användare. Vi arbetar nära kliniker, utbildare och gamemasters för att förstå hur didaktiska inlärningsprinciper bäst överförs från en virtuell upplevelse till en handling du kan lita på i verkligheten."
+    "description": "Labs är vår interna utvecklingsmiljö – platsen där nya VR-koncept, scenarier och tekniker föds, testas och förkastas långt innan de når en användare. Vi arbetar nära kliniker, utbildare och gamemasters för att förstå hur pedagogiska principer för lärande bäst kan omsättas från en virtuell upplevelse till handling i verkligheten."
   },
   "team": {
     "tabs": {
@@ -54,7 +54,7 @@
     "core": {
       "thk": {
         "title": "CEO, BSc, MBA",
-        "bio": "Thomas är civilingenjör inom elektroteknik och chef med 25 års erfarenhet från ledande roller i tech- och industriföretag. Idag leder han produktstrategi och teknisk arkitektur för VR- och AI-baserade träningsplattformar för hälso- och välfärdsutbildning, i nära samarbete med universitet och sjukhus."
+        "bio": "Thomas är civilingenjör inom elektroteknik och företagsledare med 25 års erfarenhet av ledande roller i tech- och industriföretag. Idag leder han produktstrategi och teknisk arkitektur för VR- och AI-baserade träningsplattformar för hälso- och välfärdsutbildning, i nära samarbete med universitet och sjukhus."
       },
       "rtk": {
         "title": "Senior Medical Trainer, ambulanssjukvårdare",
@@ -68,9 +68,15 @@
     "board": {
       "placeholder_title": "Styrelsemedlem",
       "visibility": "hidden",
-      "bod_1": { "title": "Styrelseordförande" },
-      "bod_2": { "title": "Styrelsemedlem" },
-      "bod_3": { "title": "Styrelsemedlem" }
+      "bod_1": {
+        "title": "Styrelseordförande"
+      },
+      "bod_2": {
+        "title": "Styrelsemedlem"
+      },
+      "bod_3": {
+        "title": "Styrelsemedlem"
+      }
     }
   },
   "press": {
@@ -80,7 +86,7 @@
     "heading": "Kunder"
   },
   "contact": {
-    "description": "Vill du veta mer om våra VR-plattformar, certifiera dig genom Academy, eller har du en idé som hör hemma i Labs? Hör av dig – vi svarar gärna på frågor om allt från teknik och pris till implementering hos er.",
+    "description": "Vill du veta mer om våra VR-plattformar, bli certifierad genom Academy, eller har du en idé som hör hemma i Labs? Hör av dig – vi svarar gärna på frågor om allt från teknik och pris till implementering hos er.",
     "email_label": "E-post",
     "form": {
       "name_label": "Namn",
@@ -88,7 +94,13 @@
       "email_label": "E-post",
       "email_placeholder": "din@epost.se",
       "subject_label": "Ämne",
-      "subject_options": ["Allmän förfrågan", "Solutions och demo", "Academy", "Press", "Övrigt"],
+      "subject_options": [
+        "Allmän förfrågan",
+        "Solutions och demo",
+        "Academy",
+        "Press",
+        "Övrigt"
+      ],
       "message_label": "Meddelande",
       "message_placeholder": "Skriv ditt meddelande här...",
       "submit": "Skicka meddelande"

@@ -10,26 +10,26 @@
   },
   "hero": {
     "title": "Nordic Emergency ApS",
-    "tagline": "VR-baseret beredskabstræning og hjerte-lungeredning – klinisk præcision, når det gælder.",
+    "tagline": "VR-baseret beredskabs- og HLR-træning – klinisk præcision, når det virkelig gælder.",
     "lead": "Vi udvikler VR-platforme, der gør det muligt at træne beslutninger, samarbejde og livreddende handlinger igen og igen – i realistiske scenarier, uden risiko og uden at gå på kompromis med den kliniske virkelighed."
   },
   "solutions": {
-    "intro": "NordicEmergency står bag to VR-platforme, der begge er bygget på den samme grundtanke: de bedste beslutninger i en krisesituation er dem, du allerede har trænet. Uanset om det er en fuldskala beredskabsøvelse med flere myndigheder eller genoplivning af en bevidstløs patient, giver vores platforme et sikkert rum til at øve, fejle og blive bedre – igen og igen.",
+    "intro": "NordicEmergency står bag to VR-platforme, der begge er bygget på den samme grundtanke: de bedste beslutninger i en krisesituation er dem, du allerede har trænet. Uanset om det er en fuldskala beredskabsøvelse med flere myndigheder eller genoplivning af en bevidstløs patient, giver vores platforme et sikkert miljø til at øve, fejle og blive bedre – igen og igen.",
     "items": [
       {
         "title": "Katastrofe- og beredskabstræning",
-        "description": "En multiuser VR-simulation, hvor brand, politi, myndigheder og redningstjenester træner sammen i det samme scenarie – hver fra deres eget perspektiv. En gamemaster styrer forløbet og kan i realtid ændre på hændelsen, tilføje komplikationer eller eskalere presset, præcis som i en virkelig krise. Målet er ikke kun individuel færdighed, men den koordination og kommunikation på tværs af enheder, der afgør, om en indsats lykkes.",
+        "description": "En multiuser VR-simulation, hvor brandvæsen, politi, myndigheder og redningstjenester træner sammen i det samme scenarie – hver fra deres eget perspektiv. En gamemaster styrer forløbet og kan i realtid ændre på hændelsen, tilføje komplikationer eller eskalere presset, præcis som i en virkelig krise. Målet er ikke kun individuel færdighed, men den koordinering og kommunikation på tværs af myndigheder og beredskabsenheder, der afgør, om en indsats lykkes.",
         "highlights": [
           "Multiuser – flere deltagere i samme scenarie, samtidig",
           "Gamemaster-styret: scenariet tilpasses i realtid",
-          "Træner samarbejde på tværs af brand, politi, myndigheder og redning",
+          "Træner samarbejde på tværs af brandvæsen, politi, myndigheder og redningstjenester",
           "Gentagelig træning uden risiko eller logistik"
         ],
         "icon": "speaking"
       },
       {
-        "title": "Førstehjælp & hjertelungeredning",
-        "description": "VR-træning i førstehjælp og hjerte-lungeredning, bygget på anerkendte kliniske retningslinjer. Du øver hjertemassage, brug af hjertestarter (AED) og de kritiske første minutter, hvor beslutsomhed og korrekt teknik gør forskellen mellem liv og død – i et trygt miljø, hvor du kan gentage scenariet, til det sidder på rygraden.",
+        "title": "Førstehjælp & HLR",
+        "description": "VR-træning i Førstehjælp & HLR, bygget på anerkendte kliniske retningslinjer. Du øver hjertemassage, brug af hjertestarter (AED) og de kritiske første minutter, hvor beslutsomhed og korrekt teknik gør forskellen mellem liv og død – i et trygt miljø, hvor du kan gentage scenariet, til det sidder på rygraden.",
         "highlights": [
           "Baseret på anerkendte kliniske retningslinjer",
           "Træn hjertemassage og AED-betjening",
@@ -41,10 +41,10 @@
     ]
   },
   "academy": {
-    "description": "Academy er vejen ind, hvis du selv vil stå i spidsen for træningen. Her uddanner vi gamemastere, der kan lede og tilpasse de multiuser-scenarier, som beredskabsplatformen bygger på, og HLR-instruktører, der kan facilitere realistisk førstehjælpstræning for andre. Du får både den kliniske og den didaktiske ballast til at gøre træningen troværdig – uanset om den foregår på en brandstation, et sygehus eller i en virksomhed."
+    "description": "Academy er stedet, hvor du bliver klædt på til selv at stå i spidsen for træningen. Her uddanner vi gamemastere, der kan lede og tilpasse de multiuser-scenarier, som beredskabsplatformen bygger på, og HLR-instruktører, der kan facilitere realistisk førstehjælpstræning for andre. Du får både den kliniske og den didaktiske ballast til at gøre træningen troværdig – uanset om den foregår på en brandstation, et sygehus eller i en virksomhed."
   },
   "labs": {
-    "description": "Labs er vores interne udviklingsmiljø – stedet hvor nye VR-koncepter, scenarier og teknologier bliver født, testet og forkastet, længe før de når en bruger. Her arbejder vi tæt sammen med klinikere, undervisere og gamemastere for at forstå, hvordan didaktiske læringsprincipper bedst overføres fra en virtuel oplevelse til en handling, du kan stole på i virkeligheden."
+    "description": "Labs er vores interne udviklingsmiljø – stedet, hvor nye VR-koncepter, scenarier og teknologier bliver udviklet, testet og udfordret, længe før de når brugere. Her arbejder vi tæt sammen med klinikere, undervisere og gamemastere for at forstå, hvordan didaktiske læringsprincipper bedst overføres fra en virtuel oplevelse til en handling, du kan stole på i virkeligheden."
   },
   "team": {
     "tabs": {
@@ -68,9 +68,15 @@
     "board": {
       "placeholder_title": "Bestyrelsesmedlem",
       "visibility": "hidden",
-      "bod_1": { "title": "Bestyrelsesformand" },
-      "bod_2": { "title": "Bestyrelsesmedlem" },
-      "bod_3": { "title": "Bestyrelsesmedlem" }
+      "bod_1": {
+        "title": "Bestyrelsesformand"
+      },
+      "bod_2": {
+        "title": "Bestyrelsesmedlem"
+      },
+      "bod_3": {
+        "title": "Bestyrelsesmedlem"
+      }
     }
   },
   "press": {
@@ -88,7 +94,13 @@
       "email_label": "Email",
       "email_placeholder": "din@email.dk",
       "subject_label": "Emne",
-      "subject_options": ["Generel henvendelse", "Solutions & demo", "Academy", "Presse", "Andet"],
+      "subject_options": [
+        "Generel henvendelse",
+        "Solutions & demo",
+        "Academy",
+        "Presse",
+        "Andet"
+      ],
       "message_label": "Besked",
       "message_placeholder": "Skriv din besked her...",
       "submit": "Send besked"

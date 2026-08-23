@@ -11,7 +11,7 @@
   "hero": {
     "title": "Nordic Emergency ApS",
     "tagline": "VR-basert beredskapstrening og hjerte-lungeredning – klinisk presisjon når det gjelder.",
-    "lead": "Vi utvikler VR-plattformer som gjør det mulig å trene beslutninger, samarbeid og livreddende handlinger igjen og igjen – i realistiske scenarier, uten risiko og uten å gå på kompromiss med den kliniske virkeligheten."
+    "lead": "Vi utvikler VR-plattformer som gjør det mulig å trene beslutninger, samarbeid og livreddende handlinger igjen og igjen – i realistiske scenarier, uten risiko og uten å gå på kompromiss med den kliniske kvaliteten."
   },
   "solutions": {
     "intro": "Bak NordicEmergency står to VR-plattformer bygget på samme grunntanke: de beste beslutningene i en krise er dem du allerede har trent på. Enten det er en fullskala beredskapsøvelse med flere etater eller gjenopplivning av en bevisstløs pasient, gir plattformene våre et trygt rom for å øve, feile og bli bedre – igjen og igjen.",
@@ -41,10 +41,10 @@
     ]
   },
   "academy": {
-    "description": "Academy er veien inn hvis du selv vil lede treningen. Vi utdanner gamemastere som kan lede og tilpasse de flerbruker-scenariene beredskapsplattformen bygger på, og HLR-instruktører som kan legge til rette for realistisk førstehjelpstrening for andre. Du får både den kliniske og den didaktiske ballasten som skal til for å gjøre treningen troverdig – enten det foregår på en brannstasjon, et sykehus eller en arbeidsplass."
+    "description": "Academy er veien inn hvis du selv vil lede treningen. Vi utdanner gamemastere som kan lede og tilpasse de flerbruker-scenariene beredskapsplattformen bygger på, og HLR-instruktører som kan legge til rette for realistisk førstehjelpstrening for andre. Du får både det kliniske og det pedagogiske grunnlaget du trenger for å gjøre treningen troverdig – enten det foregår på en brannstasjon, et sykehus eller en arbeidsplass."
   },
   "labs": {
-    "description": "Labs er vårt interne utviklingsmiljø – stedet der nye VR-konsepter, scenarier og teknologier blir til, testet og forkastet, lenge før de når en bruker. Vi jobber tett med klinikere, undervisere og gamemastere for å forstå hvordan didaktiske læringsprinsipper best overføres fra en virtuell opplevelse til en handling du kan stole på i virkeligheten."
+    "description": "Labs er vårt interne utviklingsmiljø – stedet der nye VR-konsepter, scenarier og teknologier utvikles, testes og forkastes, lenge før de når en bruker. Vi jobber tett med klinikere, undervisere og gamemastere for å forstå hvordan didaktiske læringsprinsipper best overføres fra en virtuell opplevelse til en handling du kan stole på i virkeligheten."
   },
   "team": {
     "tabs": {
@@ -54,7 +54,7 @@
     "core": {
       "thk": {
         "title": "CEO, BSc., MBA",
-        "bio": "Thomas er elektroingeniør og leder med 25 års erfaring fra ledende stillinger i teknologi- og industribedrifter. I dag leder han produktstrategi og teknisk arkitektur for VR- og AI-baserte treningsplattformer for helse- og velferdsutdanning, i tett samarbeid med universiteter og sykehus."
+        "bio": "Thomas er elektroingeniør og næringslivsleder med 25 års erfaring fra ledende stillinger i teknologi- og industribedrifter. I dag leder han produktstrategi og teknisk arkitektur for VR- og AI-baserte treningsplattformer for helse- og velferdsutdanning, i tett samarbeid med universiteter og sykehus."
       },
       "rtk": {
         "title": "Senior Medical Trainer, paramedisiner",
@@ -68,9 +68,15 @@
     "board": {
       "placeholder_title": "Styremedlem",
       "visibility": "hidden",
-      "bod_1": { "title": "Styreleder" },
-      "bod_2": { "title": "Styremedlem" },
-      "bod_3": { "title": "Styremedlem" }
+      "bod_1": {
+        "title": "Styreleder"
+      },
+      "bod_2": {
+        "title": "Styremedlem"
+      },
+      "bod_3": {
+        "title": "Styremedlem"
+      }
     }
   },
   "press": {
@@ -88,7 +94,13 @@
       "email_label": "E-post",
       "email_placeholder": "din@epost.no",
       "subject_label": "Emne",
-      "subject_options": ["Generell henvendelse", "Solutions og demo", "Academy", "Presse", "Annet"],
+      "subject_options": [
+        "Generell henvendelse",
+        "Solutions og demo",
+        "Academy",
+        "Presse",
+        "Annet"
+      ],
       "message_label": "Melding",
       "message_placeholder": "Skriv meldingen din her...",
       "submit": "Send melding"
