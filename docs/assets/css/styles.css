@@ -530,6 +530,11 @@ h1, h2, h3 { color: var(--color-primary-dark); line-height: 1.2; }
 .footer-inner p { margin: 0; }
 .footer-meta { font-size: 0.8rem; margin-top: 2px; }
 
+.footer-links {
+  display: flex;
+  gap: 16px;
+}
+
 .footer-inner a {
   color: var(--color-primary);
   text-decoration: none;

@@ -356,6 +356,9 @@
     var linkedinEl = document.getElementById("footer-linkedin");
     if (linkedinEl && site.linkedin) linkedinEl.href = site.linkedin;
 
+    var discordEl = document.getElementById("footer-discord");
+    if (discordEl && site.discord) discordEl.href = site.discord;
+
     var companyEl = document.getElementById("footer-company");
     if (companyEl && site.company) companyEl.textContent = site.company;
 
