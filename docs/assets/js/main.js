@@ -285,14 +285,27 @@
   }
 
   function detectLang(config) {
-    var stored = localStorage.getItem(LANG_STORAGE_KEY);
     var available = config.languages.map(function (l) { return l.code; });
+
+    var urlLang = new URLSearchParams(window.location.search).get("lang");
+    if (urlLang) {
+      urlLang = urlLang.toLowerCase();
+      if (available.indexOf(urlLang) !== -1) return urlLang;
+    }
+
+    var stored = localStorage.getItem(LANG_STORAGE_KEY);
     if (stored && available.indexOf(stored) !== -1) return stored;
 
     var browserLang = (navigator.language || "").slice(0, 2).toLowerCase();
     if (available.indexOf(browserLang) !== -1) return browserLang;
 
     return config.default;
+  }
+
+  function setLangInUrl(lang) {
+    var url = new URL(window.location.href);
+    url.searchParams.set("lang", lang);
+    window.history.replaceState({}, "", url);
   }
 
   function renderContactForm(dict) {
@@ -323,6 +336,7 @@
         renderContactForm(dict);
         renderLangSwitcher(config, lang, function (newLang) {
           localStorage.setItem(LANG_STORAGE_KEY, newLang);
+          setLangInUrl(newLang);
           loadLang(newLang, config, teamData, articleData);
         });
       });
