@@ -5,21 +5,24 @@
       "name": "Thomas Herbert Kokholm",
       "linkedin": "https://www.linkedin.com/in/kokholm/",
       "image": "assets/images/thomas_portrait.jpg",
-      "mobile": "+45 31 77 17 70"
+      "mobile": "+45 31 77 17 70",
+      "visibility": "public"
     },
     {
       "id": "rtk",
       "name": "Ricki Toft Kristiansen",
       "linkedin": "https://www.linkedin.com/in/ricki-toft-kristiansen-97762070/",
       "image": "assets/images/ricki_portrait.jpg",
-      "mobile": "+45 30 20 97 98"
+      "mobile": "+45 30 20 97 98",
+      "visibility": "hidden"
     },
     {
       "id": "mgs",
       "name": "Mads Gabelgaard Sommer",
       "linkedin": "https://www.linkedin.com/in/mads-sommer-129a253b/",
       "image": "assets/images/mads_portrait.jpg",
-      "mobile": "+45 26 81 40 44"
+      "mobile": "+45 26 81 40 44",
+      "visibility": "public"
     }
   ],
   "board": [
@@ -27,20 +30,23 @@
       "id": "bod_1",
       "name": "Ricki Toft Kristiansen",
       "image": "assets/images/ricki_portrait.jpg",
-      "placeholder": true
+      "placeholder": true,
+      "visibility": "hidden"
     },
     {
       "id": "bod_2",
       "name": "Kjeld Grostøl Nielsen",
       "linkedin": "https://www.linkedin.com/in/kjeld-grost%C3%B8l-nielsen-0b9a1b1/",
       "image": "assets/images/kjeld_portrait.jpg",
-      "placeholder": true
+      "placeholder": true,
+      "visibility": "hidden"
     },
     {
       "id": "bod_3",
       "name": "Thomas Herbert Kokholm",
       "image": "assets/images/thomas_portrait.jpg",
-      "placeholder": true
+      "placeholder": true,
+      "visibility": "hidden"
     }
   ]
 }

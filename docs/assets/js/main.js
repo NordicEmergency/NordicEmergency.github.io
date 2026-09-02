@@ -121,6 +121,7 @@
 
     var coreTitles = (dict.team && dict.team.core) || {};
     coreEl.innerHTML = teamData.core
+      .filter(function (person) { return person.visibility !== "hidden"; })
       .map(function (person) {
         var entry = coreTitles[person.id] || {};
         return renderPerson(person, entry.title, entry.bio);
@@ -129,7 +130,8 @@
 
     var boardDict = (dict.team && dict.team.board) || {};
     var boardFallbackTitle = boardDict.placeholder_title || "";
-    boardEl.innerHTML = teamData.board
+    var visibleBoard = teamData.board.filter(function (person) { return person.visibility !== "hidden"; });
+    boardEl.innerHTML = visibleBoard
       .map(function (person) {
         var entry = boardDict[person.id];
         var title = entry && entry.title ? entry.title : boardFallbackTitle;
@@ -141,7 +143,7 @@
     attachAvatarFallbacks(boardEl);
 
     var boardTabBtn = document.querySelector('.tab-btn[data-tab="board"]');
-    var boardHidden = boardDict.visibility === "hidden";
+    var boardHidden = boardDict.visibility === "hidden" || visibleBoard.length === 0;
     if (boardTabBtn) boardTabBtn.hidden = boardHidden;
     var tabsBar = document.querySelector(".tabs");
     if (tabsBar) tabsBar.hidden = boardHidden;
