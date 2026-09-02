@@ -299,6 +299,7 @@ h1, h2, h3 { color: var(--color-primary-dark); line-height: 1.2; }
 
 /* Team */
 .tabs { display: flex; gap: 8px; margin-bottom: 28px; }
+.tabs[hidden] { display: none; }
 
 .tab-btn {
   border: 1px solid var(--color-border);
