@@ -105,5 +105,78 @@
       "message_placeholder": "Skriv ditt meddelande här...",
       "submit": "Skicka meddelande"
     }
+  },
+  "footer": {
+    "privacy": "Integritetspolicy"
+  },
+  "privacy": {
+    "meta_title": "Integritetspolicy – NordicEmergency",
+    "heading": "Integritetspolicy",
+    "intro": "Så hanterar vi personuppgifter när du besöker nordicemergency.dk.",
+    "last_updated": "Senast uppdaterad: 8 september 2026",
+    "back_home": "← Tillbaka till startsidan",
+    "sections": [
+      {
+        "heading": "Personuppgiftsansvarig",
+        "paragraphs": [
+          "Nordic Emergency ApS (danskt organisationsnummer/CVR 46 72 47 12), Fussingsvej 8, 8700 Horsens, Danmark, är personuppgiftsansvarig för den behandling som beskrivs i denna policy."
+        ]
+      },
+      {
+        "heading": "Vilka uppgifter vi samlar in",
+        "paragraphs": [
+          "Den här webbplatsen är en statisk sida utan användarkonton, inloggning eller betallösning. Vi samlar bara in personuppgifter när du själv väljer att lämna dem till oss.",
+          "När du fyller i kontaktformuläret öppnas ditt eget e-postprogram med ett förifyllt meddelande adresserat till oss. Namn, e-post och meddelande skickas inte till någon server hos NordicEmergency – vi tar emot uppgifterna först när du själv trycker på skicka i ditt eget e-postprogram."
+        ]
+      },
+      {
+        "heading": "Cookies och lokal lagring",
+        "paragraphs": [
+          "Vi använder inga cookies och inga analys- eller spårningsverktyg från tredje part.",
+          "Webbplatsen sparar två valfria inställningar i din webbläsares lokala lagring (localStorage): ditt valda språk och ditt valda ljusa eller mörka tema. Den informationen lämnar aldrig din enhet och används enbart för att komma ihåg dina inställningar nästa gång du besöker sidan."
+        ]
+      },
+      {
+        "heading": "Hosting och tredje part",
+        "paragraphs": [
+          "Webbplatsen driftas via GitHub Pages (GitHub, Inc.). Precis som på de flesta webbplatser registrerar värdleverantören vanligtvis standardmässig serverloggdata, till exempel IP-adress, webbläsartyp och tidpunkt för besöket, av drift- och säkerhetsskäl. Vi har inte tillgång till dessa loggar och behandlar dem inte själva.",
+          "Vissa sidor länkar vidare till LinkedIn och Discord. Om du klickar dig vidare till någon av dessa tjänster gäller tjänstens egen integritetspolicy för din användning av den."
+        ]
+      },
+      {
+        "heading": "Lagringstid",
+        "paragraphs": [
+          "Eftersom kontaktformuläret inte skickar data till oss, lagrar vi inga personuppgifter från ditt besök på webbplatsen. Skriver du till oss direkt via e-post sparar vi korrespondensen så länge det behövs för att besvara och följa upp din förfrågan."
+        ]
+      },
+      {
+        "heading": "Dina rättigheter",
+        "paragraphs": [
+          "Enligt dataskyddsförordningen (GDPR) har du ett antal rättigheter som du när som helst kan använda genom att kontakta oss:"
+        ],
+        "items": [
+          "Rätt till tillgång till de uppgifter vi behandlar om dig",
+          "Rätt till rättelse av felaktiga uppgifter",
+          "Rätt till radering av dina uppgifter",
+          "Rätt till begränsning av behandlingen",
+          "Rätt till dataportabilitet",
+          "Rätt att invända mot behandlingen"
+        ]
+      },
+      {
+        "heading": "Klagomål",
+        "paragraphs": [
+          "Du har alltid rätt att klaga till den danska tillsynsmyndigheten Datatilsynet (datatilsynet.dk) om du är missnöjd med hur vi behandlar dina personuppgifter."
+        ]
+      },
+      {
+        "heading": "Ändringar av denna policy",
+        "paragraphs": [
+          "Vi uppdaterar den här policyn när vår behandling av uppgifter förändras. Den senaste versionen finns alltid på den här sidan, med uppdateringsdatum överst."
+        ]
+      }
+    ],
+    "contact_heading": "Kontakt",
+    "contact_text": "Har du frågor om den här integritetspolicyn, eller vill använda dina rättigheter? Skriv gärna till oss på"
   }
 }

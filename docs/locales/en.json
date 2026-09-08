@@ -105,5 +105,78 @@
       "message_placeholder": "Write your message here...",
       "submit": "Send message"
     }
+  },
+  "footer": {
+    "privacy": "Privacy Policy"
+  },
+  "privacy": {
+    "meta_title": "Privacy Policy — NordicEmergency",
+    "heading": "Privacy Policy",
+    "intro": "How we handle personal data when you visit nordicemergency.dk.",
+    "last_updated": "Last updated: 8 September 2026",
+    "back_home": "← Back to home",
+    "sections": [
+      {
+        "heading": "Data controller",
+        "paragraphs": [
+          "Nordic Emergency ApS (Danish company registration no. 46 72 47 12), Fussingsvej 8, 8700 Horsens, Denmark, is the data controller for the personal data described in this policy."
+        ]
+      },
+      {
+        "heading": "What information we collect",
+        "paragraphs": [
+          "This website is a static site with no user accounts, login or payment processing. We only collect personal data when you choose to give it to us.",
+          "When you fill in the contact form, it opens your own email client with a pre-filled message addressed to us. Your name, email address and message are not sent to a server operated by NordicEmergency — we only receive the information once you press send in your own email client."
+        ]
+      },
+      {
+        "heading": "Cookies and local storage",
+        "paragraphs": [
+          "We do not use cookies, and we do not use any third-party analytics or tracking tools.",
+          "The website stores two optional preferences in your browser's local storage (localStorage): your chosen language and your chosen light or dark theme. This information never leaves your device and is used only to remember your preferences the next time you visit."
+        ]
+      },
+      {
+        "heading": "Hosting and third parties",
+        "paragraphs": [
+          "The website is hosted via GitHub Pages (GitHub, Inc.). As with most websites, the hosting provider typically records standard server log data — such as IP address, browser type and time of visit — for operational and security purposes. We do not have access to these logs and do not process them ourselves.",
+          "Some pages link to LinkedIn and Discord. If you follow one of these links, that service's own privacy policy applies to your use of it."
+        ]
+      },
+      {
+        "heading": "Retention",
+        "paragraphs": [
+          "Since the contact form does not send data to us, we do not retain personal data from your visit to the website. If you email us directly, we keep that correspondence for as long as needed to respond to and follow up on your enquiry."
+        ]
+      },
+      {
+        "heading": "Your rights",
+        "paragraphs": [
+          "Under the General Data Protection Regulation (GDPR), you have a number of rights, which you can exercise at any time by contacting us:"
+        ],
+        "items": [
+          "The right to access the information we hold about you",
+          "The right to have inaccurate information corrected",
+          "The right to have your information deleted",
+          "The right to restrict processing",
+          "The right to data portability",
+          "The right to object to processing"
+        ]
+      },
+      {
+        "heading": "Complaints",
+        "paragraphs": [
+          "You always have the right to lodge a complaint with the Danish Data Protection Agency, Datatilsynet (datatilsynet.dk), if you are unhappy with how we handle your personal data."
+        ]
+      },
+      {
+        "heading": "Changes to this policy",
+        "paragraphs": [
+          "We update this policy whenever our handling of information changes. The latest version is always available on this page, with the update date shown at the top."
+        ]
+      }
+    ],
+    "contact_heading": "Contact",
+    "contact_text": "If you have questions about this privacy policy, or want to exercise your rights, feel free to email us at"
   }
 }

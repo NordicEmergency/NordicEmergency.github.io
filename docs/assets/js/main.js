@@ -1,30 +1,8 @@
 (function () {
   "use strict";
 
-  var LANG_STORAGE_KEY = "ne_lang";
-  var THEME_STORAGE_KEY = "ne_theme";
-
-  function fetchJSON(url, fallback) {
-    return fetch(url)
-      .then(function (res) { return res.json(); })
-      .catch(function (err) {
-        console.warn("Failed to load " + url + ", using fallback.", err);
-        return fallback;
-      });
-  }
-
-  function getByPath(obj, path) {
-    return path.split(".").reduce(function (acc, key) {
-      return acc && acc[key] !== undefined ? acc[key] : undefined;
-    }, obj);
-  }
-
-  function applyTranslations(dict) {
-    document.querySelectorAll("[data-i18n]").forEach(function (el) {
-      var value = getByPath(dict, el.getAttribute("data-i18n"));
-      if (typeof value === "string") el.textContent = value;
-    });
-  }
+  var fetchJSON = NE.fetchJSON;
+  var applyTranslations = NE.applyTranslations;
 
   var SOLUTION_ICONS = {
     speaking:
@@ -206,49 +184,6 @@
       .join("");
   }
 
-  function getStoredTheme() {
-    try {
-      return localStorage.getItem(THEME_STORAGE_KEY);
-    } catch (e) {
-      return null;
-    }
-  }
-
-  function systemPrefersDark() {
-    return window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
-  }
-
-  function currentEffectiveTheme() {
-    var stored = getStoredTheme();
-    if (stored === "light" || stored === "dark") return stored;
-    return systemPrefersDark() ? "dark" : "light";
-  }
-
-  function initThemeToggle() {
-    var btn = document.getElementById("theme-toggle");
-    if (!btn) return;
-
-    function updatePressed() {
-      btn.setAttribute("aria-pressed", currentEffectiveTheme() === "dark" ? "true" : "false");
-    }
-    updatePressed();
-
-    btn.addEventListener("click", function () {
-      var next = currentEffectiveTheme() === "dark" ? "light" : "dark";
-      try {
-        localStorage.setItem(THEME_STORAGE_KEY, next);
-      } catch (e) {}
-      document.documentElement.setAttribute("data-theme", next);
-      updatePressed();
-    });
-
-    if (window.matchMedia) {
-      window.matchMedia("(prefers-color-scheme: dark)").addEventListener("change", function () {
-        if (!getStoredTheme()) updatePressed();
-      });
-    }
-  }
-
   function initTabs() {
     var buttons = document.querySelectorAll(".tab-btn");
     buttons.forEach(function (btn) {
@@ -264,50 +199,6 @@
         document.getElementById("team-board").hidden = btn.dataset.tab !== "board";
       });
     });
-  }
-
-  function renderLangSwitcher(config, currentLang, onSelect) {
-    var el = document.getElementById("lang-switcher");
-    if (!el) return;
-    el.innerHTML = config.languages
-      .map(function (lang) {
-        return (
-          '<button data-lang="' + lang.code + '" class="' + (lang.code === currentLang ? "active" : "") + '" title="' + lang.label + '">' +
-          '<img src="assets/flags/' + lang.flag + '.svg" alt="' + lang.label + '">' +
-          "</button>"
-        );
-      })
-      .join("");
-
-    el.querySelectorAll("button").forEach(function (btn) {
-      btn.addEventListener("click", function () {
-        onSelect(btn.getAttribute("data-lang"));
-      });
-    });
-  }
-
-  function detectLang(config) {
-    var available = config.languages.map(function (l) { return l.code; });
-
-    var urlLang = new URLSearchParams(window.location.search).get("lang");
-    if (urlLang) {
-      urlLang = urlLang.toLowerCase();
-      if (available.indexOf(urlLang) !== -1) return urlLang;
-    }
-
-    var stored = localStorage.getItem(LANG_STORAGE_KEY);
-    if (stored && available.indexOf(stored) !== -1) return stored;
-
-    var browserLang = (navigator.language || "").slice(0, 2).toLowerCase();
-    if (available.indexOf(browserLang) !== -1) return browserLang;
-
-    return config.default;
-  }
-
-  function setLangInUrl(lang) {
-    var url = new URL(window.location.href);
-    url.searchParams.set("lang", lang);
-    window.history.replaceState({}, "", url);
   }
 
   function renderContactForm(dict) {
@@ -336,9 +227,9 @@
         renderTeam(dict, teamData);
         renderArticles(lang, articleData);
         renderContactForm(dict);
-        renderLangSwitcher(config, lang, function (newLang) {
-          localStorage.setItem(LANG_STORAGE_KEY, newLang);
-          setLangInUrl(newLang);
+        NE.renderLangSwitcher(config, lang, "assets/flags/", function (newLang) {
+          NE.storeLang(newLang);
+          NE.setLangInUrl(newLang);
           loadLang(newLang, config, teamData, articleData);
         });
       });
@@ -392,7 +283,7 @@
     if (yearEl) yearEl.textContent = new Date().getFullYear();
 
     initTabs();
-    initThemeToggle();
+    NE.initThemeToggle();
 
     Promise.all([
       fetchJSON("locales/config.json", { default: "en", languages: [{ code: "en", flag: "gb", label: "English" }] }),
@@ -409,7 +300,7 @@
       applySiteData(siteData);
       renderCustomers(customerData);
       initContactForm(siteData);
-      var lang = detectLang(config);
+      var lang = NE.detectLang(config);
       loadLang(lang, config, teamData, articleData);
     });
   });

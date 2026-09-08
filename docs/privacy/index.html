@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title data-i18n="privacy.meta_title">Privacy Policy — NordicEmergency</title>
+<meta name="description" content="NordicEmergency privacy policy — how we handle your data.">
+<meta name="robots" content="noindex">
+<link rel="icon" type="image/png" href="../assets/icons/badge.png">
+<link rel="stylesheet" href="../assets/css/styles.css">
+<script>
+(function () {
+  try {
+    var stored = localStorage.getItem("ne_theme");
+    if (stored === "light" || stored === "dark") {
+      document.documentElement.setAttribute("data-theme", stored);
+    }
+  } catch (e) {}
+})();
+</script>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="../index.html">
+      <img class="brand-mark" src="../assets/icons/badge.png" alt="">
+      <span class="brand-name" data-i18n="hero.title">NordicEmergency</span>
+    </a>
+
+    <nav class="site-nav" aria-label="Main">
+      <ul>
+        <li><a href="../index.html" data-i18n="privacy.back_home">← Back to home</a></li>
+      </ul>
+    </nav>
+
+    <div class="lang-switcher" id="lang-switcher" aria-label="Language"></div>
+
+    <button id="theme-toggle" class="theme-toggle" type="button" aria-pressed="false" aria-label="Toggle dark mode">
+      <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"></path></svg>
+      <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+    </button>
+  </div>
+</header>
+
+<main id="top">
+  <section class="hero legal-hero">
+    <div class="container">
+      <h1 data-i18n="privacy.heading">Privacy Policy</h1>
+      <p class="tagline" data-i18n="privacy.intro"></p>
+      <p class="legal-updated" data-i18n="privacy.last_updated"></p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="legal-content" id="privacy-sections"></div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div>
+      <p>&copy; <span id="year"></span> <span id="footer-company">Nordic Emergency ApS</span></p>
+      <p class="footer-meta" id="footer-meta"></p>
+    </div>
+    <div class="footer-links">
+      <a id="footer-linkedin" href="#" target="_blank" rel="noopener">LinkedIn</a>
+      <a id="footer-discord" href="#" target="_blank" rel="noopener">Discord</a>
+      <a href="../index.html#contact" data-i18n="nav.contact">Contact</a>
+    </div>
+  </div>
+</footer>
+
+<script src="../assets/js/common.js"></script>
+<script src="../assets/js/privacy.js"></script>
+</body>
+</html>

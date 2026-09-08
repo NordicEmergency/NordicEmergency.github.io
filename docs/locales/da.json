@@ -105,5 +105,78 @@
       "message_placeholder": "Skriv din besked her...",
       "submit": "Send besked"
     }
+  },
+  "footer": {
+    "privacy": "Privatlivspolitik"
+  },
+  "privacy": {
+    "meta_title": "Privatlivspolitik – NordicEmergency",
+    "heading": "Privatlivspolitik",
+    "intro": "Sådan behandler vi personoplysninger, når du besøger nordicemergency.dk.",
+    "last_updated": "Sidst opdateret: 8. september 2026",
+    "back_home": "← Til forsiden",
+    "sections": [
+      {
+        "heading": "Dataansvarlig",
+        "paragraphs": [
+          "Nordic Emergency ApS (CVR-nr. 46 72 47 12), Fussingsvej 8, 8700 Horsens, er dataansvarlig for behandlingen af de personoplysninger, der er beskrevet i denne politik."
+        ]
+      },
+      {
+        "heading": "Hvilke oplysninger indsamler vi",
+        "paragraphs": [
+          "Denne hjemmeside er en statisk side uden brugerkonti, login eller betalingsløsning. Vi indsamler kun personoplysninger, når du selv vælger at give dem til os.",
+          "Når du udfylder kontaktformularen, åbner den din egen e-mailklient med en foraudfyldt besked stilet til os. Navn, e-mail og besked sendes ikke til en server hos NordicEmergency – vi modtager først oplysningerne, når du selv trykker send i din e-mailklient."
+        ]
+      },
+      {
+        "heading": "Cookies og lokal lagring",
+        "paragraphs": [
+          "Vi bruger ikke cookies og ingen tredjeparts analyse- eller sporingsværktøjer.",
+          "Hjemmesiden gemmer to valgfrie indstillinger i din browsers lokale lager (localStorage): dit valg af sprog og dit valg af lyst eller mørkt tema. Disse oplysninger forlader aldrig din enhed og bruges udelukkende til at huske dine præferencer, næste gang du besøger siden."
+        ]
+      },
+      {
+        "heading": "Hosting og tredjeparter",
+        "paragraphs": [
+          "Hjemmesiden hostes via GitHub Pages (GitHub, Inc.). Som ved besøg på de fleste hjemmesider registrerer hostingudbyderen typisk standard serverlogdata som IP-adresse, browsertype og tidspunkt for besøget, af hensyn til drift og sikkerhed. Vi har ikke adgang til disse logs og behandler dem ikke selv.",
+          "Enkelte sider linker videre til LinkedIn og Discord. Klikker du dig videre til disse tjenester, er det deres egne privatlivspolitikker, der gælder for din brug af dem."
+        ]
+      },
+      {
+        "heading": "Opbevaring",
+        "paragraphs": [
+          "Da kontaktformularen ikke sender data til os, opbevarer vi ikke personoplysninger fra dit besøg på hjemmesiden. Skriver du til os på e-mail, opbevares korrespondancen, så længe det er nødvendigt for at besvare og følge op på din henvendelse."
+        ]
+      },
+      {
+        "heading": "Dine rettigheder",
+        "paragraphs": [
+          "Som registreret har du efter databeskyttelsesforordningen (GDPR) en række rettigheder, du altid kan gøre brug af ved at kontakte os:"
+        ],
+        "items": [
+          "Ret til indsigt i de oplysninger, vi behandler om dig",
+          "Ret til berigtigelse af urigtige oplysninger",
+          "Ret til sletning af dine oplysninger",
+          "Ret til begrænsning af behandlingen",
+          "Ret til dataportabilitet",
+          "Ret til at gøre indsigelse mod behandlingen"
+        ]
+      },
+      {
+        "heading": "Klage",
+        "paragraphs": [
+          "Du har altid ret til at klage til Datatilsynet (datatilsynet.dk), hvis du er utilfreds med den måde, vi behandler dine personoplysninger på."
+        ]
+      },
+      {
+        "heading": "Ændringer af denne politik",
+        "paragraphs": [
+          "Vi opdaterer denne politik, hvis vores behandling af oplysninger ændrer sig. Den nyeste version er altid tilgængelig på denne side, med opdateringsdato øverst."
+        ]
+      }
+    ],
+    "contact_heading": "Kontakt",
+    "contact_text": "Har du spørgsmål til denne privatlivspolitik, eller ønsker du at gøre brug af dine rettigheder? Skriv til os på"
   }
 }

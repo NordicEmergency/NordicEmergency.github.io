@@ -105,5 +105,78 @@
       "message_placeholder": "Schreiben Sie hier Ihre Nachricht...",
       "submit": "Nachricht senden"
     }
+  },
+  "footer": {
+    "privacy": "Datenschutz"
+  },
+  "privacy": {
+    "meta_title": "Datenschutzerklärung – NordicEmergency",
+    "heading": "Datenschutzerklärung",
+    "intro": "So gehen wir mit personenbezogenen Daten um, wenn Sie nordicemergency.dk besuchen.",
+    "last_updated": "Zuletzt aktualisiert: 8. September 2026",
+    "back_home": "← Zurück zur Startseite",
+    "sections": [
+      {
+        "heading": "Verantwortlicher",
+        "paragraphs": [
+          "Verantwortlich für die in dieser Erklärung beschriebene Verarbeitung personenbezogener Daten ist die Nordic Emergency ApS (dänische Handelsregisternummer/CVR 46 72 47 12), Fussingsvej 8, 8700 Horsens, Dänemark."
+        ]
+      },
+      {
+        "heading": "Welche Daten wir erheben",
+        "paragraphs": [
+          "Diese Website ist eine statische Seite ohne Benutzerkonten, Login oder Zahlungsabwicklung. Wir erheben personenbezogene Daten nur, wenn Sie sie uns aktiv mitteilen.",
+          "Wenn Sie das Kontaktformular ausfüllen, öffnet sich Ihr eigenes E-Mail-Programm mit einer vorausgefüllten, an uns adressierten Nachricht. Name, E-Mail-Adresse und Nachricht werden dabei nicht an einen Server von NordicEmergency gesendet – wir erhalten die Angaben erst, wenn Sie die Nachricht in Ihrem eigenen E-Mail-Programm tatsächlich absenden."
+        ]
+      },
+      {
+        "heading": "Cookies und lokaler Speicher",
+        "paragraphs": [
+          "Wir verwenden keine Cookies und keine Analyse- oder Tracking-Tools von Drittanbietern.",
+          "Die Website speichert zwei optionale Einstellungen im lokalen Speicher Ihres Browsers (localStorage): Ihre gewählte Sprache und Ihr gewähltes helles oder dunkles Design. Diese Angaben verlassen Ihr Gerät nie und dienen ausschließlich dazu, Ihre Einstellungen bei Ihrem nächsten Besuch wiederzuerkennen."
+        ]
+      },
+      {
+        "heading": "Hosting und Drittanbieter",
+        "paragraphs": [
+          "Die Website wird über GitHub Pages (GitHub, Inc.) gehostet. Wie bei den meisten Websites erfasst der Hosting-Anbieter dabei in der Regel Standard-Server-Logdaten wie IP-Adresse, Browsertyp und Zugriffszeitpunkt zu Betriebs- und Sicherheitszwecken. Wir haben keinen Zugriff auf diese Protokolle und verarbeiten sie nicht selbst.",
+          "Einige Seiten verlinken zu LinkedIn und Discord. Wenn Sie einem dieser Links folgen, gilt für die Nutzung dieser Dienste die jeweils eigene Datenschutzerklärung."
+        ]
+      },
+      {
+        "heading": "Speicherdauer",
+        "paragraphs": [
+          "Da das Kontaktformular keine Daten an uns überträgt, speichern wir keine personenbezogenen Daten aus Ihrem Besuch der Website. Schreiben Sie uns direkt per E-Mail, bewahren wir diese Korrespondenz so lange auf, wie es zur Bearbeitung und Nachverfolgung Ihrer Anfrage erforderlich ist."
+        ]
+      },
+      {
+        "heading": "Ihre Rechte",
+        "paragraphs": [
+          "Nach der Datenschutz-Grundverordnung (DSGVO) stehen Ihnen verschiedene Rechte zu, die Sie jederzeit durch Kontaktaufnahme mit uns geltend machen können:"
+        ],
+        "items": [
+          "Recht auf Auskunft über die von uns verarbeiteten Daten",
+          "Recht auf Berichtigung unrichtiger Daten",
+          "Recht auf Löschung Ihrer Daten",
+          "Recht auf Einschränkung der Verarbeitung",
+          "Recht auf Datenübertragbarkeit",
+          "Recht auf Widerspruch gegen die Verarbeitung"
+        ]
+      },
+      {
+        "heading": "Beschwerde",
+        "paragraphs": [
+          "Sie haben jederzeit das Recht, sich bei der dänischen Datenschutzbehörde Datatilsynet (datatilsynet.dk) zu beschweren, wenn Sie mit der Art und Weise, wie wir Ihre personenbezogenen Daten verarbeiten, nicht einverstanden sind."
+        ]
+      },
+      {
+        "heading": "Änderungen dieser Erklärung",
+        "paragraphs": [
+          "Wir aktualisieren diese Erklärung, sobald sich unsere Datenverarbeitung ändert. Die jeweils aktuelle Fassung finden Sie stets auf dieser Seite, das Datum der letzten Aktualisierung steht oben."
+        ]
+      }
+    ],
+    "contact_heading": "Kontakt",
+    "contact_text": "Bei Fragen zu dieser Datenschutzerklärung oder wenn Sie Ihre Rechte geltend machen möchten, schreiben Sie uns gerne an"
   }
 }

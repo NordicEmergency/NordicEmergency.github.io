@@ -105,5 +105,78 @@
       "message_placeholder": "Skriv meldingen din her...",
       "submit": "Send melding"
     }
+  },
+  "footer": {
+    "privacy": "Personvern"
+  },
+  "privacy": {
+    "meta_title": "Personvernerklæring – NordicEmergency",
+    "heading": "Personvernerklæring",
+    "intro": "Slik behandler vi personopplysninger når du besøker nordicemergency.dk.",
+    "last_updated": "Sist oppdatert: 8. september 2026",
+    "back_home": "← Tilbake til forsiden",
+    "sections": [
+      {
+        "heading": "Behandlingsansvarlig",
+        "paragraphs": [
+          "Nordic Emergency ApS (dansk organisasjonsnummer/CVR 46 72 47 12), Fussingsvej 8, 8700 Horsens, Danmark, er behandlingsansvarlig for personopplysningene som er beskrevet i denne erklæringen."
+        ]
+      },
+      {
+        "heading": "Hvilke opplysninger vi samler inn",
+        "paragraphs": [
+          "Denne nettsiden er en statisk side uten brukerkontoer, innlogging eller betalingsløsning. Vi samler kun inn personopplysninger når du selv velger å gi dem til oss.",
+          "Når du fyller ut kontaktskjemaet, åpnes din egen e-postklient med en forhåndsutfylt melding stilet til oss. Navn, e-post og melding sendes ikke til en server hos NordicEmergency – vi mottar opplysningene først når du selv trykker send i din egen e-postklient."
+        ]
+      },
+      {
+        "heading": "Cookies og lokal lagring",
+        "paragraphs": [
+          "Vi bruker ikke informasjonskapsler (cookies), og vi bruker ingen tredjeparts analyse- eller sporingsverktøy.",
+          "Nettsiden lagrer to valgfrie innstillinger i nettleserens lokale lager (localStorage): valgt språk og valgt lyst eller mørkt tema. Disse opplysningene forlater aldri din enhet og brukes utelukkende til å huske preferansene dine neste gang du besøker siden."
+        ]
+      },
+      {
+        "heading": "Hosting og tredjeparter",
+        "paragraphs": [
+          "Nettsiden driftes via GitHub Pages (GitHub, Inc.). Som ved besøk på de fleste nettsider registrerer hostingleverandøren normalt standard serverloggdata som IP-adresse, nettlesertype og tidspunkt for besøket, av hensyn til drift og sikkerhet. Vi har ikke tilgang til disse loggene og behandler dem ikke selv.",
+          "Enkelte sider lenker videre til LinkedIn og Discord. Følger du en av disse lenkene, er det tjenestens egen personvernerklæring som gjelder for din bruk av den."
+        ]
+      },
+      {
+        "heading": "Lagringstid",
+        "paragraphs": [
+          "Siden kontaktskjemaet ikke sender data til oss, lagrer vi ikke personopplysninger fra ditt besøk på nettsiden. Skriver du til oss direkte på e-post, oppbevarer vi korrespondansen så lenge det er nødvendig for å besvare og følge opp henvendelsen din."
+        ]
+      },
+      {
+        "heading": "Dine rettigheter",
+        "paragraphs": [
+          "Etter personvernforordningen (GDPR) har du en rekke rettigheter, som du når som helst kan benytte ved å kontakte oss:"
+        ],
+        "items": [
+          "Rett til innsyn i opplysningene vi behandler om deg",
+          "Rett til retting av uriktige opplysninger",
+          "Rett til sletting av opplysningene dine",
+          "Rett til begrensning av behandlingen",
+          "Rett til dataportabilitet",
+          "Rett til å protestere mot behandlingen"
+        ]
+      },
+      {
+        "heading": "Klage",
+        "paragraphs": [
+          "Du har alltid rett til å klage til det danske Datatilsynet (datatilsynet.dk), dersom du er misfornøyd med måten vi behandler personopplysningene dine på."
+        ]
+      },
+      {
+        "heading": "Endringer i denne erklæringen",
+        "paragraphs": [
+          "Vi oppdaterer denne erklæringen når behandlingen av opplysninger endrer seg. Den nyeste versjonen er alltid tilgjengelig på denne siden, med oppdateringsdato øverst."
+        ]
+      }
+    ],
+    "contact_heading": "Kontakt",
+    "contact_text": "Har du spørsmål til denne personvernerklæringen, eller ønsker å benytte deg av rettighetene dine? Skriv til oss på"
   }
 }
