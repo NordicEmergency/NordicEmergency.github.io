@@ -21,10 +21,9 @@
       .join("");
 
     if (privacy.contact_heading) {
-      var email = (site && site.email) || "info@nordicemergency.dk";
-      var emailLink = email
-        ? ' <a id="privacy-contact-email" href="mailto:' + email + '">' + email + "</a>"
-        : "";
+      var email = (site && site.privacyEmail) || "legal@nordicemergency.dk";
+      var emailLink =
+        ' <a id="privacy-contact-email" href="mailto:' + email + '">' + email + "</a>";
       html +=
         '<div class="legal-section"><h2>' + privacy.contact_heading + "</h2><p>" +
         (privacy.contact_text || "") + emailLink + "</p></div>";
