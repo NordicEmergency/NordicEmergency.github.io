@@ -20,8 +20,8 @@
       })
       .join("");
 
-    if (privacy.contact_heading) {
-      var email = (site && site.privacyEmail) || "legal@nordicemergency.dk";
+    if (privacy.contact_heading && site && site.privacyEmail) {
+      var email = site.privacyEmail;
       var emailLink =
         ' <a id="privacy-contact-email" href="mailto:' + email + '">' + email + "</a>";
       html +=
