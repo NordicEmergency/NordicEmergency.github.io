@@ -610,6 +610,13 @@ h1, h2, h3 { color: var(--color-primary-dark); line-height: 1.2; }
 
 .footer-inner a:hover { text-decoration: underline; }
 
+.footer-icon-link {
+  display: inline-flex;
+  align-items: center;
+}
+
+.footer-icon-link:hover { text-decoration: none; opacity: 0.75; }
+
 @media (max-width: 720px) {
   .header-inner { flex-wrap: wrap; }
   .site-nav ul { gap: 14px; flex-wrap: wrap; }
