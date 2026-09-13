@@ -178,5 +178,95 @@
     ],
     "contact_heading": "Kontakt",
     "contact_text": "Har du frågor om den här integritetspolicyn, eller vill använda dina rättigheter? Skriv gärna till oss på"
+  },
+  "terms": {
+    "meta_title": "Allmänna villkor – NordicEmergency",
+    "heading": "Allmänna villkor",
+    "intro": "Villkoren för organisationers och användares åtkomst till och användning av NordicEmergency-portalen och den tillhörande VR-appen.",
+    "last_updated": "Senast uppdaterad: 13 september 2026",
+    "sections": [
+      {
+        "heading": "Parterna och godkännande av villkoren",
+        "paragraphs": [
+          "Dessa villkor gäller mellan Nordic Emergency ApS (”NordicEmergency”, ”vi”) och den organisation som har tecknat åtkomst till portalen (”Organisationen”), samt de enskilda användare som Organisationen skapar under sitt konto (”Användare”). Genom att skapa ett organisationskonto, eller genom att logga in som Användare, godkänner du dessa villkor för egen del och, där det är relevant, för Organisationens räkning."
+        ]
+      },
+      {
+        "heading": "Om portalen och VR-appen",
+        "paragraphs": [
+          "Portalen är en administrations- och lärplattform (LMS) där Organisationen kan skapa och administrera Användare, tilldela åtkomst till den tillhörande VR-appen samt följa Användarnas framsteg och certifikat. Själva utbildningen i första hjälpen och beredskap genomförs i VR-appen, som Användaren får åtkomst till via den licens Organisationen tilldelar i portalen."
+        ]
+      },
+      {
+        "heading": "Konton, inloggningsuppgifter och användarlicenser",
+        "paragraphs": [
+          "Organisationen skapar ett organisationskonto och kan därefter skapa och administrera användarkonton för sina anställda. Organisationen ansvarar för att de uppgifter som lämnas vid kontoskapandet är korrekta och hålls uppdaterade.",
+          "Åtkomst till VR-appen sker via ett antal användarlicenser (platser) som följer av Organisationens abonnemang. Organisationen tilldelar platser till namngivna Användare via portalen och kan när som helst återkalla en plats och tilldela den till en annan Användare. Antalet samtidigt tilldelade platser får inte överstiga det antal Organisationen har abonnerat på.",
+          "Användare ansvarar för att hålla sitt lösenord och andra inloggningsuppgifter konfidentiella och får inte dela dem med andra. Misstanke om obehörig åtkomst till ett konto eller VR-appen ska omedelbart anmälas till Organisationens administratör eller till oss."
+        ]
+      },
+      {
+        "heading": "Abonnemang och betalning",
+        "paragraphs": [
+          "Åtkomst till portalen och VR-appen förutsätter ett giltigt abonnemang tecknat av Organisationen, inklusive det antal användarlicenser (platser) Organisationen har abonnerat på. Priser, betalningsvillkor och abonnemangsperiod framgår av det avtal Organisationen har ingått med oss. Vid utebliven betalning kan vi stänga av Organisationens och dess Användares åtkomst till portalen och VR-appen tills förhållandet har åtgärdats."
+        ]
+      },
+      {
+        "heading": "Organisationens ansvar",
+        "paragraphs": [
+          "Organisationen ansvarar för att Användarna följer dessa villkor och för all aktivitet som sker under Organisationens konto, inklusive tilldelning av användarlicenser. Organisationen ska säkerställa att endast behöriga anställda får åtkomst och ska återkalla åtkomsten för anställda som inte längre ska ha den."
+        ]
+      },
+      {
+        "heading": "Tillåten användning",
+        "paragraphs": [
+          "Portalen och VR-appen får endast användas för sitt avsedda syfte, nämligen administration av och utbildning i första hjälpen och beredskap. Du får inte dela ditt konto eller din användarlicens med andra, försöka kringgå åtkomstkontroller eller säkerhetsåtgärder, göra reverse engineering av portalen eller VR-appen, eller på annat sätt använda dem på ett sätt som är olagligt eller skadar oss, andra Organisationer eller deras Användare."
+        ]
+      },
+      {
+        "heading": "Immateriella rättigheter",
+        "paragraphs": [
+          "Portalen och VR-appen, inklusive kursinnehåll, VR-upplevelser, programvara och design, tillhör Nordic Emergency ApS eller våra licensgivare och skyddas av upphovsrätt och annan immaterialrätt. Organisationen och dess Användare ges en begränsad, icke-exklusiv och icke-överlåtbar rätt att använda portalen och VR-appen under abonnemangsperioden för dess avsedda syfte. Data som Organisationen själv för in i portalen (”Kunddata”) förblir Organisationens egendom."
+        ]
+      },
+      {
+        "heading": "Personuppgifter",
+        "paragraphs": [
+          "Vår behandling av personuppgifter om Användare beskrivs i vår integritetspolicy. Har Organisationen ingått ett separat personuppgiftsbiträdesavtal med oss, gäller det avtalet för vår behandling av personuppgifter på Organisationens vägnar."
+        ]
+      },
+      {
+        "heading": "Ansvarsfriskrivning",
+        "paragraphs": [
+          "Portalen och VR-appen tillhandahålls ”i befintligt skick” och ”som tillgängliga”, utan garanti för oavbruten eller felfri drift. Utbildning som genomförs i VR-appen kompletterar, men ersätter inte, certifierad utbildning i första hjälpen, lagstadgad beredskapsträning eller akut medicinsk hjälp. Vid en nödsituation ska larmcentralen alltid kontaktas."
+        ]
+      },
+      {
+        "heading": "Ansvarsbegränsning",
+        "paragraphs": [
+          "I den utsträckning det är tillåtet enligt tillämplig lag är Nordic Emergency ApS totala ansvar gentemot Organisationen begränsat till det belopp Organisationen har betalat för abonnemanget under de senaste 12 månaderna, och vi ansvarar inte för indirekta skador eller följdskador."
+        ]
+      },
+      {
+        "heading": "Uppsägning",
+        "paragraphs": [
+          "Organisationen kan säga upp sitt abonnemang i enlighet med det ingångna avtalet. Vi kan stänga av eller avsluta åtkomsten till portalen och VR-appen vid väsentligt brott mot dessa villkor, inklusive utebliven betalning. Vid abonnemangets upphörande stängs åtkomsten för Organisationens Användare, och radering eller utlämnande av Kunddata sker i enlighet med det ingångna avtalet."
+        ]
+      },
+      {
+        "heading": "Ändringar av dessa villkor",
+        "paragraphs": [
+          "Vi kan uppdatera dessa villkor löpande, till exempel till följd av ändringar i portalen, VR-appen eller tillämplig lagstiftning. Väsentliga ändringar meddelas till Organisationens administratör. Den senaste versionen finns alltid på den här sidan, med uppdateringsdatum överst."
+        ]
+      },
+      {
+        "heading": "Tillämplig lag och forum",
+        "paragraphs": [
+          "Dessa villkor regleras av dansk rätt. Tvister som uppstår ur eller i samband med dessa villkor ska avgöras av danska domstolar, med Retten i Horsens som forum, om inte annat följer av tvingande lagstiftning."
+        ]
+      }
+    ],
+    "contact_heading": "Kontakt",
+    "contact_text": "Har du frågor om dessa villkor? Skriv gärna till oss på"
   }
 }

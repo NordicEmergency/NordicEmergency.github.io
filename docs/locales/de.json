@@ -178,5 +178,95 @@
     ],
     "contact_heading": "Kontakt",
     "contact_text": "Bei Fragen zu dieser Datenschutzerklärung oder wenn Sie Ihre Rechte geltend machen möchten, schreiben Sie uns gerne an"
+  },
+  "terms": {
+    "meta_title": "Allgemeine Geschäftsbedingungen – NordicEmergency",
+    "heading": "Allgemeine Geschäftsbedingungen",
+    "intro": "Die Bedingungen für den Zugang von Organisationen und Nutzern zum NordicEmergency-Portal und der zugehörigen VR-App sowie deren Nutzung.",
+    "last_updated": "Zuletzt aktualisiert: 13. September 2026",
+    "sections": [
+      {
+        "heading": "Die Parteien und Annahme dieser Bedingungen",
+        "paragraphs": [
+          "Diese Bedingungen gelten zwischen der Nordic Emergency ApS („NordicEmergency“, „wir“) und der Organisation, die den Zugang zum Portal abonniert hat (die „Organisation“), sowie den einzelnen Nutzern, die die Organisation unter ihrem Konto anlegt („Nutzer“). Mit der Erstellung eines Organisationskontos oder der Anmeldung als Nutzer akzeptieren Sie diese Bedingungen für sich selbst und, soweit zutreffend, im Namen der Organisation."
+        ]
+      },
+      {
+        "heading": "Über das Portal und die VR-App",
+        "paragraphs": [
+          "Das Portal ist eine Verwaltungs- und Lernplattform (LMS), über die die Organisation Nutzer anlegen und verwalten, Zugang zur zugehörigen VR-App zuweisen sowie den Fortschritt und die Zertifikate der Nutzer verfolgen kann. Die eigentliche Schulung in Erster Hilfe und Notfallvorsorge findet in der VR-App statt, zu der der Nutzer über die von der Organisation im Portal zugewiesene Lizenz Zugang erhält."
+        ]
+      },
+      {
+        "heading": "Konten, Zugangsdaten und Nutzerlizenzen",
+        "paragraphs": [
+          "Die Organisation erstellt ein Organisationskonto und kann anschließend Benutzerkonten für ihre Mitarbeitenden anlegen und verwalten. Die Organisation ist dafür verantwortlich, dass die bei der Kontoerstellung angegebenen Informationen korrekt sind und aktuell gehalten werden.",
+          "Der Zugang zur VR-App erfolgt über eine Anzahl von Nutzerlizenzen (Seats), die sich aus dem Abonnement der Organisation ergibt. Die Organisation weist Seats über das Portal namentlich benannten Nutzern zu und kann einen Seat jederzeit widerrufen und einem anderen Nutzer zuweisen. Die Anzahl gleichzeitig zugewiesener Seats darf die Anzahl der von der Organisation abonnierten Seats nicht überschreiten.",
+          "Nutzer sind dafür verantwortlich, ihr Passwort und andere Zugangsdaten vertraulich zu behandeln und nicht an Dritte weiterzugeben. Der Verdacht auf unbefugten Zugriff auf ein Konto oder die VR-App ist unverzüglich dem Administrator der Organisation oder uns zu melden."
+        ]
+      },
+      {
+        "heading": "Abonnement und Zahlung",
+        "paragraphs": [
+          "Der Zugang zum Portal und zur VR-App setzt ein gültiges Abonnement der Organisation voraus, einschließlich der Anzahl der von der Organisation abonnierten Nutzerlizenzen (Seats). Preise, Zahlungsbedingungen und Abonnementlaufzeit ergeben sich aus der mit uns geschlossenen Vereinbarung. Bei Zahlungsverzug können wir den Zugang der Organisation und ihrer Nutzer zum Portal und zur VR-App aussetzen, bis die Angelegenheit geklärt ist."
+        ]
+      },
+      {
+        "heading": "Verantwortlichkeiten der Organisation",
+        "paragraphs": [
+          "Die Organisation ist verantwortlich für die Einhaltung dieser Bedingungen durch ihre Nutzer sowie für sämtliche Aktivitäten, die unter dem Konto der Organisation stattfinden, einschließlich der Zuweisung von Nutzerlizenzen. Die Organisation muss sicherstellen, dass nur autorisierte Mitarbeitende Zugang erhalten, und den Zugang für Mitarbeitende widerrufen, die ihn nicht mehr haben sollen."
+        ]
+      },
+      {
+        "heading": "Zulässige Nutzung",
+        "paragraphs": [
+          "Das Portal und die VR-App dürfen nur zu ihrem vorgesehenen Zweck genutzt werden, nämlich zur Verwaltung von und Schulung in Erster Hilfe und Notfallvorsorge. Sie dürfen Ihr Konto oder Ihre Nutzerlizenz nicht mit anderen teilen, keine Zugangskontrollen oder Sicherheitsmaßnahmen umgehen, das Portal oder die VR-App nicht zurückentwickeln (Reverse Engineering) oder sie anderweitig in einer Weise nutzen, die rechtswidrig ist oder uns, anderen Organisationen oder deren Nutzern schadet."
+        ]
+      },
+      {
+        "heading": "Geistiges Eigentum",
+        "paragraphs": [
+          "Das Portal und die VR-App, einschließlich Kursinhalten, VR-Erlebnissen, Software und Design, gehören der Nordic Emergency ApS oder unseren Lizenzgebern und sind urheberrechtlich sowie durch sonstiges Recht des geistigen Eigentums geschützt. Der Organisation und ihren Nutzern wird ein beschränktes, nicht ausschließliches und nicht übertragbares Recht eingeräumt, das Portal und die VR-App während der Abonnementlaufzeit zum vorgesehenen Zweck zu nutzen. Daten, die die Organisation selbst in das Portal eingibt („Kundendaten“), bleiben Eigentum der Organisation."
+        ]
+      },
+      {
+        "heading": "Personenbezogene Daten",
+        "paragraphs": [
+          "Unsere Verarbeitung personenbezogener Daten von Nutzern ist in unserer Datenschutzerklärung beschrieben. Hat die Organisation mit uns eine gesonderte Auftragsverarbeitungsvereinbarung geschlossen, gilt diese für unsere Verarbeitung personenbezogener Daten im Auftrag der Organisation."
+        ]
+      },
+      {
+        "heading": "Haftungsausschluss",
+        "paragraphs": [
+          "Das Portal und die VR-App werden „wie besehen“ und „wie verfügbar“ bereitgestellt, ohne Gewährleistung eines unterbrechungs- oder fehlerfreien Betriebs. In der VR-App absolvierte Schulungen ergänzen zertifizierte Erste-Hilfe-Ausbildungen, gesetzlich vorgeschriebene Notfallschulungen oder medizinische Notfallhilfe, ersetzen diese jedoch nicht. Wenden Sie sich im Notfall stets an den Rettungsdienst."
+        ]
+      },
+      {
+        "heading": "Haftungsbeschränkung",
+        "paragraphs": [
+          "Soweit gesetzlich zulässig, ist die Gesamthaftung der Nordic Emergency ApS gegenüber der Organisation auf den Betrag beschränkt, den die Organisation in den vorangegangenen 12 Monaten für das Abonnement gezahlt hat, und wir haften nicht für mittelbare Schäden oder Folgeschäden."
+        ]
+      },
+      {
+        "heading": "Kündigung",
+        "paragraphs": [
+          "Die Organisation kann ihr Abonnement gemäß der geschlossenen Vereinbarung kündigen. Wir können den Zugang zum Portal und zur VR-App bei wesentlicher Verletzung dieser Bedingungen, einschließlich Zahlungsverzug, aussetzen oder beenden. Bei Beendigung des Abonnements wird der Zugang für die Nutzer der Organisation gesperrt; die Löschung oder Herausgabe von Kundendaten erfolgt gemäß der geschlossenen Vereinbarung."
+        ]
+      },
+      {
+        "heading": "Änderungen dieser Bedingungen",
+        "paragraphs": [
+          "Wir können diese Bedingungen von Zeit zu Zeit aktualisieren, beispielsweise aufgrund von Änderungen am Portal, an der VR-App oder der geltenden Rechtslage. Wesentliche Änderungen werden dem Administrator der Organisation mitgeteilt. Die jeweils aktuelle Fassung finden Sie stets auf dieser Seite, das Datum der letzten Aktualisierung steht oben."
+        ]
+      },
+      {
+        "heading": "Anwendbares Recht und Gerichtsstand",
+        "paragraphs": [
+          "Diese Bedingungen unterliegen dänischem Recht. Streitigkeiten, die sich aus oder im Zusammenhang mit diesen Bedingungen ergeben, werden von den dänischen Gerichten entschieden, mit dem Gericht Horsens (Retten i Horsens) als Gerichtsstand, soweit zwingendes Recht nichts anderes vorschreibt."
+        ]
+      }
+    ],
+    "contact_heading": "Kontakt",
+    "contact_text": "Bei Fragen zu diesen Bedingungen schreiben Sie uns gerne an"
   }
 }

@@ -178,5 +178,95 @@
     ],
     "contact_heading": "Contact",
     "contact_text": "If you have questions about this privacy policy, or want to exercise your rights, feel free to email us at"
+  },
+  "terms": {
+    "meta_title": "Terms & Conditions — NordicEmergency",
+    "heading": "Terms & Conditions",
+    "intro": "The terms for organisations' and users' access to and use of the NordicEmergency portal and the associated VR app.",
+    "last_updated": "Last updated: 13 September 2026",
+    "sections": [
+      {
+        "heading": "The parties and acceptance of these terms",
+        "paragraphs": [
+          "These terms apply between Nordic Emergency ApS (“NordicEmergency”, “we”) and the organisation that has subscribed for access to the portal (the “Organisation”), as well as the individual users the Organisation creates under its account (“Users”). By creating an organisation account, or by logging in as a User, you accept these terms on your own behalf and, where applicable, on behalf of the Organisation."
+        ]
+      },
+      {
+        "heading": "About the portal and the VR app",
+        "paragraphs": [
+          "The portal is an administration and learning platform (LMS) from which the Organisation can create and manage Users, assign access to the associated VR app, and track Users' progress and certificates. The actual training in first aid and emergency response takes place in the VR app, which the User accesses through the licence the Organisation assigns in the portal."
+        ]
+      },
+      {
+        "heading": "Accounts, credentials and user licences",
+        "paragraphs": [
+          "The Organisation creates an organisation account and can then create and manage user accounts for its employees. The Organisation is responsible for ensuring that the information provided on account creation is correct and kept up to date.",
+          "Access to the VR app is provided through a number of user licences (seats) determined by the Organisation's subscription. The Organisation assigns seats to named Users through the portal and may at any time revoke a seat and assign it to a different User. The number of seats assigned at any one time must not exceed the number the Organisation has subscribed for.",
+          "Users are responsible for keeping their password and other credentials confidential and must not share them with others. Suspected unauthorised access to an account or the VR app must be reported immediately to the Organisation's administrator or to us."
+        ]
+      },
+      {
+        "heading": "Subscription and payment",
+        "paragraphs": [
+          "Access to the portal and the VR app requires a valid subscription taken out by the Organisation, including the number of user licences (seats) the Organisation has subscribed for. Pricing, payment terms and the subscription period are set out in the agreement the Organisation has entered into with us. In the event of non-payment, we may suspend the Organisation's and its Users' access to the portal and the VR app until the matter has been resolved."
+        ]
+      },
+      {
+        "heading": "The Organisation's responsibilities",
+        "paragraphs": [
+          "The Organisation is responsible for its Users' compliance with these terms and for all activity that takes place under the Organisation's account, including the assignment of user licences. The Organisation must ensure that only authorised employees are given access, and must revoke access for employees who should no longer have it."
+        ]
+      },
+      {
+        "heading": "Permitted use",
+        "paragraphs": [
+          "The portal and the VR app may only be used for their intended purpose, namely administering and training in first aid and emergency response. You must not share your account or your user licence with others, attempt to circumvent access controls or security measures, reverse engineer the portal or the VR app, or otherwise use them in a way that is unlawful or harmful to us, other Organisations or their Users."
+        ]
+      },
+      {
+        "heading": "Intellectual property",
+        "paragraphs": [
+          "The portal and the VR app, including course content, VR experiences, software and design, belong to Nordic Emergency ApS or our licensors and are protected by copyright and other intellectual property law. The Organisation and its Users are granted a limited, non-exclusive and non-transferable right to use the portal and the VR app during the subscription period for their intended purpose. Data that the Organisation itself enters into the portal (“Customer Data”) remains the property of the Organisation."
+        ]
+      },
+      {
+        "heading": "Personal data",
+        "paragraphs": [
+          "Our processing of personal data about Users is described in our privacy policy. Where the Organisation has entered into a separate data processing agreement with us, that agreement governs our processing of personal data on the Organisation's behalf."
+        ]
+      },
+      {
+        "heading": "Disclaimer",
+        "paragraphs": [
+          "The portal and the VR app are provided “as is” and “as available”, without warranty of uninterrupted or error-free operation. Training completed in the VR app is a supplement to, and does not replace, certified first-aid training, statutory emergency preparedness training, or emergency medical assistance. In an emergency, always contact the emergency services."
+        ]
+      },
+      {
+        "heading": "Limitation of liability",
+        "paragraphs": [
+          "To the extent permitted by applicable law, Nordic Emergency ApS' total liability to the Organisation is limited to the amount the Organisation has paid for the subscription in the preceding 12 months, and we are not liable for any indirect or consequential loss."
+        ]
+      },
+      {
+        "heading": "Termination",
+        "paragraphs": [
+          "The Organisation may terminate its subscription in accordance with the agreement entered into. We may suspend or terminate access to the portal and the VR app in the event of a material breach of these terms, including non-payment. On termination of the subscription, access for the Organisation's Users is closed, and deletion or release of Customer Data takes place in accordance with the agreement entered into."
+        ]
+      },
+      {
+        "heading": "Changes to these terms",
+        "paragraphs": [
+          "We may update these terms from time to time, for example as a result of changes to the portal, the VR app, or applicable law. Material changes are notified to the Organisation's administrator. The latest version is always available on this page, with the update date shown at the top."
+        ]
+      },
+      {
+        "heading": "Governing law and jurisdiction",
+        "paragraphs": [
+          "These terms are governed by Danish law. Any disputes arising out of or relating to these terms shall be settled by the Danish courts, with the Court of Horsens (Retten i Horsens) as the venue, unless otherwise required by mandatory law."
+        ]
+      }
+    ],
+    "contact_heading": "Contact",
+    "contact_text": "If you have questions about these terms, feel free to email us at"
   }
 }
