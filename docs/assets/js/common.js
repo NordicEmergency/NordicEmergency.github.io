@@ -24,6 +24,13 @@ window.NE = (function () {
       var value = getByPath(dict, el.getAttribute("data-i18n"));
       if (typeof value === "string") el.textContent = value;
     });
+    document.querySelectorAll("[data-i18n-label]").forEach(function (el) {
+      var value = getByPath(dict, el.getAttribute("data-i18n-label"));
+      if (typeof value === "string") {
+        el.setAttribute("aria-label", value);
+        el.setAttribute("title", value);
+      }
+    });
   }
 
   function getStoredTheme() {
