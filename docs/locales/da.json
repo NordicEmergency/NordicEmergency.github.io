@@ -15,7 +15,7 @@
     "lead": "Vi udvikler VR-platforme, der gør det muligt at træne beslutninger, samarbejde og livreddende handlinger igen og igen – i realistiske scenarier, uden risiko og uden at gå på kompromis med den kliniske virkelighed."
   },
   "solutions": {
-    "intro": "NordicEmergency står bag to VR-platforme, der begge er bygget på den samme grundtanke: de bedste beslutninger i en krisesituation er dem, du allerede har trænet. Uanset om det er en fuldskala beredskabsøvelse med flere myndigheder eller genoplivning af en bevidstløs patient, giver vores platforme et sikkert miljø til at øve, fejle og blive bedre – igen og igen.",
+    "intro": "Nordic Emergency Solutions står bag to VR-platforme, der begge er bygget på den samme grundtanke: de bedste beslutninger i en krisesituation er dem, du allerede har trænet. Uanset om det er en fuldskala beredskabsøvelse med flere myndigheder eller genoplivning af en bevidstløs patient, giver vores platforme et sikkert miljø til at øve, fejle og blive bedre – igen og igen.",
     "items": [
       {
         "title": "Katastrofe- og beredskabstræning",
@@ -111,7 +111,7 @@
     "privacy": "Privatlivspolitik"
   },
   "privacy": {
-    "meta_title": "Privatlivspolitik – NordicEmergency",
+    "meta_title": "Privatlivspolitik – Nordic Emergency Solutions",
     "heading": "Privatlivspolitik",
     "intro": "Sådan behandler vi personoplysninger, når du besøger nordicemergency.dk.",
     "last_updated": "Sidst opdateret: 8. september 2026",
@@ -127,7 +127,7 @@
         "heading": "Hvilke oplysninger indsamler vi",
         "paragraphs": [
           "Denne hjemmeside er en statisk side uden brugerkonti, login eller betalingsløsning. Vi indsamler kun personoplysninger, når du selv vælger at give dem til os.",
-          "Når du udfylder kontaktformularen, åbner den din egen e-mailklient med en foraudfyldt besked stilet til os. Navn, e-mail og besked sendes ikke til en server hos NordicEmergency – vi modtager først oplysningerne, når du selv trykker send i din e-mailklient."
+          "Når du udfylder kontaktformularen, åbner den din egen e-mailklient med en foraudfyldt besked stilet til os. Navn, e-mail og besked sendes ikke til en server hos Nordic Emergency Solutions – vi modtager først oplysningerne, når du selv trykker send i din e-mailklient."
         ]
       },
       {
@@ -181,15 +181,15 @@
     "contact_text": "Har du spørgsmål til denne privatlivspolitik, eller ønsker du at gøre brug af dine rettigheder? Skriv til os på"
   },
   "terms": {
-    "meta_title": "Vilkår og betingelser – NordicEmergency",
+    "meta_title": "Vilkår og betingelser – Nordic Emergency Solutions",
     "heading": "Vilkår og betingelser",
-    "intro": "Vilkårene for organisationers og brugeres adgang til og brug af NordicEmergency-portalen og den tilhørende VR-app.",
+    "intro": "Vilkårene for organisationers og brugeres adgang til og brug af Nordic Emergency Solutions-portalen og den tilhørende VR-app.",
     "last_updated": "Sidst opdateret: 13. september 2026",
     "sections": [
       {
         "heading": "Parterne og accept af vilkårene",
         "paragraphs": [
-          "Disse vilkår gælder mellem Nordic Emergency Solutions ApS (“NordicEmergency”, “vi”) og den organisation, der har tegnet adgang til portalen (“Organisationen”), samt de individuelle brugere, Organisationen opretter under sin konto (“Brugere”). Ved at oprette en organisationskonto, eller ved at logge ind som Bruger, accepterer du disse vilkår på egne vegne og, hvis relevant, på vegne af Organisationen."
+          "Disse vilkår gælder mellem Nordic Emergency Solutions ApS (“Nordic Emergency Solutions”, “vi”) og den organisation, der har tegnet adgang til portalen (“Organisationen”), samt de individuelle brugere, Organisationen opretter under sin konto (“Brugere”). Ved at oprette en organisationskonto, eller ved at logge ind som Bruger, accepterer du disse vilkår på egne vegne og, hvis relevant, på vegne af Organisationen."
         ]
       },
       {
