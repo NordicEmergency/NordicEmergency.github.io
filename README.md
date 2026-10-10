@@ -1,6 +1,6 @@
 # NordicEmergency.com
 
-Website for Nordic Emergency ApS — VR platforms for disaster/emergency response training and first aid/CPR simulation.
+Website for Nordic Emergency Solutions ApS — VR platforms for disaster/emergency response training and first aid/CPR simulation.
 
 Single-page site, hosted on GitHub Pages, content-driven via JSON. Supports five languages (DA, EN, DE, NO, SV) via small flags in the header.
 
