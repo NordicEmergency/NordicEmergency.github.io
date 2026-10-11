@@ -313,7 +313,6 @@ a:hover { text-decoration: underline; }
   color: var(--muted);
   font-size: 1.1875rem;
   line-height: 1.45;
-  max-width: 720px;
   text-wrap: pretty;
 }
 
