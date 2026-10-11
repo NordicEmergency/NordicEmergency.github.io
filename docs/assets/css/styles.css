@@ -764,6 +764,20 @@ a.customer-logo:hover { text-decoration: none; color: var(--text); }
   .form-row { grid-template-columns: 1fr; gap: 0; }
 }
 
+/* Scroll reveal (NE.reveal in common.js). Timings are Apple's StaggeredFadeIn:
+   30px rise over .7s, fade over .9s. Only elements the script marks are hidden. */
+[data-reveal] {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity .9s var(--ease), transform .7s var(--ease);
+}
+
+[data-reveal].is-in { opacity: 1; transform: none; }
+
+/* Gallery photos then drift in slowly, like the battery shot on apple.com. */
+.gallery-item img { transition: transform 4s ease-in-out; }
+.gallery-item.is-zoomed img { transform: scale(1.06); }
+
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
   *, *::before, *::after {
