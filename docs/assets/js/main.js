@@ -227,6 +227,7 @@
         renderTeam(dict, teamData);
         renderArticles(lang, articleData);
         renderContactForm(dict);
+        NE.reveal();
         NE.renderLangSwitcher(config, lang, "assets/flags/", function (newLang) {
           NE.storeLang(newLang);
           NE.setLangInUrl(newLang);
@@ -284,6 +285,7 @@
 
     initTabs();
     NE.initThemeToggle();
+    NE.reveal();
 
     Promise.all([
       fetchJSON("locales/config.json", { default: "en", languages: [{ code: "en", flag: "gb", label: "English" }] }),
