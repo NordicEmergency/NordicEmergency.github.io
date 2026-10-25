@@ -339,6 +339,8 @@ a:hover { text-decoration: underline; }
   border-radius: 22px;
   box-shadow: var(--card-shadow);
   padding: 32px;
+  display: flex;
+  flex-direction: column;
 }
 
 .card h3 {
@@ -401,6 +403,21 @@ a:hover { text-decoration: underline; }
 
 .card ul li { margin-bottom: 6px; }
 .card ul li:last-child { margin-bottom: 0; }
+
+/* Brochure link, pinned to the bottom so it lines up across cards in a row. */
+.card-brochure {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  align-self: flex-start;
+  margin-top: auto;
+  padding-top: 20px;
+  font-size: 0.9375rem;
+  font-weight: 600;
+}
+
+.card-brochure svg { width: 18px; height: 18px; flex-shrink: 0; }
+.card-brochure:hover { text-decoration: underline; }
 
 /* Gallery */
 #gallery { padding-top: 0; }

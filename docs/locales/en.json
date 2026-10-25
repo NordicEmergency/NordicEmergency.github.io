@@ -16,6 +16,7 @@
   },
   "solutions": {
     "intro": "Nordic Emergency Solutions develops two VR platforms built around the same core idea: the best decisions in a crisis are the ones you've already practised. Whether it's a full-scale multi-agency emergency exercise or resuscitating an unconscious patient, our platforms give you a safe space to practise, fail and improve — again and again.",
+    "brochure_label": "Download brochure (PDF, Danish)",
     "items": [
       {
         "title": "Disaster & Emergency Response Training",
@@ -26,7 +27,8 @@
           "Trains coordination across fire services, police, authorities and rescue services",
           "Repeatable training without risk or logistics"
         ],
-        "icon": "speaking"
+        "icon": "speaking",
+        "brochure": "assets/files/NES_Online_brochure.pdf"
       },
       {
         "title": "First Aid & CPR Training",
@@ -37,7 +39,8 @@
           "Repeat the scenario until the response becomes automatic",
           "No equipment, no logistics — train whenever it suits you"
         ],
-        "icon": "heartbeat"
+        "icon": "heartbeat",
+        "brochure": "assets/files/NES_HLR_brochure.pdf"
       },
       {
         "title": "vis-à-vis – difficult conversations",
