@@ -41,6 +41,19 @@
         ],
         "icon": "heartbeat",
         "brochure": "assets/files/NES_HLR_brochure.pdf"
+      },
+      {
+        "title": "vis-à-vis – vanskelige samtaler",
+        "badge": "Beta",
+        "description": "Tren de vanskelige samtalene ansikt til ansikt med en AI-videokarakter – en bekymret pasient, en pårørende i sjokk eller en innbygger midt i en krise. Samtalen foregår som en direkte videosamtale, og etterpå blir den transkribert og evaluert mot casens kriterier, slik at du får en poengsum og konkrete tilbakemeldinger.",
+        "highlights": [
+          "Direkte videosamtale med en realistisk AI-karakter",
+          "Caser innen f.eks. helse, beredskap og krisekommunikasjon",
+          "Automatisk transkribering og evaluering mot casens kriterier",
+          "Poengsum og tilbakemelding etter hver samtale"
+        ],
+        "icon": "video",
+        "visibility": "hidden"
       }
     ]
   },

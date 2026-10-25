@@ -41,6 +41,19 @@
         ],
         "icon": "heartbeat",
         "brochure": "assets/files/NES_HLR_brochure.pdf"
+      },
+      {
+        "title": "vis-à-vis – schwierige Gespräche",
+        "badge": "Beta",
+        "description": "Trainieren Sie schwierige Gespräche von Angesicht zu Angesicht mit einer KI-Videofigur – einem besorgten Patienten, einem Angehörigen unter Schock oder einem Menschen mitten in einer Krise. Das Gespräch findet als Live-Videoanruf statt und wird anschließend transkribiert und anhand der Kriterien des Falls bewertet, sodass Sie eine Punktzahl und konkretes Feedback erhalten.",
+        "highlights": [
+          "Live-Videogespräch mit einer realistischen KI-Figur",
+          "Fälle z. B. aus Gesundheitswesen, Bevölkerungsschutz und Krisenkommunikation",
+          "Automatische Transkription und Bewertung anhand der Fallkriterien",
+          "Punktzahl und Feedback nach jedem Gespräch"
+        ],
+        "icon": "video",
+        "visibility": "hidden"
       }
     ]
   },
