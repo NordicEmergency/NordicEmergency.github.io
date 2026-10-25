@@ -16,6 +16,7 @@
   },
   "solutions": {
     "intro": "Bakom Nordic Emergency Solutions står två VR-plattformar byggda på samma grundtanke: de bästa besluten i en kris är de du redan har tränat på. Oavsett om det handlar om en fullskalig beredskapsövning med flera myndigheter eller att genomföra återupplivning av en medvetslös patient ger våra plattformar ett tryggt utrymme att öva, misslyckas och bli bättre – om och om igen.",
+    "brochure_label": "Ladda ner broschyr (PDF, danska)",
     "items": [
       {
         "title": "Katastrof- och beredskapsträning",
@@ -26,7 +27,8 @@
           "Tränar samarbete mellan räddningstjänst, polis, myndigheter och andra aktörer",
           "Upprepningsbar träning utan risk eller logistik"
         ],
-        "icon": "speaking"
+        "icon": "speaking",
+        "brochure": "assets/files/NES_Online_brochure.pdf"
       },
       {
         "title": "Första hjälpen & hjärt-lungräddning",
@@ -37,7 +39,8 @@
           "Upprepa scenariot tills reaktionen blir automatisk",
           "Ingen utrustning, ingen logistik – träna när det passar dig"
         ],
-        "icon": "heartbeat"
+        "icon": "heartbeat",
+        "brochure": "assets/files/NES_HLR_brochure.pdf"
       }
     ]
   },

@@ -16,6 +16,7 @@
   },
   "solutions": {
     "intro": "Nordic Emergency Solutions entwickelt zwei VR-Plattformen, die auf derselben Grundidee basieren: Die besten Entscheidungen in einer Krise sind die, die man bereits trainiert hat. Ob groß angelegte Einsatzübung mit mehreren Behörden oder Wiederbelebung eines bewusstlosen Patienten – unsere Plattformen bieten einen sicheren Raum zum Üben, Scheitern und kontinuierlichen Verbessern, immer wieder.",
+    "brochure_label": "Broschüre herunterladen (PDF, Dänisch)",
     "items": [
       {
         "title": "Katastrophen- und Einsatztraining",
@@ -26,7 +27,8 @@
           "Trainiert die Zusammenarbeit zwischen Feuerwehr, Polizei, Behörden und Rettungsdiensten",
           "Wiederholbares Training ohne Risiko oder Logistikaufwand"
         ],
-        "icon": "speaking"
+        "icon": "speaking",
+        "brochure": "assets/files/NES_Online_brochure.pdf"
       },
       {
         "title": "Erste Hilfe & Wiederbelebung",
@@ -37,7 +39,8 @@
           "Wiederholen Sie das Szenario, bis die richtigen Abläufe sicher sitzen",
           "Keine Ausrüstung, keine Logistik – trainieren Sie, wann es passt"
         ],
-        "icon": "heartbeat"
+        "icon": "heartbeat",
+        "brochure": "assets/files/NES_HLR_brochure.pdf"
       }
     ]
   },
