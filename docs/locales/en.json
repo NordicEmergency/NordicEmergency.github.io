@@ -38,6 +38,19 @@
           "No equipment, no logistics — train whenever it suits you"
         ],
         "icon": "heartbeat"
+      },
+      {
+        "title": "vis-à-vis – difficult conversations",
+        "badge": "Beta",
+        "description": "Practise difficult conversations face to face with an AI video character – a worried patient, a relative in shock or a citizen in the middle of a crisis. The conversation takes place as a live video call, and afterwards it is transcribed and evaluated against the case's criteria, so you get a score and concrete feedback.",
+        "highlights": [
+          "Live video conversation with a realistic AI character",
+          "Cases in areas such as health care, emergency response and crisis communication",
+          "Automatic transcription and evaluation against the case's criteria",
+          "Score and feedback after every conversation"
+        ],
+        "icon": "video",
+        "visibility": "hidden"
       }
     ]
   },

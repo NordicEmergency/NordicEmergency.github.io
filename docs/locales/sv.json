@@ -38,6 +38,19 @@
           "Ingen utrustning, ingen logistik – träna när det passar dig"
         ],
         "icon": "heartbeat"
+      },
+      {
+        "title": "vis-à-vis – svåra samtal",
+        "badge": "Beta",
+        "description": "Träna de svåra samtalen ansikte mot ansikte med en AI-videokaraktär – en orolig patient, en anhörig i chock eller en invånare mitt i en kris. Samtalet sker som ett direktsänt videosamtal och transkriberas sedan och utvärderas mot fallets kriterier, så att du får ett resultat och konkret återkoppling.",
+        "highlights": [
+          "Direktsänt videosamtal med en realistisk AI-karaktär",
+          "Fall inom t.ex. vård, beredskap och kriskommunikation",
+          "Automatisk transkribering och utvärdering mot fallets kriterier",
+          "Resultat och återkoppling efter varje samtal"
+        ],
+        "icon": "video",
+        "visibility": "hidden"
       }
     ]
   },

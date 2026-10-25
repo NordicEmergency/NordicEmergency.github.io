@@ -38,6 +38,19 @@
           "Intet udstyr, ingen logistik – træn når det passer dig"
         ],
         "icon": "heartbeat"
+      },
+      {
+        "title": "vis-à-vis – svære samtaler",
+        "badge": "Beta",
+        "description": "Træn de svære samtaler ansigt til ansigt med en AI-videokarakter – en bekymret patient, en pårørende i chok eller en borger midt i en krise. Samtalen foregår som et live videoopkald, og bagefter bliver den transskriberet og evalueret mod casens kriterier, så du får en score og konkret feedback.",
+        "highlights": [
+          "Live videosamtale med en realistisk AI-karakter",
+          "Cases inden for fx sundhed, beredskab og krisekommunikation",
+          "Automatisk transskription og evaluering mod casens kriterier",
+          "Score og feedback efter hver samtale"
+        ],
+        "icon": "video",
+        "visibility": "hidden"
       }
     ]
   },
