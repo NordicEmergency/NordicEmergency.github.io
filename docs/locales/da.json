@@ -11,8 +11,8 @@
   },
   "hero": {
     "title": "Nordic Emergency Solutions ApS",
-    "tagline": "VR-baseret beredskabs- og HLR-træning – klinisk præcision, når det virkelig gælder.",
-    "lead": "Vi udvikler VR-platforme, der gør det muligt at træne beslutninger, samarbejde og livreddende handlinger igen og igen – i realistiske scenarier, uden risiko og uden at gå på kompromis med den kliniske virkelighed."
+    "tagline": "Beredskabs-, HLR- og samtaletræning i VR og med AI – klinisk præcision, når det virkelig gælder.",
+    "lead": "Vi udvikler træningsplatforme i VR og med AI, der gør det muligt at træne beslutninger, samarbejde, svære samtaler og livreddende handlinger igen og igen – i realistiske scenarier, uden risiko og uden at gå på kompromis med den kliniske virkelighed."
   },
   "solutions": {
     "intro": "Nordic Emergency Solutions står bag tre træningsplatforme – to i VR og én til svære samtaler med en AI-karakter – der alle er bygget på den samme grundtanke: de bedste beslutninger i en krisesituation er dem, du allerede har trænet. Uanset om det er en fuldskala beredskabsøvelse med flere myndigheder, genoplivning af en bevidstløs patient eller samtalen med en pårørende i chok, giver vores platforme et sikkert miljø til at øve, fejle og blive bedre – igen og igen.",
@@ -20,11 +20,11 @@
     "items": [
       {
         "title": "Katastrofe- og beredskabstræning",
-        "description": "En multiuser VR-simulation, hvor brandvæsen, politi, myndigheder og redningstjenester træner sammen i det samme scenarie – hver fra deres eget perspektiv. En gamemaster styrer forløbet og kan i realtid ændre på hændelsen, tilføje komplikationer eller eskalere presset, præcis som i en virkelig krise. Målet er ikke kun individuel færdighed, men den koordinering og kommunikation på tværs af myndigheder og beredskabsenheder, der afgør, om en indsats lykkes.",
+        "description": "En multiuser VR-simulation, hvor brandvæsen, politi, myndigheder og redningstjenester træner sammen i det samme scenarie – hver fra deres eget perspektiv. En gamemaster styrer forløbet i realtid og kan tilføje komplikationer eller eskalere presset, præcis som i en virkelig krise. I fokus er den koordinering på tværs, der afgør, om en indsats lykkes.",
         "highlights": [
-          "Multiuser – flere deltagere i samme scenarie, samtidig",
-          "Gamemaster-styret: scenariet tilpasses i realtid",
-          "Træner samarbejde på tværs af brandvæsen, politi, myndigheder og redningstjenester",
+          "Flere deltagere i samme scenarie, samtidig",
+          "Gamemaster tilpasser scenariet i realtid",
+          "Træner samarbejde på tværs af myndigheder",
           "Gentagelig træning uden risiko eller logistik"
         ],
         "icon": "speaking",
@@ -32,12 +32,12 @@
       },
       {
         "title": "Førstehjælp & HLR",
-        "description": "VR-træning i Førstehjælp & HLR, bygget på anerkendte kliniske retningslinjer. Du øver hjertemassage, brug af hjertestarter (AED) og de kritiske første minutter, hvor beslutsomhed og korrekt teknik gør forskellen mellem liv og død – i et trygt miljø, hvor du kan gentage scenariet, til det sidder på rygraden.",
+        "description": "En VR-simulation i førstehjælp og HLR, bygget på anerkendte kliniske retningslinjer. Du øver hjertemassage, brug af hjertestarter (AED) og de kritiske første minutter, hvor korrekt teknik gør forskellen mellem liv og død. I fokus er at gentage scenariet, til reaktionen sidder på rygraden.",
         "highlights": [
-          "Baseret på anerkendte kliniske retningslinjer",
-          "Træn hjertemassage og AED-betjening",
-          "Gentag scenariet, til reaktionen bliver automatisk",
-          "Intet udstyr, ingen logistik – træn når det passer dig"
+          "Bygget på anerkendte kliniske retningslinjer",
+          "Træn hjertemassage og brug af AED",
+          "Gentag, til reaktionen bliver automatisk",
+          "Træn når det passer – uden logistik"
         ],
         "icon": "heartbeat",
         "brochure": "assets/files/NES_HLR_brochure.pdf"
@@ -45,12 +45,12 @@
       {
         "title": "vis-à-vis – svære samtaler",
         "badge": "Beta",
-        "description": "Træn de svære samtaler ansigt til ansigt med en AI-karakter – en bekymret patient, en pårørende i chok eller en borger midt i en krise. Samtalen foregår som live videoopkald eller telefonsamtale, og bagefter bliver den transskriberet og evalueret mod casens faglige kriterier, så du får en score, feedback pr. kriterium og konkrete fokuspunkter til næste gang.",
+        "description": "En AI-simulation af svære samtaler, hvor du taler ansigt til ansigt med en bekymret patient, en pårørende i chok eller en borger i krise. Samtalen foregår som live videoopkald eller telefonsamtale og evalueres bagefter mod casens faglige kriterier. I fokus er konkret feedback og fokuspunkter til næste samtale.",
         "highlights": [
-          "Live video- eller telefonsamtale med en realistisk AI-karakter",
-          "Cases inden for fx sundhed, beredskab og krisekommunikation – forankret i faglige rammer",
-          "Score, feedback og fokuspunkter efter hver samtale – og din udvikling over tid",
-          "Til organisationer: egne brugere og pladser, single sign-on og eget design"
+          "Video- eller telefonsamtale med en AI-karakter",
+          "Cases forankret i faglige rammer",
+          "Score, feedback og fokuspunkter hver gang",
+          "Egne brugere, single sign-on og eget design"
         ],
         "icon": "video",
         "link": "https://vis-a-vis.nordicemergency.dk",
@@ -106,7 +106,7 @@
     "heading": "Kunder"
   },
   "contact": {
-    "description": "Vil du vide mere om vores VR-platforme, blive certificeret gennem Academy, eller har du en idé, der hører hjemme i Labs? Skriv til os – vi svarer gerne på spørgsmål om alt fra teknik og pris til implementering hos jer.",
+    "description": "Vil du vide mere om vores platforme, blive certificeret gennem Academy, eller har du en idé, der hører hjemme i Labs? Skriv til os – vi svarer gerne på spørgsmål om alt fra teknik og pris til implementering hos jer.",
     "email_label": "Email",
     "form": {
       "name_label": "Navn",

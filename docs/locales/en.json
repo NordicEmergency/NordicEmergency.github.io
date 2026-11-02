@@ -11,8 +11,8 @@
   },
   "hero": {
     "title": "Nordic Emergency Solutions ApS",
-    "tagline": "VR-based emergency response and CPR training — clinical precision when it matters.",
-    "lead": "We build VR platforms that let you train decisions, teamwork and life-saving action again and again — in realistic scenarios, without risk, and without compromising clinical accuracy."
+    "tagline": "Emergency response, CPR and conversation training in VR and with AI — clinical precision when it matters.",
+    "lead": "We build training platforms in VR and with AI that let you train decisions, teamwork, difficult conversations and life-saving action again and again — in realistic scenarios, without risk, and without compromising clinical accuracy."
   },
   "solutions": {
     "intro": "Nordic Emergency Solutions develops three training platforms – two in VR and one for difficult conversations with an AI character – all built around the same core idea: the best decisions in a crisis are the ones you've already practised. Whether it's a full-scale multi-agency emergency exercise, resuscitating an unconscious patient or the conversation with a relative in shock, our platforms give you a safe space to practise, fail and improve — again and again.",
@@ -20,11 +20,11 @@
     "items": [
       {
         "title": "Disaster & Emergency Response Training",
-        "description": "A multi-user VR simulation where fire services, police, authorities and rescue services train together in the same scenario — each from their own perspective. A gamemaster controls the scenario and can change the incident in real time, add complications or escalate the pressure, just like in a real crisis. The goal isn't just individual skill, but the cross-agency coordination and communication that determines whether a response succeeds.",
+        "description": "A multi-user VR simulation where fire services, police, authorities and rescue services train together in the same scenario — each from their own perspective. A gamemaster runs it in real time and can add complications or escalate the pressure, just like in a real crisis. The focus is the cross-agency coordination that determines whether a response succeeds.",
         "highlights": [
-          "Multi-user — several participants in the same scenario, at the same time",
-          "Gamemaster-controlled: the scenario adapts in real time",
-          "Trains coordination across fire services, police, authorities and rescue services",
+          "Several participants in the same scenario, at once",
+          "A gamemaster adapts the scenario in real time",
+          "Trains coordination across agencies",
           "Repeatable training without risk or logistics"
         ],
         "icon": "speaking",
@@ -32,12 +32,12 @@
       },
       {
         "title": "First Aid & CPR Training",
-        "description": "VR training in first aid and CPR, built on recognised clinical guidelines. You practise chest compressions, AED use, and the critical first minutes where confidence and correct technique can make the difference between life and death — in a safe environment where you can repeat the scenario until it becomes second nature.",
+        "description": "A VR simulation of first aid and CPR, built on recognised clinical guidelines. You practise chest compressions, AED use and the critical first minutes, where correct technique makes the difference between life and death. The focus is repeating the scenario until the response becomes second nature.",
         "highlights": [
           "Built on recognised clinical guidelines",
           "Practise chest compressions and AED use",
-          "Repeat the scenario until the response becomes automatic",
-          "No equipment, no logistics — train whenever it suits you"
+          "Repeat until the response becomes automatic",
+          "Train whenever it suits you — no logistics"
         ],
         "icon": "heartbeat",
         "brochure": "assets/files/NES_HLR_brochure.pdf"
@@ -45,12 +45,12 @@
       {
         "title": "vis-à-vis – difficult conversations",
         "badge": "Beta",
-        "description": "Practise difficult conversations face to face with an AI character – a worried patient, a relative in shock or a citizen in the middle of a crisis. The conversation takes place as a live video call or a phone call, and afterwards it is transcribed and evaluated against the case's professional criteria, so you get a score, feedback per criterion and concrete focus points for next time.",
+        "description": "An AI simulation of difficult conversations, where you talk face to face with a worried patient, a relative in shock or a citizen in crisis. The conversation takes place as a live video call or a phone call and is then evaluated against the case's professional criteria. The focus is concrete feedback and focus points for the next conversation.",
         "highlights": [
-          "Live video or phone conversation with a realistic AI character",
-          "Cases in areas such as health care, emergency response and crisis communication – grounded in professional frameworks",
-          "Score, feedback and focus points after every conversation – and your progress over time",
-          "For organisations: your own users and seats, single sign-on and your own branding"
+          "Video or phone conversation with an AI character",
+          "Cases grounded in professional frameworks",
+          "Score, feedback and focus points every time",
+          "Your own users, single sign-on and branding"
         ],
         "icon": "video",
         "link": "https://vis-a-vis.nordicemergency.dk",
@@ -106,7 +106,7 @@
     "heading": "Customers"
   },
   "contact": {
-    "description": "Want to know more about our VR platforms, get certified through Academy, or have an idea you think belongs in Labs? Get in touch — we're happy to answer questions about anything from technology and pricing to implementation at your organisation.",
+    "description": "Want to know more about our platforms, get certified through Academy, or have an idea you think belongs in Labs? Get in touch — we're happy to answer questions about anything from technology and pricing to implementation at your organisation.",
     "email_label": "Email",
     "form": {
       "name_label": "Name",
