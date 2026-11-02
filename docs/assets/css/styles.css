@@ -333,6 +333,11 @@ a:hover { text-decoration: underline; }
   gap: 20px;
 }
 
+/* Below room for three cards in a row, stack them rather than leave one alone. */
+@media (max-width: 927px) {
+  .cards { grid-template-columns: 1fr; }
+}
+
 .card {
   background: var(--surface);
   border: 1px solid var(--hairline);

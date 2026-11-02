@@ -16,6 +16,9 @@
   var DOWNLOAD_ICON =
     '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>';
 
+  var EXTERNAL_ICON =
+    '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>';
+
   function renderSolutions(dict) {
     var list = document.getElementById("solutions-list");
     if (!list) return;
@@ -32,6 +35,9 @@
         var brochure = item.brochure
           ? '<a class="card-brochure" href="' + item.brochure + '" target="_blank" rel="noopener">' +
             DOWNLOAD_ICON + (dict.solutions.brochure_label || "PDF") + "</a>"
+          : item.link
+          ? '<a class="card-brochure" href="' + item.link + '" target="_blank" rel="noopener">' +
+            EXTERNAL_ICON + (item.link_label || item.link) + "</a>"
           : "";
         return (
           '<div class="card"><h3>' +

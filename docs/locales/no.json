@@ -15,7 +15,7 @@
     "lead": "Vi utvikler VR-plattformer som gjør det mulig å trene beslutninger, samarbeid og livreddende handlinger igjen og igjen – i realistiske scenarier, uten risiko og uten å gå på kompromiss med den kliniske kvaliteten."
   },
   "solutions": {
-    "intro": "Bak Nordic Emergency Solutions står to VR-plattformer bygget på samme grunntanke: de beste beslutningene i en krise er dem du allerede har trent på. Enten det er en fullskala beredskapsøvelse med flere etater eller gjenopplivning av en bevisstløs pasient, gir plattformene våre et trygt rom for å øve, feile og bli bedre – igjen og igjen.",
+    "intro": "Bak Nordic Emergency Solutions står tre treningsplattformer – to i VR og én for vanskelige samtaler med en AI-karakter – som alle bygger på samme grunntanke: de beste beslutningene i en krise er dem du allerede har trent på. Enten det er en fullskala beredskapsøvelse med flere etater, gjenopplivning av en bevisstløs pasient eller samtalen med en pårørende i sjokk, gir plattformene våre et trygt rom for å øve, feile og bli bedre – igjen og igjen.",
     "brochure_label": "Last ned brosjyre (PDF, dansk)",
     "items": [
       {
@@ -45,15 +45,16 @@
       {
         "title": "vis-à-vis – vanskelige samtaler",
         "badge": "Beta",
-        "description": "Tren de vanskelige samtalene ansikt til ansikt med en AI-videokarakter – en bekymret pasient, en pårørende i sjokk eller en innbygger midt i en krise. Samtalen foregår som en direkte videosamtale, og etterpå blir den transkribert og evaluert mot casens kriterier, slik at du får en poengsum og konkrete tilbakemeldinger.",
+        "description": "Tren de vanskelige samtalene ansikt til ansikt med en AI-karakter – en bekymret pasient, en pårørende i sjokk eller en innbygger midt i en krise. Samtalen foregår som en direkte videosamtale eller telefonsamtale, og etterpå blir den transkribert og evaluert mot casens faglige kriterier, slik at du får en poengsum, tilbakemelding per kriterium og konkrete fokuspunkter til neste gang.",
         "highlights": [
-          "Direkte videosamtale med en realistisk AI-karakter",
-          "Caser innen f.eks. helse, beredskap og krisekommunikasjon",
-          "Automatisk transkribering og evaluering mot casens kriterier",
-          "Poengsum og tilbakemelding etter hver samtale"
+          "Direkte video- eller telefonsamtale med en realistisk AI-karakter",
+          "Caser innen f.eks. helse, beredskap og krisekommunikasjon – forankret i faglige rammeverk",
+          "Poengsum, tilbakemelding og fokuspunkter etter hver samtale – og din utvikling over tid",
+          "For organisasjoner: egne brukere og lisenser, single sign-on og eget design"
         ],
         "icon": "video",
-        "visibility": "hidden"
+        "link": "https://vis-a-vis.nordicemergency.dk",
+        "link_label": "Gå til vis-à-vis (dansk)"
       }
     ]
   },

@@ -15,7 +15,7 @@
     "lead": "We build VR platforms that let you train decisions, teamwork and life-saving action again and again — in realistic scenarios, without risk, and without compromising clinical accuracy."
   },
   "solutions": {
-    "intro": "Nordic Emergency Solutions develops two VR platforms built around the same core idea: the best decisions in a crisis are the ones you've already practised. Whether it's a full-scale multi-agency emergency exercise or resuscitating an unconscious patient, our platforms give you a safe space to practise, fail and improve — again and again.",
+    "intro": "Nordic Emergency Solutions develops three training platforms – two in VR and one for difficult conversations with an AI character – all built around the same core idea: the best decisions in a crisis are the ones you've already practised. Whether it's a full-scale multi-agency emergency exercise, resuscitating an unconscious patient or the conversation with a relative in shock, our platforms give you a safe space to practise, fail and improve — again and again.",
     "brochure_label": "Download brochure (PDF, Danish)",
     "items": [
       {
@@ -45,15 +45,16 @@
       {
         "title": "vis-à-vis – difficult conversations",
         "badge": "Beta",
-        "description": "Practise difficult conversations face to face with an AI video character – a worried patient, a relative in shock or a citizen in the middle of a crisis. The conversation takes place as a live video call, and afterwards it is transcribed and evaluated against the case's criteria, so you get a score and concrete feedback.",
+        "description": "Practise difficult conversations face to face with an AI character – a worried patient, a relative in shock or a citizen in the middle of a crisis. The conversation takes place as a live video call or a phone call, and afterwards it is transcribed and evaluated against the case's professional criteria, so you get a score, feedback per criterion and concrete focus points for next time.",
         "highlights": [
-          "Live video conversation with a realistic AI character",
-          "Cases in areas such as health care, emergency response and crisis communication",
-          "Automatic transcription and evaluation against the case's criteria",
-          "Score and feedback after every conversation"
+          "Live video or phone conversation with a realistic AI character",
+          "Cases in areas such as health care, emergency response and crisis communication – grounded in professional frameworks",
+          "Score, feedback and focus points after every conversation – and your progress over time",
+          "For organisations: your own users and seats, single sign-on and your own branding"
         ],
         "icon": "video",
-        "visibility": "hidden"
+        "link": "https://vis-a-vis.nordicemergency.dk",
+        "link_label": "Go to vis-à-vis (Danish)"
       }
     ]
   },

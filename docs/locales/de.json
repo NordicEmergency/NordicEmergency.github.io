@@ -15,7 +15,7 @@
     "lead": "Wir entwickeln VR-Plattformen, mit denen Sie Entscheidungen, Teamarbeit und lebensrettendes Handeln immer wieder trainieren können – in realistischen Szenarien, ohne Risiko und ohne Kompromisse bei der klinischen Qualität."
   },
   "solutions": {
-    "intro": "Nordic Emergency Solutions entwickelt zwei VR-Plattformen, die auf derselben Grundidee basieren: Die besten Entscheidungen in einer Krise sind die, die man bereits trainiert hat. Ob groß angelegte Einsatzübung mit mehreren Behörden oder Wiederbelebung eines bewusstlosen Patienten – unsere Plattformen bieten einen sicheren Raum zum Üben, Scheitern und kontinuierlichen Verbessern, immer wieder.",
+    "intro": "Nordic Emergency Solutions entwickelt drei Trainingsplattformen – zwei in VR und eine für schwierige Gespräche mit einer KI-Figur –, die alle auf derselben Grundidee basieren: Die besten Entscheidungen in einer Krise sind die, die man bereits trainiert hat. Ob groß angelegte Einsatzübung mit mehreren Behörden, Wiederbelebung eines bewusstlosen Patienten oder das Gespräch mit einem Angehörigen unter Schock – unsere Plattformen bieten einen sicheren Raum zum Üben, Scheitern und kontinuierlichen Verbessern, immer wieder.",
     "brochure_label": "Broschüre herunterladen (PDF, Dänisch)",
     "items": [
       {
@@ -45,15 +45,16 @@
       {
         "title": "vis-à-vis – schwierige Gespräche",
         "badge": "Beta",
-        "description": "Trainieren Sie schwierige Gespräche von Angesicht zu Angesicht mit einer KI-Videofigur – einem besorgten Patienten, einem Angehörigen unter Schock oder einem Menschen mitten in einer Krise. Das Gespräch findet als Live-Videoanruf statt und wird anschließend transkribiert und anhand der Kriterien des Falls bewertet, sodass Sie eine Punktzahl und konkretes Feedback erhalten.",
+        "description": "Trainieren Sie schwierige Gespräche von Angesicht zu Angesicht mit einer KI-Figur – einem besorgten Patienten, einem Angehörigen unter Schock oder einem Menschen mitten in einer Krise. Das Gespräch findet als Live-Videoanruf oder Telefonat statt und wird anschließend transkribiert und anhand der fachlichen Kriterien des Falls bewertet, sodass Sie eine Punktzahl, Feedback pro Kriterium und konkrete Ansatzpunkte für das nächste Mal erhalten.",
         "highlights": [
-          "Live-Videogespräch mit einer realistischen KI-Figur",
-          "Fälle z. B. aus Gesundheitswesen, Bevölkerungsschutz und Krisenkommunikation",
-          "Automatische Transkription und Bewertung anhand der Fallkriterien",
-          "Punktzahl und Feedback nach jedem Gespräch"
+          "Live-Video- oder Telefongespräch mit einer realistischen KI-Figur",
+          "Fälle z. B. aus Gesundheitswesen, Bevölkerungsschutz und Krisenkommunikation – verankert in fachlichen Rahmenwerken",
+          "Punktzahl, Feedback und Ansatzpunkte nach jedem Gespräch – und Ihre Entwicklung über die Zeit",
+          "Für Organisationen: eigene Benutzer und Lizenzen, Single Sign-on und eigenes Design"
         ],
         "icon": "video",
-        "visibility": "hidden"
+        "link": "https://vis-a-vis.nordicemergency.dk",
+        "link_label": "Zu vis-à-vis (Dänisch)"
       }
     ]
   },
