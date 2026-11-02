@@ -327,63 +327,12 @@ a:hover { text-decoration: underline; }
   margin-bottom: 8px;
 }
 
-/* Cards (Solutions): an Apple-style carousel. One wide card at a time, the next
-   peeking in from the right; it bleeds to the window's edges but starts and snaps
-   in line with the container. */
-#solutions { overflow-x: clip; }
-
-.carousel {
-  --inset: calc(max(0px, (100vw - var(--max-width)) / 2) + 24px);
-  margin-inline: calc(50% - 50vw);
-}
-
+/* Cards (Solutions): wide and low, one under the other, so every solution is
+   in view without paging. */
 .cards {
-  display: flex;
+  display: grid;
   gap: 20px;
-  overflow-x: auto;
-  scroll-snap-type: x mandatory;
-  scroll-padding-inline: var(--inset);
-  scroll-behavior: smooth;
-  overscroll-behavior-x: contain;
-  scrollbar-width: none;
-  padding: 4px var(--inset) 24px;
-  margin-bottom: -24px;
 }
-
-.cards::-webkit-scrollbar { display: none; }
-
-.cards > .card {
-  flex: 0 0 min(860px, calc(100vw - 2 * var(--inset)));
-  scroll-snap-align: start;
-}
-
-.carousel-nav {
-  display: flex;
-  justify-content: flex-end;
-  gap: 16px;
-  margin-top: 28px;
-}
-
-.carousel-nav[hidden] { display: none; }
-
-.carousel-btn {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 36px;
-  height: 36px;
-  padding: 0;
-  border: 0;
-  border-radius: 50%;
-  background: var(--fill);
-  color: var(--text);
-  cursor: pointer;
-  transition: background .2s var(--ease), opacity .2s var(--ease);
-}
-
-.carousel-btn svg { width: 18px; height: 18px; }
-.carousel-btn:hover:not(:disabled) { background: var(--border); }
-.carousel-btn:disabled { opacity: .36; cursor: default; }
 
 .card {
   background: var(--surface);
@@ -854,8 +803,6 @@ a.customer-logo:hover { text-decoration: none; color: var(--text); }
 
 @media (max-width: 720px) {
   .container { padding: 0 16px; }
-  .carousel { --inset: 16px; }
-  .cards > .card { flex-basis: calc(100vw - 2 * var(--inset) - 32px); }
   .header-inner { flex-wrap: wrap; gap: 10px 14px; }
   .site-nav { order: 3; width: 100%; }
   .site-nav ul { gap: 16px; flex-wrap: wrap; }
@@ -878,7 +825,7 @@ a.customer-logo:hover { text-decoration: none; color: var(--text); }
   transition: opacity .9s var(--ease), transform .7s var(--ease);
 }
 
-/* Solution cards come in from the side, like the carousel they sit in. */
+/* Solution cards come in from the side. */
 .cards > [data-reveal]:not(.is-in) { transform: translateX(60px); }
 
 [data-reveal].is-in { opacity: 1; transform: none; }
@@ -888,7 +835,7 @@ a.customer-logo:hover { text-decoration: none; color: var(--text); }
 .gallery-item.is-zoomed img { transform: scale(1.06); }
 
 @media (prefers-reduced-motion: reduce) {
-  html, .cards { scroll-behavior: auto; }
+  html { scroll-behavior: auto; }
   *, *::before, *::after {
     animation-duration: .01ms !important;
     animation-iteration-count: 1 !important;
