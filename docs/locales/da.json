@@ -56,7 +56,9 @@
         "link": "https://vis-a-vis.nordicemergency.dk",
         "link_label": "Gå til vis-à-vis"
       }
-    ]
+    ],
+    "prev": "Forrige",
+    "next": "Næste"
   },
   "academy": {
     "description": "Academy er stedet, hvor du bliver klædt på til selv at stå i spidsen for træningen. Her uddanner vi gamemastere, der kan lede og tilpasse de multiuser-scenarier, som beredskabsplatformen bygger på, og HLR-instruktører, der kan facilitere realistisk førstehjælpstræning for andre. Du får både den kliniske og den didaktiske ballast til at gøre træningen troværdig – uanset om den foregår på en brandstation, et sygehus eller i en virksomhed."

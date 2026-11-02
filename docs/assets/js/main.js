@@ -55,6 +55,35 @@
       .join("");
   }
 
+  // The solution cards' < > buttons: one card per click, greyed out at either end,
+  // and hidden when every card fits.
+  var updateCarousel = function () {};
+
+  function initCarousel() {
+    var list = document.getElementById("solutions-list");
+    var nav = document.getElementById("solutions-nav");
+    if (!list || !nav) return;
+    var buttons = nav.querySelectorAll(".carousel-btn");
+
+    updateCarousel = function () {
+      var max = list.scrollWidth - list.clientWidth;
+      nav.hidden = max <= 1;
+      buttons[0].disabled = list.scrollLeft <= 1;
+      buttons[1].disabled = list.scrollLeft >= max - 1;
+    };
+
+    buttons.forEach(function (btn) {
+      btn.addEventListener("click", function () {
+        var card = list.querySelector(".card");
+        if (!card) return;
+        var step = card.offsetWidth + parseFloat(getComputedStyle(list).columnGap || 0);
+        list.scrollBy({ left: Number(btn.getAttribute("data-dir")) * step });
+      });
+    });
+    list.addEventListener("scroll", function () { updateCarousel(); }, { passive: true });
+    window.addEventListener("resize", function () { updateCarousel(); });
+  }
+
   function initials(name) {
     return name
       .split(" ")
@@ -242,6 +271,7 @@
         document.documentElement.lang = lang;
         applyTranslations(dict);
         renderSolutions(dict);
+        updateCarousel();
         renderTeam(dict, teamData);
         renderArticles(lang, articleData);
         renderContactForm(dict);
@@ -302,6 +332,7 @@
     if (yearEl) yearEl.textContent = new Date().getFullYear();
 
     initTabs();
+    initCarousel();
     NE.initThemeToggle();
     NE.reveal();
 

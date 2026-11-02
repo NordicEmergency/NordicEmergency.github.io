@@ -56,7 +56,9 @@
         "link": "https://vis-a-vis.nordicemergency.dk",
         "link_label": "Go to vis-à-vis (Danish)"
       }
-    ]
+    ],
+    "prev": "Previous",
+    "next": "Next"
   },
   "academy": {
     "description": "Academy is for those who want to lead the training themselves. We train gamemasters who can run and adapt the multi-user scenarios behind our emergency response platform, and CPR instructors who can facilitate realistic first-aid training for others. You get both the clinical grounding and the instructional skills to make the training credible — whether it takes place at a fire station, a hospital, or a workplace."
