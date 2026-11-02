@@ -11,20 +11,20 @@
   },
   "hero": {
     "title": "Nordic Emergency Solutions ApS",
-    "tagline": "VR-basert beredskapstrening og hjerte-lungeredning – klinisk presisjon når det gjelder.",
-    "lead": "Vi utvikler VR-plattformer som gjør det mulig å trene beslutninger, samarbeid og livreddende handlinger igjen og igjen – i realistiske scenarier, uten risiko og uten å gå på kompromiss med den kliniske kvaliteten."
+    "tagline": "Trening i beredskap, hjerte-lungeredning og vanskelige samtaler – i VR og med AI, med klinisk presisjon når det gjelder.",
+    "lead": "Vi utvikler treningsplattformer i VR og med AI som gjør det mulig å trene beslutninger, samarbeid, vanskelige samtaler og livreddende handlinger igjen og igjen – i realistiske scenarier, uten risiko og uten å gå på kompromiss med den kliniske kvaliteten."
   },
   "solutions": {
-    "intro": "Bak Nordic Emergency Solutions står to VR-plattformer bygget på samme grunntanke: de beste beslutningene i en krise er dem du allerede har trent på. Enten det er en fullskala beredskapsøvelse med flere etater eller gjenopplivning av en bevisstløs pasient, gir plattformene våre et trygt rom for å øve, feile og bli bedre – igjen og igjen.",
+    "intro": "Bak Nordic Emergency Solutions står tre treningsplattformer – to i VR og én for vanskelige samtaler med en AI-karakter – som alle bygger på samme grunntanke: de beste beslutningene i en krise er dem du allerede har trent på. Enten det er en fullskala beredskapsøvelse med flere etater, gjenopplivning av en bevisstløs pasient eller samtalen med en pårørende i sjokk, gir plattformene våre et trygt rom for å øve, feile og bli bedre – igjen og igjen.",
     "brochure_label": "Last ned brosjyre (PDF, dansk)",
     "items": [
       {
         "title": "Katastrofe- og beredskapstrening",
-        "description": "En VR-simulering for flere brukere, der brann, politi, myndigheter og redningstjenester trener sammen i det samme scenariet – hver fra sitt eget perspektiv. En gamemaster styrer forløpet og kan endre hendelsen i sanntid, legge til komplikasjoner eller eskalere presset, akkurat som i en reell krise. Målet er ikke bare individuell ferdighet, men koordinasjonen og kommunikasjonen på tvers av etater som avgjør om innsatsen lykkes.",
+        "description": "En VR-simulering for flere brukere, der brann, politi, myndigheter og redningstjenester trener sammen i det samme scenariet – hver fra sitt eget perspektiv. En gamemaster styrer forløpet i sanntid og kan legge til komplikasjoner eller eskalere presset, akkurat som i en reell krise. I fokus står koordinasjonen på tvers av etater som avgjør om innsatsen lykkes.",
         "highlights": [
-          "Flere brukere – flere deltakere i samme scenario, samtidig",
-          "Gamemaster-styrt: scenariet tilpasses i sanntid",
-          "Trener samarbeid på tvers av brann, politi, myndigheter og redning",
+          "Flere deltakere i samme scenario, samtidig",
+          "En gamemaster tilpasser scenariet i sanntid",
+          "Trener samarbeid på tvers av etater",
           "Gjentakbar trening uten risiko eller logistikk"
         ],
         "icon": "speaking",
@@ -32,12 +32,12 @@
       },
       {
         "title": "Førstehjelp og hjerte-lungeredning",
-        "description": "VR-trening i førstehjelp og hjerte-lungeredning, bygget på anerkjente kliniske retningslinjer. Du øver på hjertekompresjoner, bruk av hjertestarter (AED) og de kritiske første minuttene, der ro og riktig teknikk avgjør forskjellen mellom liv og død – i et trygt miljø der du kan gjenta scenariet til det sitter i ryggmargen.",
+        "description": "En VR-simulering i førstehjelp og hjerte-lungeredning, bygget på anerkjente kliniske retningslinjer. Du øver på hjertekompresjoner, bruk av hjertestarter (AED) og de kritiske første minuttene, der riktig teknikk avgjør forskjellen mellom liv og død. I fokus står å gjenta scenariet til reaksjonen sitter i ryggmargen.",
         "highlights": [
           "Bygget på anerkjente kliniske retningslinjer",
           "Øv på hjertekompresjoner og AED-bruk",
-          "Gjenta scenariet til reaksjonen blir automatisk",
-          "Ikke noe utstyr, ingen logistikk – tren når det passer deg"
+          "Gjenta til reaksjonen blir automatisk",
+          "Tren når det passer – uten logistikk"
         ],
         "icon": "heartbeat",
         "brochure": "assets/files/NES_HLR_brochure.pdf"
@@ -45,17 +45,20 @@
       {
         "title": "vis-à-vis – vanskelige samtaler",
         "badge": "Beta",
-        "description": "Tren de vanskelige samtalene ansikt til ansikt med en AI-videokarakter – en bekymret pasient, en pårørende i sjokk eller en innbygger midt i en krise. Samtalen foregår som en direkte videosamtale, og etterpå blir den transkribert og evaluert mot casens kriterier, slik at du får en poengsum og konkrete tilbakemeldinger.",
+        "description": "En AI-simulering av vanskelige samtaler, der du snakker ansikt til ansikt med en bekymret pasient, en pårørende i sjokk eller en innbygger i krise. Samtalen foregår som direkte videosamtale eller telefonsamtale og evalueres etterpå mot casens faglige kriterier. I fokus står konkrete tilbakemeldinger og fokuspunkter til neste samtale.",
         "highlights": [
-          "Direkte videosamtale med en realistisk AI-karakter",
-          "Caser innen f.eks. helse, beredskap og krisekommunikasjon",
-          "Automatisk transkribering og evaluering mot casens kriterier",
-          "Poengsum og tilbakemelding etter hver samtale"
+          "Video- eller telefonsamtale med en AI-karakter",
+          "Caser forankret i faglige rammeverk",
+          "Poengsum, tilbakemelding og fokuspunkter hver gang",
+          "Egne brukere, single sign-on og eget design"
         ],
         "icon": "video",
-        "visibility": "hidden"
+        "link": "https://vis-a-vis.nordicemergency.dk",
+        "link_label": "Gå til vis-à-vis (dansk)"
       }
-    ]
+    ],
+    "prev": "Forrige",
+    "next": "Neste"
   },
   "academy": {
     "description": "Academy er veien inn hvis du selv vil lede treningen. Vi utdanner gamemastere som kan lede og tilpasse de flerbruker-scenariene beredskapsplattformen bygger på, og HLR-instruktører som kan legge til rette for realistisk førstehjelpstrening for andre. Du får både det kliniske og det pedagogiske grunnlaget du trenger for å gjøre treningen troverdig – enten det foregår på en brannstasjon, et sykehus eller en arbeidsplass."
@@ -103,7 +106,7 @@
     "heading": "Kunder"
   },
   "contact": {
-    "description": "Vil du vite mer om VR-plattformene våre, bli sertifisert gjennom Academy, eller har du en idé som hører hjemme i Labs? Ta kontakt – vi svarer gjerne på spørsmål om alt fra teknikk og pris til implementering hos dere.",
+    "description": "Vil du vite mer om plattformene våre, bli sertifisert gjennom Academy, eller har du en idé som hører hjemme i Labs? Ta kontakt – vi svarer gjerne på spørsmål om alt fra teknikk og pris til implementering hos dere.",
     "email_label": "E-post",
     "form": {
       "name_label": "Navn",

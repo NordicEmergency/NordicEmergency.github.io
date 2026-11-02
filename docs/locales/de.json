@@ -11,33 +11,33 @@
   },
   "hero": {
     "title": "Nordic Emergency Solutions ApS",
-    "tagline": "VR-basiertes Einsatz- und Wiederbelebungstraining – klinische Präzision, wenn es darauf ankommt.",
-    "lead": "Wir entwickeln VR-Plattformen, mit denen Sie Entscheidungen, Teamarbeit und lebensrettendes Handeln immer wieder trainieren können – in realistischen Szenarien, ohne Risiko und ohne Kompromisse bei der klinischen Qualität."
+    "tagline": "Einsatz-, Wiederbelebungs- und Gesprächstraining in VR und mit KI – klinische Präzision, wenn es darauf ankommt.",
+    "lead": "Wir entwickeln Trainingsplattformen in VR und mit KI, mit denen Sie Entscheidungen, Teamarbeit, schwierige Gespräche und lebensrettendes Handeln immer wieder trainieren können – in realistischen Szenarien, ohne Risiko und ohne Kompromisse bei der klinischen Qualität."
   },
   "solutions": {
-    "intro": "Nordic Emergency Solutions entwickelt zwei VR-Plattformen, die auf derselben Grundidee basieren: Die besten Entscheidungen in einer Krise sind die, die man bereits trainiert hat. Ob groß angelegte Einsatzübung mit mehreren Behörden oder Wiederbelebung eines bewusstlosen Patienten – unsere Plattformen bieten einen sicheren Raum zum Üben, Scheitern und kontinuierlichen Verbessern, immer wieder.",
+    "intro": "Nordic Emergency Solutions entwickelt drei Trainingsplattformen – zwei in VR und eine für schwierige Gespräche mit einer KI-Figur –, die alle auf derselben Grundidee basieren: Die besten Entscheidungen in einer Krise sind die, die man bereits trainiert hat. Ob groß angelegte Einsatzübung mit mehreren Behörden, Wiederbelebung eines bewusstlosen Patienten oder das Gespräch mit einem Angehörigen unter Schock – unsere Plattformen bieten einen sicheren Raum zum Üben, Scheitern und kontinuierlichen Verbessern, immer wieder.",
     "brochure_label": "Broschüre herunterladen (PDF, Dänisch)",
     "items": [
       {
         "title": "Katastrophen- und Einsatztraining",
-        "description": "Eine VR-Simulation für mehrere Nutzer, in der Feuerwehr, Polizei, Behörden und Rettungsdienste gemeinsam im selben Szenario trainieren – jeder aus seiner eigenen Perspektive. Ein Gamemaster steuert den Ablauf und kann das Ereignis in Echtzeit verändern, Komplikationen hinzufügen oder den Druck erhöhen, genau wie in einer echten Krise. Es geht nicht nur um individuelles Können, sondern um die Koordination und Kommunikation zwischen den Einsatzkräften, die über den Erfolg eines Einsatzes entscheiden.",
+        "description": "Eine VR-Simulation für mehrere Nutzer, in der Feuerwehr, Polizei, Behörden und Rettungsdienste gemeinsam im selben Szenario trainieren – jeder aus seiner eigenen Perspektive. Ein Gamemaster steuert den Ablauf in Echtzeit und kann Komplikationen hinzufügen oder den Druck erhöhen, genau wie in einer echten Krise. Im Fokus steht die Koordination zwischen den Einsatzkräften, die über den Erfolg eines Einsatzes entscheidet.",
         "highlights": [
-          "Multiuser – mehrere Teilnehmer gleichzeitig im selben Szenario",
-          "Gamemaster-gesteuert: Das Szenario passt sich in Echtzeit an",
-          "Trainiert die Zusammenarbeit zwischen Feuerwehr, Polizei, Behörden und Rettungsdiensten",
-          "Wiederholbares Training ohne Risiko oder Logistikaufwand"
+          "Mehrere Teilnehmer gleichzeitig im selben Szenario",
+          "Ein Gamemaster passt das Szenario in Echtzeit an",
+          "Trainiert die Zusammenarbeit zwischen Behörden",
+          "Wiederholbares Training ohne Risiko oder Logistik"
         ],
         "icon": "speaking",
         "brochure": "assets/files/NES_Online_brochure.pdf"
       },
       {
         "title": "Erste Hilfe & Wiederbelebung",
-        "description": "VR-Training in Erster Hilfe und Wiederbelebung auf Basis anerkannter klinischer Leitlinien. Sie üben Herzdruckmassage, den Einsatz eines Defibrillators (AED) und die entscheidenden ersten Minuten, in denen Ruhe und die richtige Technik über Leben und Tod entscheiden – in einer sicheren Umgebung, in der Sie das Szenario so oft wiederholen können, bis die Abläufe sicher sitzen.",
+        "description": "Eine VR-Simulation für Erste Hilfe und Wiederbelebung auf Basis anerkannter klinischer Leitlinien. Sie üben Herzdruckmassage, den Einsatz eines Defibrillators (AED) und die entscheidenden ersten Minuten, in denen die richtige Technik über Leben und Tod entscheidet. Im Fokus steht, das Szenario zu wiederholen, bis die Abläufe sicher sitzen.",
         "highlights": [
           "Basiert auf anerkannten klinischen Leitlinien",
-          "Üben Sie Herzdruckmassage und AED-Bedienung",
-          "Wiederholen Sie das Szenario, bis die richtigen Abläufe sicher sitzen",
-          "Keine Ausrüstung, keine Logistik – trainieren Sie, wann es passt"
+          "Üben Sie Herzdruckmassage und AED-Einsatz",
+          "Wiederholen, bis die Abläufe sicher sitzen",
+          "Trainieren, wann es passt – ohne Logistik"
         ],
         "icon": "heartbeat",
         "brochure": "assets/files/NES_HLR_brochure.pdf"
@@ -45,17 +45,20 @@
       {
         "title": "vis-à-vis – schwierige Gespräche",
         "badge": "Beta",
-        "description": "Trainieren Sie schwierige Gespräche von Angesicht zu Angesicht mit einer KI-Videofigur – einem besorgten Patienten, einem Angehörigen unter Schock oder einem Menschen mitten in einer Krise. Das Gespräch findet als Live-Videoanruf statt und wird anschließend transkribiert und anhand der Kriterien des Falls bewertet, sodass Sie eine Punktzahl und konkretes Feedback erhalten.",
+        "description": "Eine KI-Simulation schwieriger Gespräche, in der Sie von Angesicht zu Angesicht mit einem besorgten Patienten, einem Angehörigen unter Schock oder einem Menschen in einer Krise sprechen. Das Gespräch findet als Live-Videoanruf oder Telefonat statt und wird anschließend anhand der fachlichen Kriterien des Falls bewertet. Im Fokus stehen konkretes Feedback und Ansatzpunkte für das nächste Gespräch.",
         "highlights": [
-          "Live-Videogespräch mit einer realistischen KI-Figur",
-          "Fälle z. B. aus Gesundheitswesen, Bevölkerungsschutz und Krisenkommunikation",
-          "Automatische Transkription und Bewertung anhand der Fallkriterien",
-          "Punktzahl und Feedback nach jedem Gespräch"
+          "Video- oder Telefongespräch mit einer KI-Figur",
+          "Fälle verankert in fachlichen Rahmenwerken",
+          "Punktzahl, Feedback und Ansatzpunkte – jedes Mal",
+          "Eigene Benutzer, Single Sign-on und eigenes Design"
         ],
         "icon": "video",
-        "visibility": "hidden"
+        "link": "https://vis-a-vis.nordicemergency.dk",
+        "link_label": "Zu vis-à-vis (Dänisch)"
       }
-    ]
+    ],
+    "prev": "Zurück",
+    "next": "Weiter"
   },
   "academy": {
     "description": "Die Academy ist der Weg für alle, die das Training selbst leiten möchten. Wir bilden Gamemaster aus, die die Multiuser-Szenarien unserer Einsatztraining-Plattform leiten und anpassen können, sowie Trainer für Erste Hilfe und Wiederbelebung, die realistisches Erste-Hilfe-Training für andere durchführen können. Sie erhalten sowohl das klinische als auch das didaktische Rüstzeug, um das Training glaubwürdig zu machen – ob in einer Feuerwache, einem Krankenhaus oder einem Unternehmen."
@@ -103,7 +106,7 @@
     "heading": "Kunden"
   },
   "contact": {
-    "description": "Möchten Sie mehr über unsere VR-Plattformen erfahren, sich über die Academy zertifizieren lassen oder haben Sie eine Idee für Labs? Kontaktieren Sie uns – wir beantworten gerne Fragen zu Technik, Preisen und Implementierung bei Ihnen.",
+    "description": "Möchten Sie mehr über unsere Plattformen erfahren, sich über die Academy zertifizieren lassen oder haben Sie eine Idee für Labs? Kontaktieren Sie uns – wir beantworten gerne Fragen zu Technik, Preisen und Implementierung bei Ihnen.",
     "email_label": "E-Mail",
     "form": {
       "name_label": "Name",
