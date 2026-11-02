@@ -328,7 +328,9 @@ a:hover { text-decoration: underline; }
 }
 
 /* Cards (Solutions): wide and low, one under the other, so every solution is
-   in view without paging. */
+   in view without paging. The section clips the cards' flight in from the side. */
+#solutions { overflow-x: clip; }
+
 .cards {
   display: grid;
   gap: 20px;
@@ -825,8 +827,11 @@ a.customer-logo:hover { text-decoration: none; color: var(--text); }
   transition: opacity .9s var(--ease), transform .7s var(--ease);
 }
 
-/* Solution cards come in from the side. */
-.cards > [data-reveal]:not(.is-in) { transform: translateX(60px); }
+/* Solution cards fly in from alternating sides and settle softly. The script
+   hands them back after 900ms, so the flight fits inside that. */
+.cards > [data-reveal] { transition: opacity .6s var(--ease), transform .9s cubic-bezier(.16, 1, .3, 1); }
+.cards > [data-reveal]:not(.is-in) { transform: translateX(-160px); }
+.cards > [data-reveal]:nth-child(even):not(.is-in) { transform: translateX(160px); }
 
 [data-reveal].is-in { opacity: 1; transform: none; }
 
