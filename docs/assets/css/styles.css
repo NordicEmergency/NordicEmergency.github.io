@@ -313,6 +313,7 @@ a:hover { text-decoration: underline; }
   font-size: 1.1875rem;
   line-height: 1.45;
   text-wrap: pretty;
+  max-width: 780px;
 }
 
 .section-intro { margin: 0 0 40px; }
