@@ -1,6 +1,10 @@
 {
   "language_name": "English",
   "language_code": "en",
+  "meta": {
+    "title": "Nordic Emergency Solutions – emergency response, CPR and conversation training in VR and with AI",
+    "description": "Training platforms in VR and with AI: disaster and emergency response training, first aid and CPR, and vis-à-vis for difficult conversations with an AI character."
+  },
   "nav": {
     "solutions": "Solutions",
     "academy": "Academy",
@@ -53,8 +57,8 @@
           "Your own users, single sign-on and branding"
         ],
         "icon": "video",
-        "link": "https://vis-a-vis.nordicemergency.dk",
-        "link_label": "Go to vis-à-vis (Danish)"
+        "link": "/vis-a-vis/",
+        "link_label": "Read more about vis-à-vis"
       }
     ]
   },
@@ -286,5 +290,100 @@
     ],
     "contact_heading": "Contact",
     "contact_text": "If you have questions about these terms, feel free to email us at"
+  },
+  "visavis": {
+    "meta_title": "vis-à-vis – practise difficult conversations with an AI character | Nordic Emergency Solutions",
+    "meta_description": "Practise the difficult conversation with a realistic patient, relative or citizen on video or phone – and get a score, feedback and focus points based on the case’s professional criteria.",
+    "badge": "Beta",
+    "heading": "vis-à-vis",
+    "tagline": "Practise the conversations that matter – face to face with an AI character.",
+    "lead": "vis-à-vis is a conversation training platform where you practise the difficult conversation with a realistic person on video or phone: a worried patient, a relative in shock or a citizen in crisis. Afterwards the conversation is evaluated against the case’s professional criteria, so you know what went well and what to work on next time.",
+    "language_note": "The platform and its current cases are in Danish.",
+    "cta_app": "Go to vis-à-vis",
+    "cta_contact": "Book a demo",
+    "how": {
+      "heading": "How it works",
+      "intro": "Every session follows the same three steps, so you can take the conversation again and again until it sticks.",
+      "step_label": "Step",
+      "steps": [
+        {
+          "title": "Prepare",
+          "text": "Choose a case, read the briefing and meet the character. The briefing can also be read aloud to you."
+        },
+        {
+          "title": "Have the conversation",
+          "text": "Talk to the character on a live video call or a phone call. The character responds to what you say, as a real person would."
+        },
+        {
+          "title": "Get feedback",
+          "text": "The conversation is evaluated against the case’s professional criteria: your score, what went well, what you can do better, and focus points for next time."
+        }
+      ]
+    },
+    "audience": {
+      "heading": "Who it is for",
+      "text": "vis-à-vis is built for education in health and social care: hospitals, municipalities, schools and others who train staff and students in difficult conversations with patients, relatives and citizens. It complements training with actors and simulated patients, so learners can practise whenever it suits them, as often as they need."
+    },
+    "features": {
+      "heading": "For educators and organisations",
+      "intro": "Educators build and adapt cases, and the organisation decides who has access.",
+      "items": [
+        {
+          "title": "Cases grounded in professional frameworks",
+          "text": "A case brings together the situation, the character and the criteria the conversation is evaluated against. A case can show who has validated it professionally."
+        },
+        {
+          "title": "Progress at a glance",
+          "text": "Educators follow learners’ conversations and results over time. Learners only see their own results."
+        },
+        {
+          "title": "Your own users and single sign-on",
+          "text": "The organisation creates its own users and can let them sign in with their Microsoft work account."
+        },
+        {
+          "title": "Your own branding",
+          "text": "The platform can run on the organisation’s own domain with its own logo and colours."
+        }
+      ]
+    },
+    "security": {
+      "heading": "Security and data",
+      "text": "The platform and its database run on servers in the EU. Video and voice in the conversation are provided by a video provider in the USA, and the conversation’s text is evaluated by language models from the providers the organisation uses. Instructors and administrators sign in with two-step verification, and an organisation can limit access to its own network.",
+      "link_label": "Read more about security in vis-à-vis (Danish)"
+    },
+    "faq": {
+      "heading": "Questions and answers",
+      "items": [
+        {
+          "q": "What is vis-à-vis?",
+          "a": "A platform from Nordic Emergency Solutions for practising difficult conversations with an AI character on video or phone. After the conversation you get an evaluation based on the case’s professional criteria."
+        },
+        {
+          "q": "Who can use it?",
+          "a": "Organisations that train staff in health and social care, such as hospitals, municipalities and schools. The organisation creates its users, and learners get access through it."
+        },
+        {
+          "q": "How is the conversation evaluated?",
+          "a": "A language model evaluates the transcript of the conversation against the criteria the case is built on. You get a score, concrete feedback on what went well and less well, and focus points for the next conversation."
+        },
+        {
+          "q": "Does it replace training with actors?",
+          "a": "No, it complements it. Learners can take the same conversation many times, before and after training with simulated patients, without rooms, actors or scheduling."
+        },
+        {
+          "q": "What does it need technically?",
+          "a": "A browser on a computer, tablet or phone with a microphone and a speaker or headset. Nothing needs to be installed."
+        },
+        {
+          "q": "How do we get started?",
+          "a": "Get in touch and we will show you the platform and talk about which conversations you want to train. vis-à-vis is in beta, and we are happy to help with the first cases."
+        }
+      ]
+    },
+    "contact": {
+      "heading": "Want to try vis-à-vis?",
+      "text": "Get in touch and we will show you the platform and answer questions about anything from cases and pricing to implementation at your organisation.",
+      "button": "Contact us"
+    }
   }
 }

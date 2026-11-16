@@ -164,7 +164,8 @@ a:hover { text-decoration: underline; }
 
 .lang-switcher { display: flex; gap: 4px; }
 
-.lang-switcher button {
+.lang-switcher button,
+.lang-switcher a {
   border: 1px solid transparent;
   background: none;
   padding: 3px;
@@ -175,11 +176,14 @@ a:hover { text-decoration: underline; }
   transition: opacity .2s var(--ease), border-color .2s var(--ease);
 }
 
-.lang-switcher button:hover { opacity: 1; }
+.lang-switcher button:hover,
+.lang-switcher a:hover { opacity: 1; }
 
-.lang-switcher button img { display: block; width: 22px; height: 15px; border-radius: 2px; }
+.lang-switcher button img,
+.lang-switcher a img { display: block; width: 22px; height: 15px; border-radius: 2px; }
 
-.lang-switcher button.active { opacity: 1; border-color: var(--border); }
+.lang-switcher button.active,
+.lang-switcher a.active { opacity: 1; border-color: var(--border); }
 
 .header-icon-btn {
   display: flex;
@@ -494,6 +498,36 @@ a:hover { text-decoration: underline; }
     border-left: 1px solid var(--hairline);
   }
   .cards > .card .card-brochure { grid-column: 2; grid-row: 3; margin-left: 40px; }
+}
+
+/* Product page (vis-à-vis): steps and features side by side, questions and
+   answers in the text column. */
+.steps {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 20px;
+}
+.steps .card h3 { font-size: 1.1875rem; }
+.steps .card p { margin: 0; }
+.step-number {
+  display: block;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--brand-red);
+  margin-bottom: 6px;
+}
+
+.faq-item + .faq-item { margin-top: 28px; }
+.faq-item h3 { font-size: 1.125rem; letter-spacing: -0.012em; margin: 0 0 6px; }
+.faq-item p { margin: 0; color: var(--muted); font-size: 1.0625rem; line-height: 1.5; }
+
+.hero-note { font-size: 0.9375rem; color: var(--muted); margin: 16px 0 0; }
+
+@media (min-width: 721px) {
+  .section > .container > .faq { grid-column: 2; }
+  .steps--pairs { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .hero-grid--text { grid-template-columns: minmax(0, 1fr); }
+  .hero-grid--text .hero-text { max-width: 760px; }
 }
 
 /* Gallery */
