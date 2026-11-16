@@ -1,208 +1,19 @@
+// Behaviour on the generated pages (tools/build.mjs writes the content into the HTML):
+// the year, team tabs, theme toggle, avatar fallbacks, the contact form, the language
+// choice and the scroll reveal. Every part skips itself when its elements are missing.
 (function () {
   "use strict";
 
-  var fetchJSON = NE.fetchJSON;
-  var applyTranslations = NE.applyTranslations;
-
-  var SOLUTION_ICONS = {
-    speaking:
-      '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="8" cy="7" r="3"></circle><path d="M2 21v-2a6 6 0 0 1 6-6h0a6 6 0 0 1 4 1.5"></path><path d="M15.5 8.5a3 3 0 0 1 0 4"></path><path d="M18.5 6.5a6 6 0 0 1 0 8"></path></svg>',
-    heartbeat:
-      '<svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 21s-6.7-4.35-9.33-8.2C.87 10.1 1.4 6.6 4.2 5.1c2.3-1.24 5-.5 6.3 1.4l1.5 2.2 1.5-2.2c1.3-1.9 4-2.64 6.3-1.4 2.8 1.5 3.33 5 1.53 7.7C18.7 16.65 12 21 12 21z"></path></svg>',
-    video:
-      '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="6" width="14" height="12" rx="2"></rect><path d="M16 10l6-3v10l-6-3z"></path></svg>'
-  };
-
-  var DOWNLOAD_ICON =
-    '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>';
-
-  var EXTERNAL_ICON =
-    '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>';
-
-  function renderSolutions(dict) {
-    var list = document.getElementById("solutions-list");
-    if (!list) return;
-    var items = ((dict.solutions && dict.solutions.items) || []).filter(function (item) { return item.visibility !== "hidden"; });
-    list.innerHTML = items
-      .map(function (item) {
-        var highlights = item.highlights && item.highlights.length
-          ? "<ul>" + item.highlights.map(function (h) { return "<li>" + h + "</li>"; }).join("") + "</ul>"
-          : "";
-        var iconSvg = SOLUTION_ICONS[item.icon];
-        var iconClass = "card-icon" + (item.icon === "heartbeat" ? " card-icon-heartbeat" : "");
-        var icon = iconSvg ? '<span class="' + iconClass + '">' + iconSvg + "</span>" : "";
-        var badge = item.badge ? '<span class="card-badge">' + item.badge + "</span>" : "";
-        var brochure = item.brochure
-          ? '<a class="card-brochure" href="' + item.brochure + '" target="_blank" rel="noopener">' +
-            DOWNLOAD_ICON + (dict.solutions.brochure_label || "PDF") + "</a>"
-          : item.link
-          ? '<a class="card-brochure" href="' + item.link + '" target="_blank" rel="noopener">' +
-            EXTERNAL_ICON + (item.link_label || item.link) + "</a>"
-          : "";
-        return (
-          '<div class="card"><h3>' +
-          icon +
-          item.title +
-          badge +
-          "</h3><p>" +
-          item.description +
-          "</p>" +
-          highlights +
-          brochure +
-          "</div>"
-        );
-      })
-      .join("");
-  }
-
-  function initials(name) {
-    return name
-      .split(" ")
-      .map(function (part) { return part.charAt(0); })
-      .join("")
-      .slice(0, 2)
-      .toUpperCase();
-  }
-
-  function renderAvatar(person, avatarClass) {
-    if (person.image) {
-      return (
-        '<div class="' + avatarClass + ' avatar-photo">' +
-        '<img src="' + person.image + '" alt="" data-fallback="' + initials(person.name) + '">' +
-        "</div>"
-      );
-    }
-    return '<div class="' + avatarClass + '">' + initials(person.name) + "</div>";
-  }
-
-  function isValidPhone(value) {
-    return typeof value === "string" && /^\+?[0-9\s]{6,}$/.test(value.trim());
-  }
-
-  function renderPerson(person, title, bio) {
-    var links = [];
-    if (isValidPhone(person.mobile)) {
-      links.push('<a href="tel:' + person.mobile.replace(/\s+/g, "") + '">' + person.mobile + "</a>");
-    }
-    if (person.linkedin) {
-      links.push('<a href="' + person.linkedin + '" target="_blank" rel="noopener">LinkedIn</a>');
-    }
-    var personClass = person.placeholder ? "person person-placeholder" : "person";
-    var avatarClass = person.placeholder ? "avatar avatar-placeholder" : "avatar";
-    return (
-      '<div class="' + personClass + '">' +
-      renderAvatar(person, avatarClass) +
-      "<h3>" + person.name + "</h3>" +
-      (title ? "<p>" + title + "</p>" : "") +
-      (bio ? '<p class="person-bio">' + bio + "</p>" : "") +
-      (links.length ? '<p class="person-links">' + links.join(" · ") + "</p>" : "") +
-      "</div>"
-    );
-  }
-
-  function attachAvatarFallbacks(container) {
-    container.querySelectorAll(".avatar-photo img").forEach(function (img) {
-      img.addEventListener("error", function () {
+  function attachAvatarFallbacks() {
+    document.querySelectorAll(".avatar-photo img").forEach(function (img) {
+      function fallback() {
         var wrap = img.parentElement;
         wrap.classList.remove("avatar-photo");
         wrap.textContent = img.getAttribute("data-fallback") || "";
-      });
+      }
+      if (img.complete && img.naturalWidth === 0) fallback();
+      else img.addEventListener("error", fallback);
     });
-  }
-
-  function renderTeam(dict, teamData) {
-    var coreEl = document.getElementById("team-core");
-    var boardEl = document.getElementById("team-board");
-    if (!coreEl || !boardEl || !teamData) return;
-
-    var coreTitles = (dict.team && dict.team.core) || {};
-    coreEl.innerHTML = teamData.core
-      .filter(function (person) { return person.visibility !== "hidden"; })
-      .map(function (person) {
-        var entry = coreTitles[person.id] || {};
-        return renderPerson(person, entry.title, entry.bio);
-      })
-      .join("");
-
-    var boardDict = (dict.team && dict.team.board) || {};
-    var boardFallbackTitle = boardDict.placeholder_title || "";
-    var visibleBoard = teamData.board.filter(function (person) { return person.visibility !== "hidden"; });
-    boardEl.innerHTML = visibleBoard
-      .map(function (person) {
-        var entry = boardDict[person.id];
-        var title = entry && entry.title ? entry.title : boardFallbackTitle;
-        return renderPerson(person, title);
-      })
-      .join("");
-
-    attachAvatarFallbacks(coreEl);
-    attachAvatarFallbacks(boardEl);
-
-    var boardTabBtn = document.querySelector('.tab-btn[data-tab="board"]');
-    var boardHidden = boardDict.visibility === "hidden" || visibleBoard.length === 0;
-    if (boardTabBtn) boardTabBtn.hidden = boardHidden;
-    var tabsBar = document.querySelector(".tabs");
-    if (tabsBar) tabsBar.hidden = boardHidden;
-    if (boardHidden) {
-      boardEl.hidden = true;
-      coreEl.hidden = false;
-    }
-  }
-
-  function renderArticles(lang, articles) {
-    var section = document.getElementById("press");
-    var list = document.getElementById("article-list");
-    if (!section || !list) return;
-    if (!articles || !articles.length) {
-      section.hidden = true;
-      return;
-    }
-    section.hidden = false;
-    var fmt = new Intl.DateTimeFormat(lang, { year: "numeric", month: "long", day: "numeric", timeZone: "UTC" });
-    var docIcon = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><line x1="10" y1="9" x2="8" y2="9"></line></svg>';
-    var arrowIcon = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>';
-    list.innerHTML = articles
-      .map(function (a) {
-        var date = a.date ? fmt.format(new Date(a.date)) : "";
-        var meta = [a.source, date].filter(Boolean).join(" · ");
-        return (
-          '<a class="article-card" href="' + a.url + '" target="_blank" rel="noopener">' +
-          '<span class="article-ico">' + docIcon + "</span>" +
-          '<span class="article-body">' +
-          '<span class="article-title">' + a.title + "</span>" +
-          (meta ? '<span class="article-meta">' + meta + "</span>" : "") +
-          "</span>" +
-          '<span class="article-arrow">' + arrowIcon + "</span>" +
-          "</a>"
-        );
-      })
-      .join("");
-  }
-
-  function renderCustomers(customers) {
-    var section = document.getElementById("customers");
-    var list = document.getElementById("customer-list");
-    if (!section || !list) return;
-    var visible = (customers || []).filter(function (c) { return c.visibility !== "hidden"; });
-    if (!visible.length) {
-      section.hidden = true;
-      return;
-    }
-    section.hidden = false;
-    list.innerHTML = visible
-      .map(function (c) {
-        var inner = c.logo
-          ? '<img src="' + c.logo + '" alt="' + c.name + '">'
-          : "<span>" + c.name + "</span>";
-        var cls = "customer-logo";
-        if (c.logo) cls += " customer-logo-image";
-        if (c.placeholder) cls += " customer-logo-placeholder";
-        var title = c.logo ? ' title="' + c.name + '"' : "";
-        return c.url
-          ? '<a class="' + cls + '"' + title + ' href="' + c.url + '" target="_blank" rel="noopener">' + inner + "</a>"
-          : '<div class="' + cls + '"' + title + ">" + inner + "</div>";
-      })
-      .join("");
   }
 
   function initTabs() {
@@ -215,58 +26,23 @@
         });
         btn.classList.add("active");
         btn.setAttribute("aria-selected", "true");
-
         document.getElementById("team-core").hidden = btn.dataset.tab !== "core";
         document.getElementById("team-board").hidden = btn.dataset.tab !== "board";
       });
     });
   }
 
-  function renderContactForm(dict) {
-    var form = dict.contact && dict.contact.form;
-    if (!form) return;
-    var nameInput = document.getElementById("cf-name");
-    var emailInput = document.getElementById("cf-email");
-    var messageInput = document.getElementById("cf-message");
-    var subjectSelect = document.getElementById("cf-subject");
-    if (nameInput) nameInput.placeholder = form.name_placeholder || "";
-    if (emailInput) emailInput.placeholder = form.email_placeholder || "";
-    if (messageInput) messageInput.placeholder = form.message_placeholder || "";
-    if (subjectSelect && form.subject_options) {
-      subjectSelect.innerHTML = form.subject_options
-        .map(function (opt) { return "<option>" + opt + "</option>"; })
-        .join("");
-    }
-  }
-
-  function loadLang(lang, config, teamData, articleData) {
-    fetchJSON("locales/" + lang + ".json", {})
-      .then(function (dict) {
-        document.documentElement.lang = lang;
-        applyTranslations(dict);
-        renderSolutions(dict);
-        renderTeam(dict, teamData);
-        renderArticles(lang, articleData);
-        renderContactForm(dict);
-        NE.reveal();
-        NE.renderLangSwitcher(config, lang, "assets/flags/", function (newLang) {
-          NE.storeLang(newLang);
-          NE.setLangInUrl(newLang);
-          loadLang(newLang, config, teamData, articleData);
-        });
-      });
-  }
-
-  function initContactForm(site) {
+  function initContactForm() {
     var form = document.getElementById("contact-form");
     if (!form) return;
+    var emailEl = document.getElementById("contact-email");
+    var target = (emailEl && emailEl.textContent.trim()) || "hello@nordicemergency.dk";
     form.addEventListener("submit", function (e) {
       e.preventDefault();
       var name = document.getElementById("cf-name").value.trim();
       var email = document.getElementById("cf-email").value.trim();
       var subject = document.getElementById("cf-subject").value;
       var message = document.getElementById("cf-message").value.trim();
-      var target = site.email || "info@nordicemergency.dk";
       var mailSubject = subject + (name ? " – " + name : "");
       var mailBody = message + "\n\n---\n" + name + (email ? " (" + email + ")" : "");
       window.location.href =
@@ -276,28 +52,14 @@
     });
   }
 
-  function applySiteData(site) {
-    var emailEl = document.getElementById("contact-email");
-    if (emailEl && site.email) {
-      emailEl.textContent = site.email;
-      emailEl.href = "mailto:" + site.email;
-    }
-    var linkedinEl = document.getElementById("footer-linkedin");
-    if (linkedinEl && site.linkedin) linkedinEl.href = site.linkedin;
-
-    var discordEl = document.getElementById("footer-discord");
-    if (discordEl && site.discord) discordEl.href = site.discord;
-
-    var companyEl = document.getElementById("footer-company");
-    if (companyEl && site.company) companyEl.textContent = site.company;
-
-    var metaEl = document.getElementById("footer-meta");
-    if (metaEl) {
-      var parts = [];
-      if (site.CVR) parts.push("CVR " + site.CVR);
-      if (site.address) parts.push(site.address);
-      metaEl.textContent = parts.join(" · ");
-    }
+  // A flag is a link to the page in that language; the choice is remembered, so the
+  // next visit opens in it (the script in each page's head).
+  function initLangLinks() {
+    document.querySelectorAll(".lang-switcher a[data-lang]").forEach(function (a) {
+      a.addEventListener("click", function () {
+        NE.storeLang(a.getAttribute("data-lang"));
+      });
+    });
   }
 
   document.addEventListener("DOMContentLoaded", function () {
@@ -306,25 +68,9 @@
 
     initTabs();
     NE.initThemeToggle();
+    attachAvatarFallbacks();
+    initContactForm();
+    initLangLinks();
     NE.reveal();
-
-    Promise.all([
-      fetchJSON("locales/config.json", { default: "en", languages: [{ code: "en", flag: "gb", label: "English" }] }),
-      fetchJSON("data/team.json", { core: [], board: [] }),
-      fetchJSON("data/site.json", {}),
-      fetchJSON("data/article.json", []),
-      fetchJSON("data/customer.json", [])
-    ]).then(function (results) {
-      var config = results[0];
-      var teamData = results[1];
-      var siteData = results[2];
-      var articleData = results[3];
-      var customerData = results[4];
-      applySiteData(siteData);
-      renderCustomers(customerData);
-      initContactForm(siteData);
-      var lang = NE.detectLang(config);
-      loadLang(lang, config, teamData, articleData);
-    });
   });
 })();

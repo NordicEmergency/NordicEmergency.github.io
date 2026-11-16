@@ -1,6 +1,10 @@
 {
   "language_name": "Dansk",
   "language_code": "da",
+  "meta": {
+    "title": "Nordic Emergency Solutions – beredskabs-, HLR- og samtaletræning i VR og med AI",
+    "description": "Træningsplatforme i VR og med AI: katastrofe- og beredskabstræning, førstehjælp og HLR, og vis-à-vis til svære samtaler med en AI-karakter."
+  },
   "nav": {
     "solutions": "Løsninger",
     "academy": "Academy",
@@ -53,8 +57,8 @@
           "Egne brugere, single sign-on og eget design"
         ],
         "icon": "video",
-        "link": "https://vis-a-vis.nordicemergency.dk",
-        "link_label": "Gå til vis-à-vis"
+        "link": "/vis-a-vis/",
+        "link_label": "Læs mere om vis-à-vis"
       }
     ]
   },
@@ -286,5 +290,100 @@
     ],
     "contact_heading": "Kontakt",
     "contact_text": "Har du spørgsmål til disse vilkår? Skriv til os på"
+  },
+  "visavis": {
+    "meta_title": "vis-à-vis – træn svære samtaler med en AI-karakter | Nordic Emergency Solutions",
+    "meta_description": "Øv den svære samtale med en realistisk patient, pårørende eller borger på video eller telefon – og få score, feedback og fokuspunkter ud fra casens faglige kriterier.",
+    "badge": "Beta",
+    "heading": "vis-à-vis",
+    "tagline": "Træn de samtaler, der betyder noget – ansigt til ansigt med en AI-karakter.",
+    "lead": "vis-à-vis er en platform til samtaletræning, hvor du øver den svære samtale med en realistisk person på video eller telefon: en bekymret patient, en pårørende i chok eller en borger i krise. Bagefter bliver samtalen vurderet ud fra casens faglige kriterier, så du ved, hvad der gik godt, og hvad du skal arbejde med næste gang.",
+    "language_note": "",
+    "cta_app": "Gå til vis-à-vis",
+    "cta_contact": "Book en demo",
+    "how": {
+      "heading": "Sådan foregår det",
+      "intro": "Hver træning følger de samme tre trin, så du kan tage samtalen igen og igen, til den sidder.",
+      "step_label": "Trin",
+      "steps": [
+        {
+          "title": "Forbered dig",
+          "text": "Vælg en case, læs briefingen og mød karakteren. Briefingen kan også læses op for dig."
+        },
+        {
+          "title": "Tag samtalen",
+          "text": "Tal med karakteren som et live videoopkald eller en telefonsamtale. Karakteren svarer på det, du siger, som en rigtig person ville."
+        },
+        {
+          "title": "Få feedback",
+          "text": "Samtalen vurderes ud fra casens faglige kriterier: din score, hvad der gik godt, hvad du kan gøre bedre, og fokuspunkter til næste gang."
+        }
+      ]
+    },
+    "audience": {
+      "heading": "Til hvem",
+      "text": "vis-à-vis er bygget til uddannelse inden for sundhed og velfærd: hospitaler, kommuner, uddannelsessteder og andre, der træner personale og studerende i svære samtaler med patienter, pårørende og borgere. Platformen supplerer træning med skuespillere og simulationspatienter, så kursisterne kan øve, når det passer dem, og så mange gange, de har brug for."
+    },
+    "features": {
+      "heading": "Til underviseren og organisationen",
+      "intro": "Undervisere bygger og tilpasser cases, og organisationen bestemmer selv, hvem der har adgang.",
+      "items": [
+        {
+          "title": "Cases forankret i faglige rammer",
+          "text": "En case samler situationen, karakteren og de kriterier, samtalen vurderes efter. En case kan vise, hvem der har valideret den fagligt."
+        },
+        {
+          "title": "Overblik over udviklingen",
+          "text": "Undervisere følger kursisternes samtaler og resultater over tid. Kursister ser kun deres egne resultater."
+        },
+        {
+          "title": "Egne brugere og single sign-on",
+          "text": "Organisationen opretter sine egne brugere og kan lade dem logge ind med deres Microsoft-arbejdskonto."
+        },
+        {
+          "title": "Eget design",
+          "text": "Platformen kan køre på organisationens eget domæne med eget logo og egne farver."
+        }
+      ]
+    },
+    "security": {
+      "heading": "Sikkerhed og data",
+      "text": "Platformen og databasen kører på servere i EU. Video og stemme i samtalen leveres af en videoudbyder i USA, og samtalens tekst evalueres af sprogmodeller fra de udbydere, organisationen bruger. Instruktører og administratorer logger ind med totrinsbekræftelse, og en organisation kan begrænse adgangen til sit eget netværk.",
+      "link_label": "Læs mere om sikkerhed i vis-à-vis"
+    },
+    "faq": {
+      "heading": "Spørgsmål og svar",
+      "items": [
+        {
+          "q": "Hvad er vis-à-vis?",
+          "a": "En platform fra Nordic Emergency Solutions til at træne svære samtaler med en AI-karakter på video eller telefon. Efter samtalen får du en vurdering ud fra casens faglige kriterier."
+        },
+        {
+          "q": "Hvem kan bruge det?",
+          "a": "Organisationer, der uddanner personale inden for sundhed og velfærd, fx hospitaler, kommuner og uddannelsessteder. Organisationen opretter sine brugere, og kursisterne får adgang gennem den."
+        },
+        {
+          "q": "Hvordan bliver samtalen vurderet?",
+          "a": "En sprogmodel vurderer udskriften af samtalen ud fra de kriterier, casen er bygget på. Du får en score, konkret feedback på, hvad der gik godt og mindre godt, og fokuspunkter til næste samtale."
+        },
+        {
+          "q": "Erstatter det træning med skuespillere?",
+          "a": "Nej, det supplerer den. Kursisterne kan tage den samme samtale mange gange, før og efter træning med simulationspatienter, uden lokaler, skuespillere eller planlægning."
+        },
+        {
+          "q": "Hvad kræver det teknisk?",
+          "a": "En browser på computer, tablet eller telefon med mikrofon og højttaler eller headset. Der skal ikke installeres noget."
+        },
+        {
+          "q": "Hvordan kommer vi i gang?",
+          "a": "Skriv til os, så viser vi platformen og taler om, hvilke samtaler I vil træne. vis-à-vis er i beta, og vi hjælper gerne med de første cases."
+        }
+      ]
+    },
+    "contact": {
+      "heading": "Vil I prøve vis-à-vis?",
+      "text": "Skriv til os, så viser vi platformen og svarer på spørgsmål om alt fra cases og pris til implementering hos jer.",
+      "button": "Kontakt os"
+    }
   }
 }

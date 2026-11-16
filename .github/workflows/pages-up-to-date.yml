@@ -1,0 +1,23 @@
+name: Pages up to date
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+      - name: Generated pages match locales and data
+        run: |
+          node tools/build.mjs
+          git add -N docs
+          git diff --exit-code --stat docs || { echo "::error::Run node tools/build.mjs and commit the generated pages."; exit 1; }

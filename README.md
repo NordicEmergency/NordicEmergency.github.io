@@ -2,7 +2,7 @@
 
 Website for Nordic Emergency Solutions ApS — training platforms in VR and with AI: disaster/emergency response, first aid/CPR, and difficult conversations (vis-à-vis).
 
-Single-page site, hosted on GitHub Pages, content-driven via JSON. Supports five languages (DA, EN, DE, NO, SV) via small flags in the header.
+Static site on GitHub Pages, content-driven via JSON. Every page exists once per language (DA, EN, DE, NO, SV), so search engines and AI assistants read the text without running JavaScript. The flags in the header link between the languages.
 
 **Live:** https://nordicemergency.dk
 
@@ -13,15 +13,24 @@ Single-page site, hosted on GitHub Pages, content-driven via JSON. Supports five
 - Team — core team and board
 - In the Media / Customers — shown only when there's content
 - Contact
-- Privacy policy and terms — separate pages under `privacy/` and `terms/`
+- Privacy policy and terms — separate pages under `privacy/` and `terms/` (rendered in the browser, noindex)
+
+## Pages and URLs
+| Page | Danish (default) | Other languages |
+|---|---|---|
+| Front page | `/` | `/en/`, `/de/`, `/no/`, `/sv/` |
+| vis-à-vis | `/vis-a-vis/` | `/en/vis-a-vis/`, … |
+
+Each page has its own title, description, canonical, hreflang alternates, Open Graph tags and JSON-LD (Organization; on vis-à-vis also SoftwareApplication and FAQPage). `sitemap.xml` and `robots.txt` are generated too. Old `?lang=xx` links and a flag chosen on an earlier visit send the visitor to that language's page; search engines keep no choice, so they stay on the page they asked for.
 
 ## Structure
 ```
-docs/index.html              Page shell
+tools/build.mjs              Generator: writes every page below from locales + data (no dependencies)
+docs/index.html, docs/*/     Generated pages: do not edit by hand
 docs/privacy/, docs/terms/   Legal pages
 docs/assets/css/styles.css   Styling
 docs/assets/js/common.js     Shared helpers: i18n, theme toggle, language switcher, scroll reveal
-docs/assets/js/main.js       Rendering of solutions/team/articles/customers, contact form
+docs/assets/js/main.js       Behaviour on the generated pages: tabs, contact form, language choice
 docs/locales/*.json          All text per language (da/en/de/no/sv) + config.json (language list)
 docs/data/team.json          Team and board members
 docs/data/article.json       Press coverage
@@ -36,7 +45,13 @@ docs/assets/flags/           SVG flags for the language switcher
 GitHub Pages serves from the `docs/` folder on `main`, at the domain in `docs/CNAME`.
 
 ## Editing content
-All text lives in `docs/locales/*.json` — no text is hardcoded in the HTML. Team, articles and customers are edited in their respective JSON files under `docs/data/`. A customer with `logo` set is shown as its logo on a light tile (also in dark mode, since logos are drawn for light backgrounds), with the name as alt text and tooltip; without `logo` the name is shown as text.
+All text lives in `docs/locales/*.json` — no text is hardcoded in the generator. After any change to `docs/locales/` or `docs/data/`, run
+
+```
+node tools/build.mjs
+```
+
+and commit the generated pages with it; CI fails a pull request whose pages are out of date. The vis-à-vis page's texts are `visavis` in each locale, and each page's title and description are `meta` (front page) and `visavis.meta_title` / `visavis.meta_description`. A card `link` that starts with `/` is a page on this site and gets the language's prefix. Team, articles and customers are edited in their respective JSON files under `docs/data/`. A customer with `logo` set is shown as its logo on a light tile (also in dark mode, since logos are drawn for light backgrounds), with the name as alt text and tooltip; without `logo` the name is shown as text.
 
 Solution cards are `solutions.items` in each locale file, in the order shown. Besides `title`, `description`, `highlights` and `icon` (`speaking`, `heartbeat` or `video`), a card can have:
 - `badge` — a small pill after the title, e.g. "Beta"

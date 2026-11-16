@@ -1,6 +1,10 @@
 {
   "language_name": "Deutsch",
   "language_code": "de",
+  "meta": {
+    "title": "Nordic Emergency Solutions – Einsatz-, Wiederbelebungs- und Gesprächstraining in VR und mit KI",
+    "description": "Trainingsplattformen in VR und mit KI: Katastrophen- und Einsatztraining, Erste Hilfe und Wiederbelebung sowie vis-à-vis für schwierige Gespräche mit einer KI-Figur."
+  },
   "nav": {
     "solutions": "Lösungen",
     "academy": "Akademie",
@@ -53,8 +57,8 @@
           "Eigene Benutzer, Single Sign-on und eigenes Design"
         ],
         "icon": "video",
-        "link": "https://vis-a-vis.nordicemergency.dk",
-        "link_label": "Zu vis-à-vis (Dänisch)"
+        "link": "/vis-a-vis/",
+        "link_label": "Mehr über vis-à-vis"
       }
     ]
   },
@@ -286,5 +290,100 @@
     ],
     "contact_heading": "Kontakt",
     "contact_text": "Bei Fragen zu diesen Bedingungen schreiben Sie uns gerne an"
+  },
+  "visavis": {
+    "meta_title": "vis-à-vis – schwierige Gespräche mit einer KI-Figur trainieren | Nordic Emergency Solutions",
+    "meta_description": "Üben Sie das schwierige Gespräch mit einem realistischen Patienten, Angehörigen oder Bürger per Video oder Telefon – und erhalten Sie Punktzahl, Feedback und Ansatzpunkte anhand der fachlichen Kriterien des Falls.",
+    "badge": "Beta",
+    "heading": "vis-à-vis",
+    "tagline": "Trainieren Sie die Gespräche, auf die es ankommt – von Angesicht zu Angesicht mit einer KI-Figur.",
+    "lead": "vis-à-vis ist eine Plattform für Gesprächstraining, auf der Sie das schwierige Gespräch mit einer realistischen Person per Video oder Telefon üben: mit einem besorgten Patienten, einem Angehörigen unter Schock oder einem Menschen in einer Krise. Anschließend wird das Gespräch anhand der fachlichen Kriterien des Falls bewertet, sodass Sie wissen, was gut lief und woran Sie beim nächsten Mal arbeiten sollten.",
+    "language_note": "Die Plattform und die aktuellen Fälle sind auf Dänisch.",
+    "cta_app": "Zu vis-à-vis",
+    "cta_contact": "Demo vereinbaren",
+    "how": {
+      "heading": "So funktioniert es",
+      "intro": "Jedes Training folgt denselben drei Schritten, sodass Sie das Gespräch immer wieder führen können, bis es sitzt.",
+      "step_label": "Schritt",
+      "steps": [
+        {
+          "title": "Vorbereiten",
+          "text": "Wählen Sie einen Fall, lesen Sie das Briefing und lernen Sie die Figur kennen. Das Briefing kann Ihnen auch vorgelesen werden."
+        },
+        {
+          "title": "Das Gespräch führen",
+          "text": "Sprechen Sie mit der Figur in einem Live-Videoanruf oder am Telefon. Die Figur reagiert auf das, was Sie sagen, wie ein echter Mensch."
+        },
+        {
+          "title": "Feedback erhalten",
+          "text": "Das Gespräch wird anhand der fachlichen Kriterien des Falls bewertet: Ihre Punktzahl, was gut lief, was Sie besser machen können, und Ansatzpunkte für das nächste Mal."
+        }
+      ]
+    },
+    "audience": {
+      "heading": "Für wen",
+      "text": "vis-à-vis ist für die Aus- und Weiterbildung im Gesundheits- und Sozialwesen gebaut: Krankenhäuser, Kommunen, Bildungseinrichtungen und andere, die Personal und Studierende in schwierigen Gesprächen mit Patienten, Angehörigen und Bürgern schulen. Die Plattform ergänzt das Training mit Schauspielern und Simulationspatienten, sodass die Lernenden üben können, wann es ihnen passt und so oft sie es brauchen."
+    },
+    "features": {
+      "heading": "Für Lehrende und Organisationen",
+      "intro": "Lehrende erstellen und passen Fälle an, und die Organisation entscheidet selbst, wer Zugang hat.",
+      "items": [
+        {
+          "title": "Fälle verankert in fachlichen Rahmenwerken",
+          "text": "Ein Fall vereint die Situation, die Figur und die Kriterien, nach denen das Gespräch bewertet wird. Ein Fall kann zeigen, wer ihn fachlich validiert hat."
+        },
+        {
+          "title": "Fortschritt im Überblick",
+          "text": "Lehrende verfolgen die Gespräche und Ergebnisse der Lernenden über die Zeit. Lernende sehen nur ihre eigenen Ergebnisse."
+        },
+        {
+          "title": "Eigene Benutzer und Single Sign-on",
+          "text": "Die Organisation legt ihre eigenen Benutzer an und kann sie mit ihrem Microsoft-Arbeitskonto anmelden lassen."
+        },
+        {
+          "title": "Eigenes Design",
+          "text": "Die Plattform kann unter der eigenen Domain der Organisation mit eigenem Logo und eigenen Farben laufen."
+        }
+      ]
+    },
+    "security": {
+      "heading": "Sicherheit und Daten",
+      "text": "Die Plattform und ihre Datenbank laufen auf Servern in der EU. Video und Stimme im Gespräch liefert ein Videoanbieter in den USA, und der Text des Gesprächs wird von Sprachmodellen der Anbieter bewertet, die die Organisation nutzt. Lehrende und Administratoren melden sich mit Zwei-Faktor-Authentifizierung an, und eine Organisation kann den Zugang auf ihr eigenes Netzwerk beschränken.",
+      "link_label": "Mehr zur Sicherheit in vis-à-vis (Dänisch)"
+    },
+    "faq": {
+      "heading": "Fragen und Antworten",
+      "items": [
+        {
+          "q": "Was ist vis-à-vis?",
+          "a": "Eine Plattform von Nordic Emergency Solutions, um schwierige Gespräche mit einer KI-Figur per Video oder Telefon zu trainieren. Nach dem Gespräch erhalten Sie eine Bewertung anhand der fachlichen Kriterien des Falls."
+        },
+        {
+          "q": "Wer kann es nutzen?",
+          "a": "Organisationen, die Personal im Gesundheits- und Sozialwesen ausbilden, etwa Krankenhäuser, Kommunen und Bildungseinrichtungen. Die Organisation legt ihre Benutzer an, und die Lernenden erhalten über sie Zugang."
+        },
+        {
+          "q": "Wie wird das Gespräch bewertet?",
+          "a": "Ein Sprachmodell bewertet das Transkript des Gesprächs anhand der Kriterien, auf denen der Fall aufbaut. Sie erhalten eine Punktzahl, konkretes Feedback dazu, was gut und weniger gut lief, und Ansatzpunkte für das nächste Gespräch."
+        },
+        {
+          "q": "Ersetzt es das Training mit Schauspielern?",
+          "a": "Nein, es ergänzt es. Die Lernenden können dasselbe Gespräch viele Male führen, vor und nach dem Training mit Simulationspatienten, ohne Räume, Schauspieler oder Terminplanung."
+        },
+        {
+          "q": "Was wird technisch benötigt?",
+          "a": "Ein Browser auf Computer, Tablet oder Telefon mit Mikrofon und Lautsprecher oder Headset. Es muss nichts installiert werden."
+        },
+        {
+          "q": "Wie fangen wir an?",
+          "a": "Schreiben Sie uns, dann zeigen wir Ihnen die Plattform und sprechen darüber, welche Gespräche Sie trainieren möchten. vis-à-vis ist in der Beta-Phase, und wir helfen gerne bei den ersten Fällen."
+        }
+      ]
+    },
+    "contact": {
+      "heading": "Möchten Sie vis-à-vis ausprobieren?",
+      "text": "Schreiben Sie uns, dann zeigen wir Ihnen die Plattform und beantworten Fragen zu Fällen, Preisen und Implementierung bei Ihnen.",
+      "button": "Kontakt aufnehmen"
+    }
   }
 }
