@@ -2,8 +2,15 @@
     {
         "id": "dapuc",
         "name": "DAPUC – Dansk Præhospital Uddannelsescenter",
-        "logo": null,
+        "logo": "assets/customers/dapuc.svg",
         "url": "https://www.dapuc.dk",
+        "visibility": "public"
+    },
+    {
+        "id": "imcc",
+        "name": "IMCC – International Medical Cooperation Committee",
+        "logo": "assets/customers/imcc.png",
+        "url": "https://imcc.dk",
         "visibility": "public"
     },
     {

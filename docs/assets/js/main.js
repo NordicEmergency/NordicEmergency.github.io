@@ -194,10 +194,13 @@
         var inner = c.logo
           ? '<img src="' + c.logo + '" alt="' + c.name + '">'
           : "<span>" + c.name + "</span>";
-        var cls = c.placeholder ? "customer-logo customer-logo-placeholder" : "customer-logo";
+        var cls = "customer-logo";
+        if (c.logo) cls += " customer-logo-image";
+        if (c.placeholder) cls += " customer-logo-placeholder";
+        var title = c.logo ? ' title="' + c.name + '"' : "";
         return c.url
-          ? '<a class="' + cls + '" href="' + c.url + '" target="_blank" rel="noopener">' + inner + "</a>"
-          : '<div class="' + cls + '">' + inner + "</div>";
+          ? '<a class="' + cls + '"' + title + ' href="' + c.url + '" target="_blank" rel="noopener">' + inner + "</a>"
+          : '<div class="' + cls + '"' + title + ">" + inner + "</div>";
       })
       .join("");
   }

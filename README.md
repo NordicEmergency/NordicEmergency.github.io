@@ -29,13 +29,14 @@ docs/data/customer.json      Customer list
 docs/data/site.json          Company details (email, LinkedIn, CVR, address)
 docs/assets/images/          Portraits and photos (promo_004.jpg is the hero photo)
 docs/assets/files/           Brochures (PDF) linked from the solution cards
+docs/assets/customers/       Customer logos (SVG, or PNG with transparent background trimmed to the logo)
 docs/assets/flags/           SVG flags for the language switcher
 ```
 
 GitHub Pages serves from the `docs/` folder on `main`, at the domain in `docs/CNAME`.
 
 ## Editing content
-All text lives in `docs/locales/*.json` — no text is hardcoded in the HTML. Team, articles and customers are edited in their respective JSON files under `docs/data/`.
+All text lives in `docs/locales/*.json` — no text is hardcoded in the HTML. Team, articles and customers are edited in their respective JSON files under `docs/data/`. A customer with `logo` set is shown as its logo on a light tile (also in dark mode, since logos are drawn for light backgrounds), with the name as alt text and tooltip; without `logo` the name is shown as text.
 
 Solution cards are `solutions.items` in each locale file, in the order shown. Besides `title`, `description`, `highlights` and `icon` (`speaking`, `heartbeat` or `video`), a card can have:
 - `badge` — a small pill after the title, e.g. "Beta"

@@ -17,6 +17,7 @@
   --header-bg: rgba(251, 251, 253, 0.8);
   --card-shadow: 0 1px 3px rgba(0, 0, 0, 0.04), 0 4px 16px rgba(0, 0, 0, 0.04);
   --focus-ring: 0 0 0 4px rgba(0, 113, 227, 0.3);
+  --logo-tile: #f5f5f7; /* customer logos are drawn for light backgrounds */
   --ease: cubic-bezier(.25, .1, .25, 1);
   --font-text: -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Helvetica Neue', 'Segoe UI', Roboto, Arial, sans-serif;
   --font-display: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Helvetica Neue', 'Segoe UI', Roboto, Arial, sans-serif;
@@ -43,6 +44,7 @@
     --header-bg: rgba(22, 22, 23, 0.8);
     --card-shadow: none;
     --focus-ring: 0 0 0 4px rgba(10, 132, 255, 0.4);
+    --logo-tile: #e8e8ed;
     color-scheme: dark;
   }
 }
@@ -64,6 +66,7 @@
   --header-bg: rgba(22, 22, 23, 0.8);
   --card-shadow: none;
   --focus-ring: 0 0 0 4px rgba(10, 132, 255, 0.4);
+  --logo-tile: #e8e8ed;
   color-scheme: dark;
 }
 
@@ -704,6 +707,9 @@ a.customer-logo:hover { text-decoration: none; color: var(--text); }
   border-color: var(--border);
   font-weight: 500;
 }
+
+.customer-logo-image,
+.section-alt .customer-logo-image { background: var(--logo-tile); }
 
 .customer-logo img {
   max-width: 100%;
