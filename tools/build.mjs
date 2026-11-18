@@ -70,7 +70,7 @@ const DISCORD_ICON =
 // ---------- Structured data ----------
 
 function postalAddress() {
-  // "Fussingsvej 8, 8700 Horsens"
+  // "Banegårdsgade 2, 8700 Horsens"
   const m = /^(.*),\s*(\d{4})\s+(.+)$/.exec(site.address || '')
   return m
     ? { '@type': 'PostalAddress', streetAddress: m[1], postalCode: m[2], addressLocality: m[3], addressCountry: 'DK' }
