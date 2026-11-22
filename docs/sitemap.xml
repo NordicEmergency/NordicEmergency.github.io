@@ -80,4 +80,44 @@
     <xhtml:link rel="alternate" hreflang="no" href="https://nordicemergency.dk/no/vis-a-vis/"/>
     <xhtml:link rel="alternate" hreflang="sv" href="https://nordicemergency.dk/sv/vis-a-vis/"/>
   </url>
+  <url>
+    <loc>https://nordicemergency.dk/status/</loc>
+    <xhtml:link rel="alternate" hreflang="da" href="https://nordicemergency.dk/status/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nordicemergency.dk/en/status/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://nordicemergency.dk/de/status/"/>
+    <xhtml:link rel="alternate" hreflang="no" href="https://nordicemergency.dk/no/status/"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://nordicemergency.dk/sv/status/"/>
+  </url>
+  <url>
+    <loc>https://nordicemergency.dk/en/status/</loc>
+    <xhtml:link rel="alternate" hreflang="da" href="https://nordicemergency.dk/status/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nordicemergency.dk/en/status/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://nordicemergency.dk/de/status/"/>
+    <xhtml:link rel="alternate" hreflang="no" href="https://nordicemergency.dk/no/status/"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://nordicemergency.dk/sv/status/"/>
+  </url>
+  <url>
+    <loc>https://nordicemergency.dk/de/status/</loc>
+    <xhtml:link rel="alternate" hreflang="da" href="https://nordicemergency.dk/status/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nordicemergency.dk/en/status/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://nordicemergency.dk/de/status/"/>
+    <xhtml:link rel="alternate" hreflang="no" href="https://nordicemergency.dk/no/status/"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://nordicemergency.dk/sv/status/"/>
+  </url>
+  <url>
+    <loc>https://nordicemergency.dk/no/status/</loc>
+    <xhtml:link rel="alternate" hreflang="da" href="https://nordicemergency.dk/status/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nordicemergency.dk/en/status/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://nordicemergency.dk/de/status/"/>
+    <xhtml:link rel="alternate" hreflang="no" href="https://nordicemergency.dk/no/status/"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://nordicemergency.dk/sv/status/"/>
+  </url>
+  <url>
+    <loc>https://nordicemergency.dk/sv/status/</loc>
+    <xhtml:link rel="alternate" hreflang="da" href="https://nordicemergency.dk/status/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nordicemergency.dk/en/status/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://nordicemergency.dk/de/status/"/>
+    <xhtml:link rel="alternate" hreflang="no" href="https://nordicemergency.dk/no/status/"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://nordicemergency.dk/sv/status/"/>
+  </url>
 </urlset>

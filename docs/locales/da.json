@@ -129,7 +129,8 @@
     }
   },
   "footer": {
-    "privacy": "Privatlivspolitik"
+    "privacy": "Privatlivspolitik",
+    "status": "Status"
   },
   "privacy": {
     "meta_title": "Privatlivspolitik – Nordic Emergency Solutions",
@@ -384,6 +385,51 @@
       "heading": "Vil I prøve vis-à-vis?",
       "text": "Skriv til os, så viser vi platformen og svarer på spørgsmål om alt fra cases og pris til implementering hos jer.",
       "button": "Kontakt os"
+    }
+  },
+  "status": {
+    "meta_title": "Systemstatus – Nordic Emergency Solutions",
+    "meta_description": "Driftsstatus for vis-à-vis, log ind, NES Online og nordicemergency.dk, tjekket hvert 5. minut.",
+    "heading": "Systemstatus",
+    "intro": "Vi tjekker vores tjenester udefra hvert 5. minut, og siden opdaterer sig selv.",
+    "loading": "Henter status …",
+    "noscript": "Statussiden skal bruge JavaScript for at hente den aktuelle status.",
+    "all_ok": "Alle systemer kører normalt",
+    "some_degraded": "Nogle systemer har problemer",
+    "some_down": "Der er en afbrydelse",
+    "unavailable": "Status kan ikke hentes lige nu",
+    "stale": "Status er ikke opdateret siden {time}",
+    "checked": "Senest tjekket {time}",
+    "legend": {
+      "ok": "Tilgængelig",
+      "degraded": "Problem",
+      "down": "Afbrydelse",
+      "unknown": "Ingen data"
+    },
+    "history_start": "90 dage siden",
+    "history_end": "I dag",
+    "uptime": "{pct} % oppetid",
+    "incidents_heading": "Seneste hændelser",
+    "no_incidents": "Ingen hændelser de seneste 90 dage.",
+    "ongoing": "Igangværende",
+    "contact": "Oplever du problemer, der ikke står her? Skriv til",
+    "services": {
+      "visavis": {
+        "name": "vis-à-vis",
+        "description": "Samtaletræning med AI"
+      },
+      "login": {
+        "name": "Log ind",
+        "description": "Log ind til vis-à-vis"
+      },
+      "nesonline": {
+        "name": "NES Online",
+        "description": "Portal til VR-træning"
+      },
+      "site": {
+        "name": "nordicemergency.dk",
+        "description": "Hjemmeside"
+      }
     }
   }
 }
