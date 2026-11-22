@@ -389,9 +389,9 @@
   },
   "status": {
     "meta_title": "Systemstatus – Nordic Emergency Solutions",
-    "meta_description": "Driftstatus för vis-à-vis, inloggning, NES Online och nordicemergency.dk, kontrollerad var 5:e minut.",
+    "meta_description": "Driftstatus för vis-à-vis, inloggning, NES Online och nordicemergency.dk, kontrollerad var 15:e minut.",
     "heading": "Systemstatus",
-    "intro": "Vi kontrollerar våra tjänster utifrån var 5:e minut, och sidan uppdateras av sig själv.",
+    "intro": "Vi kontrollerar våra tjänster utifrån var 15:e minut, och sidan uppdateras av sig själv.",
     "loading": "Hämtar status …",
     "noscript": "Statussidan behöver JavaScript för att hämta aktuell status.",
     "all_ok": "Alla system fungerar normalt",

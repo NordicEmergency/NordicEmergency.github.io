@@ -1,12 +1,12 @@
 name: Status
 
-# Checks the services every 5 minutes for nordicemergency.dk/status/ and keeps the result,
+# Checks the services every 15 minutes, off the busy whole-hour slots, for nordicemergency.dk/status/ and keeps the result,
 # status.json, as the only commit on the status-data branch (force-pushed, so it never grows).
 # GitHub may start a scheduled run late or skip one; the page says when the data is stale.
 
 on:
   schedule:
-    - cron: '*/5 * * * *'
+    - cron: '7,22,37,52 * * * *'
   workflow_dispatch:
 
 permissions:

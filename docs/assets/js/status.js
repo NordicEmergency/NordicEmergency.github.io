@@ -7,7 +7,7 @@
   if (!cfgEl) return;
   var T = JSON.parse(cfgEl.textContent);
   var DAYS = 90;
-  var STALE_MS = 30 * 60 * 1000;
+  var STALE_MS = 60 * 60 * 1000;
   var RANK = { unknown: -1, ok: 0, degraded: 1, down: 2 };
 
   var timeFmt = new Intl.DateTimeFormat(T.locale, { hour: "2-digit", minute: "2-digit", timeZone: "Europe/Copenhagen" });
