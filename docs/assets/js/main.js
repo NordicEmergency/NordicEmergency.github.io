@@ -71,7 +71,7 @@
     fetch(url, { cache: "no-store" })
       .then(function (res) { return res.ok ? res.json() : null; })
       .then(function (data) {
-        if (!data || Date.now() - new Date(data.checkedAt).getTime() > 30 * 60 * 1000) return;
+        if (!data || Date.now() - new Date(data.checkedAt).getTime() > 60 * 60 * 1000) return;
         var rank = { ok: 0, degraded: 1, down: 2 };
         var worst = "ok";
         Object.keys(data.services || {}).forEach(function (id) {
