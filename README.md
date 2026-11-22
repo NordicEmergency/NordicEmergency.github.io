@@ -37,6 +37,8 @@ docs/data/team.json          Team and board members
 docs/data/article.json       Press coverage
 docs/data/customer.json      Customer list
 docs/data/site.json          Company details (email, LinkedIn, CVR, address)
+docs/data/status.json        Services on the status page and the URLs they are checked on
+worker/                      Status worker (Cloudflare): checks the services, serves status.json
 docs/assets/images/          Portraits and photos (promo_004.jpg is the hero photo)
 docs/assets/files/           Brochures (PDF) linked from the solution cards
 docs/assets/customers/       Customer logos (SVG, or PNG with transparent background trimmed to the logo)
@@ -48,9 +50,18 @@ GitHub Pages serves from the `docs/` folder on `main`, at the domain in `docs/CN
 ## System status
 `/status/` shows whether vis-à-vis, sign-in, NES Online and this site are up, Apple System Status style, with 90 days of history and the latest incidents. The services and the URLs they are checked on are in `docs/data/status.json`; their names and descriptions are `status.services` in each locale.
 
-`.github/workflows/status.yml` runs `tools/status-check.mjs` every 15 minutes (at :07, :22, :37 and :52, away from the busy whole-hour slots) on a GitHub-hosted runner (free, since the repo is public). A probe passes on a 2xx answer within 10 s and a failed probe is retried once; a service is ok when all its probes pass, down when none does, degraded otherwise or when slower than 5 s. The result is `status.json`, force-pushed as the only commit on the `status-data` branch, so neither `main` nor Pages rebuild. `docs/assets/js/status.js` fetches it from raw.githubusercontent.com and refreshes every minute; if the data is more than an hour old, the page says so instead of showing green. GitHub can start a scheduled run late or skip one, and turns schedules off after 60 days without activity in the repo: re-enable it under Actions if that happens.
+The checks run in a Cloudflare Worker, `worker/` (`nes-status` on the account that holds nordicemergency.dk, on its own custom domain status-api.nordicemergency.dk; workers.dev is off), on a cron trigger every 5 minutes. GitHub's scheduled workflows were tried first and dropped: in this organisation they start 7–9 hours late or not at all. A probe passes on a 2xx answer within 10 s and a failed probe is retried once; a service is ok when all its probes pass, down when none does, degraded otherwise or when slower than 5 s. The result, `status.json` with the current state, a count per day for 90 days and the latest incidents, is kept in the Worker's KV namespace and served at `https://status-api.nordicemergency.dk/status.json`. `docs/assets/js/status.js` fetches it and refreshes every minute; the footer dot on every page reads it too. If the data is more than 30 minutes old, the page says so instead of showing green.
 
-To add a service: add it to `docs/data/status.json` and to `status.services` in all five locales, then run `node tools/build.mjs`.
+The Worker imports `docs/data/status.json`, so a change to the services needs a deploy as well as a Pages build:
+
+```
+cd worker
+CLOUDFLARE_API_TOKEN=$(cat ~/.config/cloudflare-token) npx wrangler deploy
+```
+
+Logs: `npx wrangler tail` from `worker/`, or Workers & Pages → nes-status → Logs in the Cloudflare dashboard.
+
+To add a service: add it to `docs/data/status.json` and to `status.services` in all five locales, run `node tools/build.mjs`, and deploy the Worker.
 
 ## Editing content
 All text lives in `docs/locales/*.json` — no text is hardcoded in the generator. After any change to `docs/locales/` or `docs/data/`, run

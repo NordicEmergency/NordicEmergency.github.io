@@ -1,5 +1,5 @@
-// Fills in the status page from status.json on the status-data branch (written by
-// tools/status-check.mjs from .github/workflows/status.yml) and refreshes it every minute.
+// Fills in the status page from status.json served by the status worker (worker/, Cloudflare)
+// and refreshes it every minute.
 (function () {
   "use strict";
 
@@ -7,7 +7,7 @@
   if (!cfgEl) return;
   var T = JSON.parse(cfgEl.textContent);
   var DAYS = 90;
-  var STALE_MS = 60 * 60 * 1000;
+  var STALE_MS = 30 * 60 * 1000;
   var RANK = { unknown: -1, ok: 0, degraded: 1, down: 2 };
 
   var timeFmt = new Intl.DateTimeFormat(T.locale, { hour: "2-digit", minute: "2-digit", timeZone: "Europe/Copenhagen" });
@@ -120,7 +120,7 @@
   }
 
   function load() {
-    // raw.githubusercontent.com caches for a few minutes; a new query string every minute gets a fresh copy.
+    // The worker allows a minute of caching; a new query string every minute gets a fresh copy.
     var url = T.dataUrl + "?t=" + Math.floor(Date.now() / 60000);
     fetch(url, { cache: "no-store" })
       .then(function (res) {
