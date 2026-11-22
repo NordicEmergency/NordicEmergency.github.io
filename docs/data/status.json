@@ -1,5 +1,5 @@
 {
-  "data_url": "https://nes-status.nordicemergency.workers.dev/status.json",
+  "data_url": "https://status-api.nordicemergency.dk/status.json",
   "interval_minutes": 5,
   "services": [
     { "id": "visavis", "probes": ["https://vis-a-vis.nordicemergency.dk/health", "https://vis-a-vis.nordicemergency.dk/api/public/cases"] },
