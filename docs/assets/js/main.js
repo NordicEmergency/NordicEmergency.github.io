@@ -1,6 +1,6 @@
 // Behaviour on the generated pages (tools/build.mjs writes the content into the HTML):
 // the year, team tabs, theme toggle, avatar fallbacks, the contact form, the language
-// choice and the scroll reveal. Every part skips itself when its elements are missing.
+// choice, the footer status dot and the scroll reveal. Every part skips itself when its elements are missing.
 (function () {
   "use strict";
 
@@ -62,6 +62,27 @@
     });
   }
 
+  // The dot before Status in the footer: the worst current state from status.json, grey until known.
+  function initFooterStatus() {
+    var link = document.querySelector(".footer-status[data-status-url]");
+    if (!link) return;
+    var dot = link.querySelector(".status-dot");
+    var url = link.getAttribute("data-status-url") + "?t=" + Math.floor(Date.now() / 60000);
+    fetch(url, { cache: "no-store" })
+      .then(function (res) { return res.ok ? res.json() : null; })
+      .then(function (data) {
+        if (!data || Date.now() - new Date(data.checkedAt).getTime() > 30 * 60 * 1000) return;
+        var rank = { ok: 0, degraded: 1, down: 2 };
+        var worst = "ok";
+        Object.keys(data.services || {}).forEach(function (id) {
+          var s = data.services[id].status;
+          if (rank[s] > rank[worst]) worst = s;
+        });
+        dot.className = "status-dot status-" + worst;
+      })
+      .catch(function () {});
+  }
+
   document.addEventListener("DOMContentLoaded", function () {
     var yearEl = document.getElementById("year");
     if (yearEl) yearEl.textContent = new Date().getFullYear();
@@ -71,6 +92,7 @@
     attachAvatarFallbacks();
     initContactForm();
     initLangLinks();
+    initFooterStatus();
     NE.reveal();
   });
 })();

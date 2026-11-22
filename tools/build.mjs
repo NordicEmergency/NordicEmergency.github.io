@@ -194,7 +194,7 @@ function footer(lang, dict) {
       ${site.linkedin ? `<a id="footer-linkedin" class="footer-icon-link" href="${esc(site.linkedin)}" target="_blank" rel="noopener" aria-label="LinkedIn">\n        ${LINKEDIN_ICON}\n      </a>` : ''}
       ${site.discord ? `<a id="footer-discord" class="footer-icon-link" href="${esc(site.discord)}" target="_blank" rel="noopener" aria-label="Discord">\n        ${DISCORD_ICON}\n      </a>` : ''}
       <a href="${pageUrl(lang, 'visavis')}">vis-à-vis</a>
-      <a href="${pageUrl(lang, 'status')}">${esc(dict.footer.status)}</a>
+      <a class="footer-status" href="${pageUrl(lang, 'status')}" data-status-url="${esc(statusConfig.data_url)}"><span class="status-dot status-unknown" aria-hidden="true"></span>${esc(dict.footer.status)}</a>
       <a href="/privacy/">${esc(dict.footer.privacy)}</a>
     </div>
   </div>

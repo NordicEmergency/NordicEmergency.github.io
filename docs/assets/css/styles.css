@@ -1046,3 +1046,7 @@ a.customer-logo:hover { text-decoration: none; color: var(--text); }
   .status-bar:nth-child(-n+60) { display: none; }
   .status-scale span:first-child { visibility: hidden; }
 }
+
+/* Footer: a status dot before the Status link (main.js colours it) */
+.footer-status { display: inline-flex; align-items: center; gap: 6px; }
+.footer-status .status-dot { width: 8px; height: 8px; }
