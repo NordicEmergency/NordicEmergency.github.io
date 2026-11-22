@@ -389,9 +389,9 @@
   },
   "status": {
     "meta_title": "System Status – Nordic Emergency Solutions",
-    "meta_description": "Service status for vis-à-vis, sign-in, NES Online and nordicemergency.dk, checked every 15 minutes.",
+    "meta_description": "Service status for vis-à-vis, sign-in, NES Online and nordicemergency.dk.",
     "heading": "System Status",
-    "intro": "We check our services from the outside every 15 minutes, and this page updates itself.",
+    "intro": "Here you can see the current status of our services.",
     "loading": "Loading status …",
     "noscript": "The status page needs JavaScript to load the current status.",
     "all_ok": "All systems operational",
