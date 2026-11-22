@@ -129,7 +129,8 @@
     }
   },
   "footer": {
-    "privacy": "Datenschutz"
+    "privacy": "Datenschutz",
+    "status": "Status"
   },
   "privacy": {
     "meta_title": "Datenschutzerklärung – Nordic Emergency Solutions",
@@ -384,6 +385,51 @@
       "heading": "Möchten Sie vis-à-vis ausprobieren?",
       "text": "Schreiben Sie uns, dann zeigen wir Ihnen die Plattform und beantworten Fragen zu Fällen, Preisen und Implementierung bei Ihnen.",
       "button": "Kontakt aufnehmen"
+    }
+  },
+  "status": {
+    "meta_title": "Systemstatus – Nordic Emergency Solutions",
+    "meta_description": "Betriebsstatus von vis-à-vis, Anmeldung, NES Online und nordicemergency.dk, alle 5 Minuten geprüft.",
+    "heading": "Systemstatus",
+    "intro": "Wir prüfen unsere Dienste alle 5 Minuten von außen, und diese Seite aktualisiert sich selbst.",
+    "loading": "Status wird geladen …",
+    "noscript": "Die Statusseite benötigt JavaScript, um den aktuellen Status zu laden.",
+    "all_ok": "Alle Systeme laufen normal",
+    "some_degraded": "Einige Systeme haben Probleme",
+    "some_down": "Es gibt einen Ausfall",
+    "unavailable": "Der Status kann gerade nicht geladen werden",
+    "stale": "Status seit {time} nicht aktualisiert",
+    "checked": "Zuletzt geprüft {time}",
+    "legend": {
+      "ok": "Verfügbar",
+      "degraded": "Problem",
+      "down": "Ausfall",
+      "unknown": "Keine Daten"
+    },
+    "history_start": "Vor 90 Tagen",
+    "history_end": "Heute",
+    "uptime": "{pct} % Verfügbarkeit",
+    "incidents_heading": "Letzte Vorfälle",
+    "no_incidents": "Keine Vorfälle in den letzten 90 Tagen.",
+    "ongoing": "Andauernd",
+    "contact": "Probleme, die hier nicht aufgeführt sind? Schreiben Sie an",
+    "services": {
+      "visavis": {
+        "name": "vis-à-vis",
+        "description": "Gesprächstraining mit KI"
+      },
+      "login": {
+        "name": "Anmeldung",
+        "description": "Anmeldung für vis-à-vis"
+      },
+      "nesonline": {
+        "name": "NES Online",
+        "description": "Portal für VR-Training"
+      },
+      "site": {
+        "name": "nordicemergency.dk",
+        "description": "Website"
+      }
     }
   }
 }

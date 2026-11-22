@@ -129,7 +129,8 @@
     }
   },
   "footer": {
-    "privacy": "Personvern"
+    "privacy": "Personvern",
+    "status": "Status"
   },
   "privacy": {
     "meta_title": "Personvernerklæring – Nordic Emergency Solutions",
@@ -384,6 +385,51 @@
       "heading": "Vil dere prøve vis-à-vis?",
       "text": "Ta kontakt, så viser vi plattformen og svarer på spørsmål om alt fra caser og pris til implementering hos dere.",
       "button": "Kontakt oss"
+    }
+  },
+  "status": {
+    "meta_title": "Systemstatus – Nordic Emergency Solutions",
+    "meta_description": "Driftsstatus for vis-à-vis, innlogging, NES Online og nordicemergency.dk, sjekket hvert 5. minutt.",
+    "heading": "Systemstatus",
+    "intro": "Vi sjekker tjenestene våre utenfra hvert 5. minutt, og siden oppdaterer seg selv.",
+    "loading": "Henter status …",
+    "noscript": "Statussiden trenger JavaScript for å hente gjeldende status.",
+    "all_ok": "Alle systemer fungerer normalt",
+    "some_degraded": "Noen systemer har problemer",
+    "some_down": "Det er et avbrudd",
+    "unavailable": "Status kan ikke hentes akkurat nå",
+    "stale": "Status er ikke oppdatert siden {time}",
+    "checked": "Sist sjekket {time}",
+    "legend": {
+      "ok": "Tilgjengelig",
+      "degraded": "Problem",
+      "down": "Avbrudd",
+      "unknown": "Ingen data"
+    },
+    "history_start": "90 dager siden",
+    "history_end": "I dag",
+    "uptime": "{pct} % oppetid",
+    "incidents_heading": "Siste hendelser",
+    "no_incidents": "Ingen hendelser de siste 90 dagene.",
+    "ongoing": "Pågående",
+    "contact": "Opplever du problemer som ikke står her? Skriv til",
+    "services": {
+      "visavis": {
+        "name": "vis-à-vis",
+        "description": "Samtaletrening med KI"
+      },
+      "login": {
+        "name": "Innlogging",
+        "description": "Innlogging til vis-à-vis"
+      },
+      "nesonline": {
+        "name": "NES Online",
+        "description": "Portal for VR-trening"
+      },
+      "site": {
+        "name": "nordicemergency.dk",
+        "description": "Nettsted"
+      }
     }
   }
 }

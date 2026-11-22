@@ -14,6 +14,9 @@
   --brand-red: #c8102e;
   --danger: #d70015;
   --ok: #248a3d;
+  --dot-ok: #34c759;
+  --dot-warn: #ff9500;
+  --dot-down: #ff3b30;
   --header-bg: rgba(251, 251, 253, 0.8);
   --card-shadow: 0 1px 3px rgba(0, 0, 0, 0.04), 0 4px 16px rgba(0, 0, 0, 0.04);
   --focus-ring: 0 0 0 4px rgba(0, 113, 227, 0.3);
@@ -41,6 +44,9 @@
     --brand-red: #ff6961;
     --danger: #ff453a;
     --ok: #30d158;
+    --dot-ok: #30d158;
+    --dot-warn: #ff9f0a;
+    --dot-down: #ff453a;
     --header-bg: rgba(22, 22, 23, 0.8);
     --card-shadow: none;
     --focus-ring: 0 0 0 4px rgba(10, 132, 255, 0.4);
@@ -63,6 +69,9 @@
   --brand-red: #ff6961;
   --danger: #ff453a;
   --ok: #30d158;
+  --dot-ok: #30d158;
+  --dot-warn: #ff9f0a;
+  --dot-down: #ff453a;
   --header-bg: rgba(22, 22, 23, 0.8);
   --card-shadow: none;
   --focus-ring: 0 0 0 4px rgba(10, 132, 255, 0.4);
@@ -936,3 +945,108 @@ a.customer-logo:hover { text-decoration: none; color: var(--text); }
     transition-duration: .01ms !important;
   }
 }
+
+/* Status page (/status/): Apple System Status-like grouped list with a 90-day bar per service */
+.status-hero { padding: 72px 0 96px; }
+.status-container { max-width: 760px; }
+.status-hero h1 { font-size: clamp(2rem, 5vw, 3rem); margin: 0 0 8px; }
+.status-intro { color: var(--muted); margin: 0 0 32px; }
+
+.status-banner {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 20px 24px;
+  margin-bottom: 24px;
+  background: var(--surface);
+  border-radius: 18px;
+  box-shadow: var(--card-shadow);
+  border: 1px solid var(--hairline);
+}
+.status-banner p { margin: 0; }
+.status-banner-title { font-family: var(--font-display); font-weight: 600; font-size: 1.25rem; letter-spacing: -0.016em; }
+.status-banner-meta { color: var(--muted); font-size: 0.875rem; }
+.status-banner-icon {
+  flex: none;
+  width: 36px;
+  height: 36px;
+  border-radius: 999px;
+  background: var(--border) no-repeat center / 20px;
+}
+.status-banner-ok .status-banner-icon {
+  background-color: var(--dot-ok);
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='20 6 9 17 4 12'/%3E%3C/svg%3E");
+}
+.status-banner-degraded .status-banner-icon,
+.status-banner-down .status-banner-icon {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='3' stroke-linecap='round'%3E%3Cline x1='12' y1='6' x2='12' y2='13'/%3E%3Cline x1='12' y1='18' x2='12' y2='18.01'/%3E%3C/svg%3E");
+}
+.status-banner-degraded .status-banner-icon { background-color: var(--dot-warn); }
+.status-banner-down .status-banner-icon { background-color: var(--dot-down); }
+
+.status-list {
+  list-style: none;
+  margin: 0;
+  padding: 0 24px;
+  background: var(--surface);
+  border-radius: 18px;
+  box-shadow: var(--card-shadow);
+  border: 1px solid var(--hairline);
+}
+.status-row {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  column-gap: 12px;
+  row-gap: 10px;
+  padding: 18px 0;
+}
+.status-row + .status-row { border-top: 1px solid var(--hairline); }
+.status-name { font-weight: 600; }
+.status-desc { display: block; font-weight: 400; color: var(--muted); font-size: 0.8125rem; }
+.status-label { color: var(--muted); font-size: 0.875rem; }
+.status-row[data-status='degraded'] .status-label { color: var(--dot-warn); }
+.status-row[data-status='down'] .status-label { color: var(--danger); }
+
+.status-dot { display: inline-block; width: 12px; height: 12px; border-radius: 999px; background: var(--border); flex: none; }
+.status-dot.status-ok { background: var(--dot-ok); }
+.status-dot.status-degraded { background: var(--dot-warn); }
+.status-dot.status-down { background: var(--dot-down); }
+
+.status-bars { grid-column: 1 / -1; display: flex; gap: 2px; height: 28px; }
+.status-bar { flex: 1; min-width: 0; border-radius: 2px; background: var(--fill); }
+.status-bar.status-ok { background: var(--dot-ok); }
+.status-bar.status-degraded { background: var(--dot-warn); }
+.status-bar.status-down { background: var(--dot-down); }
+.status-scale { grid-column: 1 / -1; display: flex; justify-content: space-between; gap: 8px; color: var(--muted); font-size: 0.75rem; }
+
+.status-legend { display: flex; flex-wrap: wrap; gap: 20px; justify-content: center; margin: 16px 0 0; color: var(--muted); font-size: 0.8125rem; }
+.status-legend-item { display: inline-flex; align-items: center; gap: 6px; }
+.status-legend .status-dot { width: 10px; height: 10px; }
+
+.status-subheading { font-size: 1.5rem; margin: 56px 0 16px; }
+.status-incidents { list-style: none; margin: 0; padding: 0; }
+.status-incident {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  column-gap: 10px;
+  padding: 12px 0;
+  border-bottom: 1px solid var(--hairline);
+}
+.status-incident-time { grid-column: 2; color: var(--muted); font-size: 0.8125rem; }
+.status-incident-empty { color: var(--muted); }
+.status-contact { margin-top: 48px; color: var(--muted); font-size: 0.875rem; }
+
+@media (max-width: 640px) {
+  .status-hero { padding: 48px 0 64px; }
+  .status-list { padding: 0 16px; }
+  .status-banner { padding: 16px; }
+  /* 30 days on a phone */
+  .status-bar:nth-child(-n+60) { display: none; }
+  .status-scale span:first-child { visibility: hidden; }
+}
+
+/* Footer: a status dot before the Status link (main.js colours it) */
+.footer-status { display: inline-flex; align-items: center; gap: 6px; }
+.footer-status .status-dot { width: 8px; height: 8px; }

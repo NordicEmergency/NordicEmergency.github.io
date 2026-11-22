@@ -129,7 +129,8 @@
     }
   },
   "footer": {
-    "privacy": "Integritetspolicy"
+    "privacy": "Integritetspolicy",
+    "status": "Status"
   },
   "privacy": {
     "meta_title": "Integritetspolicy – Nordic Emergency Solutions",
@@ -384,6 +385,51 @@
       "heading": "Vill ni prova vis-à-vis?",
       "text": "Hör av dig, så visar vi plattformen och svarar på frågor om allt från fall och pris till implementering hos er.",
       "button": "Kontakta oss"
+    }
+  },
+  "status": {
+    "meta_title": "Systemstatus – Nordic Emergency Solutions",
+    "meta_description": "Driftstatus för vis-à-vis, inloggning, NES Online och nordicemergency.dk, kontrollerad var 5:e minut.",
+    "heading": "Systemstatus",
+    "intro": "Vi kontrollerar våra tjänster utifrån var 5:e minut, och sidan uppdateras av sig själv.",
+    "loading": "Hämtar status …",
+    "noscript": "Statussidan behöver JavaScript för att hämta aktuell status.",
+    "all_ok": "Alla system fungerar normalt",
+    "some_degraded": "Vissa system har problem",
+    "some_down": "Det finns ett avbrott",
+    "unavailable": "Status kan inte hämtas just nu",
+    "stale": "Status har inte uppdaterats sedan {time}",
+    "checked": "Senast kontrollerad {time}",
+    "legend": {
+      "ok": "Tillgänglig",
+      "degraded": "Problem",
+      "down": "Avbrott",
+      "unknown": "Ingen data"
+    },
+    "history_start": "För 90 dagar sedan",
+    "history_end": "Idag",
+    "uptime": "{pct} % drifttid",
+    "incidents_heading": "Senaste händelser",
+    "no_incidents": "Inga händelser de senaste 90 dagarna.",
+    "ongoing": "Pågående",
+    "contact": "Har du problem som inte står här? Skriv till",
+    "services": {
+      "visavis": {
+        "name": "vis-à-vis",
+        "description": "Samtalsträning med AI"
+      },
+      "login": {
+        "name": "Inloggning",
+        "description": "Inloggning till vis-à-vis"
+      },
+      "nesonline": {
+        "name": "NES Online",
+        "description": "Portal för VR-träning"
+      },
+      "site": {
+        "name": "nordicemergency.dk",
+        "description": "Webbplats"
+      }
     }
   }
 }

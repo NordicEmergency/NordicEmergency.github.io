@@ -20,6 +20,7 @@ Static site on GitHub Pages, content-driven via JSON. Every page exists once per
 |---|---|---|
 | Front page | `/` | `/en/`, `/de/`, `/no/`, `/sv/` |
 | vis-à-vis | `/vis-a-vis/` | `/en/vis-a-vis/`, … |
+| System status | `/status/` | `/en/status/`, … |
 
 Each page has its own title, description, canonical, hreflang alternates, Open Graph tags and JSON-LD (Organization; on vis-à-vis also SoftwareApplication and FAQPage). `sitemap.xml` and `robots.txt` are generated too. Old `?lang=xx` links and a flag chosen on an earlier visit send the visitor to that language's page; search engines keep no choice, so they stay on the page they asked for.
 
@@ -43,6 +44,13 @@ docs/assets/flags/           SVG flags for the language switcher
 ```
 
 GitHub Pages serves from the `docs/` folder on `main`, at the domain in `docs/CNAME`.
+
+## System status
+`/status/` shows whether vis-à-vis, sign-in, NES Online and this site are up, Apple System Status style, with 90 days of history and the latest incidents. The services and the URLs they are checked on are in `docs/data/status.json`; their names and descriptions are `status.services` in each locale.
+
+`.github/workflows/status.yml` runs `tools/status-check.mjs` every 5 minutes on a GitHub-hosted runner (free, since the repo is public). A probe passes on a 2xx answer within 10 s and a failed probe is retried once; a service is ok when all its probes pass, down when none does, degraded otherwise or when slower than 5 s. The result is `status.json`, force-pushed as the only commit on the `status-data` branch, so neither `main` nor Pages rebuild. `docs/assets/js/status.js` fetches it from raw.githubusercontent.com and refreshes every minute; if the data is more than 30 minutes old, the page says so instead of showing green. GitHub can start a scheduled run late or skip one, and turns schedules off after 60 days without activity in the repo: re-enable it under Actions if that happens.
+
+To add a service: add it to `docs/data/status.json` and to `status.services` in all five locales, then run `node tools/build.mjs`.
 
 ## Editing content
 All text lives in `docs/locales/*.json` — no text is hardcoded in the generator. After any change to `docs/locales/` or `docs/data/`, run

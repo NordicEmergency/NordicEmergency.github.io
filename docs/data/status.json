@@ -1,0 +1,10 @@
+{
+  "data_url": "https://raw.githubusercontent.com/NordicEmergency/NordicEmergency.github.io/status-data/status.json",
+  "interval_minutes": 5,
+  "services": [
+    { "id": "visavis", "probes": ["https://vis-a-vis.nordicemergency.dk/health", "https://vis-a-vis.nordicemergency.dk/api/public/cases"] },
+    { "id": "login", "probes": ["https://login.nordicemergency.dk/health"] },
+    { "id": "nesonline", "probes": ["https://portal.nordicemergency.com/health"] },
+    { "id": "site", "probes": ["https://nordicemergency.dk/"] }
+  ]
+}

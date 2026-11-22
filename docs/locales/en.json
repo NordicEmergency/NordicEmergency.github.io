@@ -129,7 +129,8 @@
     }
   },
   "footer": {
-    "privacy": "Privacy Policy"
+    "privacy": "Privacy Policy",
+    "status": "Status"
   },
   "privacy": {
     "meta_title": "Privacy Policy — Nordic Emergency Solutions",
@@ -384,6 +385,51 @@
       "heading": "Want to try vis-à-vis?",
       "text": "Get in touch and we will show you the platform and answer questions about anything from cases and pricing to implementation at your organisation.",
       "button": "Contact us"
+    }
+  },
+  "status": {
+    "meta_title": "System Status – Nordic Emergency Solutions",
+    "meta_description": "Service status for vis-à-vis, sign-in, NES Online and nordicemergency.dk, checked every 5 minutes.",
+    "heading": "System Status",
+    "intro": "We check our services from the outside every 5 minutes, and this page updates itself.",
+    "loading": "Loading status …",
+    "noscript": "The status page needs JavaScript to load the current status.",
+    "all_ok": "All systems operational",
+    "some_degraded": "Some systems have issues",
+    "some_down": "There is an outage",
+    "unavailable": "Status can't be loaded right now",
+    "stale": "Status hasn't been updated since {time}",
+    "checked": "Last checked {time}",
+    "legend": {
+      "ok": "Available",
+      "degraded": "Issue",
+      "down": "Outage",
+      "unknown": "No data"
+    },
+    "history_start": "90 days ago",
+    "history_end": "Today",
+    "uptime": "{pct}% uptime",
+    "incidents_heading": "Recent incidents",
+    "no_incidents": "No incidents in the last 90 days.",
+    "ongoing": "Ongoing",
+    "contact": "Having problems that aren't listed here? Write to",
+    "services": {
+      "visavis": {
+        "name": "vis-à-vis",
+        "description": "Conversation training with AI"
+      },
+      "login": {
+        "name": "Sign-in",
+        "description": "Sign-in for vis-à-vis"
+      },
+      "nesonline": {
+        "name": "NES Online",
+        "description": "Portal for VR training"
+      },
+      "site": {
+        "name": "nordicemergency.dk",
+        "description": "Website"
+      }
     }
   }
 }
