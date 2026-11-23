@@ -3,9 +3,10 @@
 // outside and keeps the result in KV; GET /status.json serves it to the status page and the footer dot.
 // A probe passes on a 2xx answer within TIMEOUT_MS (redirects followed); a failed probe is retried once.
 // A service is ok when all its probes pass, down when none does, degraded otherwise or when slow.
+// A worse state needs two checks in a row before it is shown; a recovery shows at once.
 // The data holds the current state, a count per day (90 days, Danish time) and the latest incidents.
 
-import config from '../../docs/data/status.json'
+import config from '../../docs/data/status.json' with { type: 'json' }
 
 const KEY = 'status.json'
 const TIMEOUT_MS = 10_000
@@ -66,10 +67,19 @@ export async function update(prev, now = new Date()) {
   const incidents = prev.incidents || []
   days[today] ||= {}
 
-  for (const [id, { status, ms }] of checked) {
+  for (const [id, { status: seen, ms }] of checked) {
     const before = prev.services?.[id]
-    const since = before && before.status === status ? before.since : nowIso
-    services[id] = { status, since, ms }
+    const shown = before?.status ?? seen
+    // A worse state is shown only when two checks in a row agree: cron runs on whichever Cloudflare
+    // machine is free, sometimes far away, and a single slow or failed check is often that machine.
+    // A recovery is shown at once.
+    let status = shown
+    let pending
+    if (seen === 'ok' || seen === shown) status = seen
+    else if (before?.pending) status = seen
+    else pending = { status: seen, since: nowIso }
+    const since = status === shown && before ? before.since : (before?.pending?.since ?? nowIso)
+    services[id] = pending ? { status, since, ms, pending } : { status, since, ms }
 
     // Per day: [checks, degraded, down]
     const count = (days[today][id] ||= [0, 0, 0])
@@ -83,7 +93,7 @@ export async function update(prev, now = new Date()) {
     } else if (open) {
       if (RANK[status] > RANK[open.status]) open.status = status
     } else {
-      incidents.unshift({ id, status, start: nowIso })
+      incidents.unshift({ id, status, start: since })
     }
   }
 
