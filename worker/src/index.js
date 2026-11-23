@@ -1,6 +1,6 @@
 // Status worker for nordicemergency.dk/status/ (Cloudflare Workers).
 // Every few minutes (cron in wrangler.jsonc) it checks the services in docs/data/status.json from
-// outside and keeps the result in KV; GET /status.json serves it to the status page and the footer dot.
+// outside and keeps the result in KV; GET /status.json (and /) serves it to the status page and the footer dot.
 // A probe passes on a 2xx answer within TIMEOUT_MS (redirects followed); a failed probe is retried once.
 // A service is ok when all its probes pass, down when none does, degraded otherwise or when slow.
 // A worse state needs two checks in a row before it is shown; a recovery shows at once.
@@ -122,7 +122,7 @@ export default {
   async fetch(request, env) {
     const { pathname } = new URL(request.url)
     if (request.method === 'OPTIONS') return new Response(null, { status: 204, headers: CORS })
-    if (pathname !== '/status.json' || !['GET', 'HEAD'].includes(request.method)) {
+    if (!['/', '/status.json'].includes(pathname) || !['GET', 'HEAD'].includes(request.method)) {
       return new Response('Not found', { status: 404, headers: CORS })
     }
     const body = await env.STATUS.get(KEY)
